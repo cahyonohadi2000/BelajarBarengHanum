@@ -69,6 +69,8 @@ function renderDays(){
 function render(){
   const d=lessons[current];renderDays();renderSemester();
   $('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;
+  $('lesson-note').hidden=d.type!=='EXPERT';
+  if(d.type==='EXPERT')$('lesson-note').innerHTML='<b>Bekal Expert</b><span>Jadwal berulang yang bertemu lagi → cari KPK, lalu tambahkan selang waktunya ke jam/tanggal awal.</span><span>Membagi durasi menjadi bagian sama panjang terbesar → cari FPB.</span><small>Contoh: KPK(18, 24) = 72 menit; FPB(96, 144) = 48 menit.</small>';
   $('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&answerMatches(answers[i],q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" inputmode="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i]||'')}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${answerLabel(q[1])}. `}${q[2]}</div>`:''}</article>`}).join('');
   document.querySelectorAll('.answer-wrap input').forEach(el=>el.addEventListener('input',e=>{answers[Number(e.target.dataset.index)]=e.target.value;updateProgress();persist();}));
   $('check-btn').disabled=checked;$('check-btn').textContent=checked?'Sudah diperiksa':'Periksa jawaban';
