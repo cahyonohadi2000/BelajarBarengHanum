@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#083e59">
+  <meta name="description" content="Latihan FPB dan KPK selama tujuh hari untuk siswa kelas 5 SD.">
+  <title>Misi FPB &amp; KPK — Belajar Matematika Kelas 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Misi FPB dan KPK, beranda"><span class="brand-mark">×</span><span>MISI MATEMATIKA</span></a>
+    <span class="grade">KELAS 5 SD <i></i> 7 HARI</span>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="eyebrow"><span class="spark">✳</span> PETUALANGAN ANGKA</div>
+      <h1>Kenali pola.<br><em>Taklukkan FPB &amp; KPK.</em></h1>
+      <p>Sepuluh soal setiap hari. Kerjakan pelan-pelan dan tunjukkan caramu.</p>
+    </section>
+    <section class="workspace" aria-label="Latihan harian">
+      <aside class="day-panel">
+        <div class="panel-label">PILIH MISI</div>
+        <div id="day-list" class="day-list"></div>
+        <div class="tip"><span>TIP PAMAN</span><p id="day-tip">Pikirkan dulu: sedang mencari pembagian paling banyak, atau kapan sesuatu bertemu lagi?</p></div>
+      </aside>
+      <section class="quiz-panel">
+        <div class="quiz-heading">
+          <div><div id="day-kicker" class="panel-label">HARI 1 · DASAR</div><h2 id="day-title">Faktor dan Kelipatan</h2><p id="day-desc">Kenali faktor dan kelipatan sebelum mulai menghitung.</p></div>
+          <div class="question-count"><b id="progress-num">0</b><span>/ 10<br>terjawab</span></div>
+        </div>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+        <div id="questions" class="questions"></div>
+        <div class="quiz-actions"><button id="check-btn" class="primary-btn">Periksa jawaban</button><button id="reset-btn" class="text-btn">Ulangi hari ini</button></div>
+        <div id="result" class="result" role="status" aria-live="polite" hidden></div>
+      </section>
+    </section>
+    <footer><span>Belajar sedikit demi sedikit, hasilnya makin hebat.</span><span>FPB = faktor persekutuan terbesar · KPK = kelipatan persekutuan terkecil</span></footer>
+  </main>
+</body>
+</html>
