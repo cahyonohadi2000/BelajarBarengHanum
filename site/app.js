@@ -44,6 +44,14 @@ const answerMatches=(input,expected)=>{
 const answerLabel=expected=>Array.isArray(expected)?expected[0]:expected;
 let saved={};
 try{saved=JSON.parse(localStorage.getItem(STORE)||'{}')||{};}catch(_){saved={};}
+const migrateOldScores=!Array.isArray(saved.records);
+saved.records=Array.isArray(saved.records)?saved.records:[];
+if(migrateOldScores){
+  Object.entries(saved.days||{}).forEach(([day,state])=>{
+    if(state?.checked&&Number.isFinite(Number(state.score)))saved.records.push({day:Number(day),score:Number(state.score),total:10,timestamp:null,legacy:true});
+  });
+  try{localStorage.setItem(STORE,JSON.stringify(saved));}catch(_){/* local storage may be disabled */}
+}
 let current=Math.min(Math.max(Number(saved.current)||0,0),lessons.length-1);
 let checked=Boolean(saved.days?.[current]?.checked);
 let answers=Array.isArray(saved.days?.[current]?.answers)?saved.days[current].answers:Array(10).fill('');
@@ -60,6 +68,21 @@ function renderSemester(){
   $('semester-status').textContent=`${done} dari ${lessons.length} hari selesai`;
   $('semester-modules').innerHTML=modules.map((m,i)=>`<div class="module-card ${m.active?'module-active':''}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${m.active?'AKTIF':m.state.toUpperCase()}</span></div>`).join('');
 }
+function renderHistory(){
+  const records=Array.isArray(saved.records)?saved.records:[];
+  $('history-total').textContent=`${records.length} ${records.length===1?'percobaan':'percobaan'}`;
+  if(!records.length){$('score-history').innerHTML='<p class="history-empty">Belum ada nilai. Setelah Hanum menyelesaikan dan memeriksa satu latihan, hasilnya akan muncul di sini.</p>';return;}
+  const formatDate=stamp=>{
+    if(!stamp)return 'Nilai lama · waktu tidak tercatat';
+    const date=new Date(stamp);if(Number.isNaN(date.getTime()))return 'Waktu tidak tersedia';
+    return new Intl.DateTimeFormat('id-ID',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Jakarta'}).format(date)+' WIB';
+  };
+  const sorted=[...records].sort((a,b)=>new Date(b.timestamp||0)-new Date(a.timestamp||0));
+  $('score-history').innerHTML=sorted.map(record=>{
+    const lesson=lessons[Number(record.day)];const title=lesson?.name||'Latihan Matematika';
+    return `<article class="score-row"><div class="score-session"><b>${escapeHtml(title)}</b><small>${formatDate(record.timestamp)}</small></div><div class="score-value"><b>${Number(record.score)||0}<span>/${Number(record.total)||10}</span></b><small>nilai</small></div></article>`;
+  }).join('');
+}
 function renderDays(){
   $('day-list').innerHTML=lessons.map((d,i)=>{const done=Boolean(saved.days?.[i]?.checked);return `<button class="day-button ${i===current?'active':''} ${done?'done':''} ${d.type==='EXPERT'?'expert-button':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`}).join('');
   document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{
@@ -67,7 +90,7 @@ function renderDays(){
   }));
 }
 function render(){
-  const d=lessons[current];renderDays();renderSemester();
+  const d=lessons[current];renderDays();renderSemester();renderHistory();
   $('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;
   $('lesson-note').hidden=d.type!=='EXPERT';
   if(d.type==='EXPERT')$('lesson-note').innerHTML='<b>Bekal Expert</b><span>Jadwal berulang yang bertemu lagi → cari KPK, lalu tambahkan selang waktunya ke jam/tanggal awal.</span><span>Membagi durasi menjadi bagian sama panjang terbesar → cari FPB.</span><small>Contoh: KPK(18, 24) = 72 menit; FPB(96, 144) = 48 menit.</small>';
@@ -80,6 +103,8 @@ function render(){
   $('check-btn').onclick=()=>{
     const missing=answers.filter(v=>!String(v).trim()).length;
     if(missing){$('result').hidden=false;$('result').innerHTML=`Masih ada ${missing} soal yang belum dijawab.<small>Isi semua jawaban dulu, lalu periksa lagi.</small>`;return;}
+    const score=scoreDay();
+    saved.records.push({day:current,score,total:d.qs.length,timestamp:new Date().toISOString()});
     checked=true;persist();render();
   };
   updateProgress();
