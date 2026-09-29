@@ -14,10 +14,57 @@ const lessons=[
 {name:'Tantangan akhir',type:'TANTANGAN',desc:'Tunjukkan bahwa kamu sudah bisa membedakan FPB dan KPK.',tip:'Sebelum menghitung, sebutkan alasannya: membagi rata atau mencari kejadian berulang?',qs:[
 ['Tentukan FPB dari 42 dan 56.','14','FPB(42, 56) = 14.'],['Tentukan KPK dari 12 dan 18.','36','KPK(12, 18) = 36.'],['Ada 48 kue dan 60 permen dibagikan rata. Berapa anak paling banyak yang menerima?','12','Cari FPB: FPB(48, 60) = 12 anak.'],['Dua bus tiba tiap 12 dan 20 menit. Kapan tiba bersama lagi?','60','Cari KPK: KPK(12, 20) = 60 menit.'],['Ada 54 mawar dan 72 melati dibuat buket dengan komposisi sama. Berapa buket paling banyak?','18','Cari FPB: FPB(54, 72) = 18 buket.'],['Tentukan FPB dari 45 dan 75.','15','FPB(45, 75) = 15.'],['Tentukan KPK dari 14 dan 21.','42','KPK(14, 21) = 42.'],['Beni olahraga tiap 4 hari, Doni tiap 6 hari. Kapan berolahraga bersama lagi?','12','Cari KPK: KPK(4, 6) = 12 hari.'],['Pita 64 cm dan 80 cm dipotong sama panjang, sepanjang mungkin. Berapa cm tiap potong?','16','Cari FPB: FPB(64, 80) = 16 cm.'],['Tentukan KPK dari 15 dan 20.','60','KPK(15, 20) = 60.']]}
 ];
-let current=0,checked=false,answers=Array(10).fill('');
-const $=id=>document.getElementById(id);const clean=s=>s.toLowerCase().replace(/[\s.]/g,'').replace(/,/g,',').replace(/，/g,',');
-function renderDays(){ $('day-list').innerHTML=lessons.map((d,i)=>`<button class="day-button ${i===current?'active':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}</span></span><span class="day-mark">${i<current?'✓':''}</span></button>`).join('');document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{current=+b.dataset.day;checked=false;answers=Array(10).fill('');render()}))}
-function render(){const d=lessons[current];renderDays();$('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;$('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&clean(answers[i])===clean(q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i])}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${q[1]}. `}${q[2]}</div>`:''}</article>`}).join('');document.querySelectorAll('.answer-wrap input').forEach(el=>el.addEventListener('input',e=>{answers[+e.target.dataset.index]=e.target.value;updateProgress()}));$('check-btn').disabled=checked;$('check-btn').textContent=checked?'Sudah diperiksa':'Periksa jawaban';$('reset-btn').onclick=()=>{checked=false;answers=Array(10).fill('');render()};$('result').hidden=!checked;if(checked){let score=d.qs.reduce((n,q,i)=>n+(clean(answers[i])===clean(q[1])?1:0),0);$('result').innerHTML=`${score===10?'Hebat sekali! ':score>=7?'Bagus! ':'Terus berlatih! '}Nilaimu ${score} dari 10.<small>${score===10?'Semua jawaban tepat. Siap lanjut ke misi berikutnya?':'Periksa pembahasan di bawah soal, lalu coba ulangi jika ingin.'}</small>`}$('check-btn').onclick=()=>{checked=true;render()};updateProgress()}
-function updateProgress(){const n=answers.filter(v=>v.trim()).length;$('progress-num').textContent=n;$('progress-bar').style.width=`${n*10}%`}
-function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+const modules=[
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
+  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan interaktif · 10 soal per hari',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Membandingkan dan melakukan operasi hitung',state:'Berikutnya'},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
+  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
+];
+const STORE='belajarBarengHanum.v1';
+const $=id=>document.getElementById(id);
+const clean=s=>s.toLowerCase().replace(/[\s.]/g,'').replace(/，/g,',');
+let saved={};
+try{saved=JSON.parse(localStorage.getItem(STORE)||'{}')||{};}catch(_){saved={};}
+let current=Math.min(Math.max(Number(saved.current)||0,0),lessons.length-1);
+let checked=Boolean(saved.days?.[current]?.checked);
+let answers=Array.isArray(saved.days?.[current]?.answers)?saved.days[current].answers:Array(10).fill('');
+function persist(){
+  saved.current=current;
+  saved.days=saved.days||{};
+  saved.days[current]={answers,checked,score:checked?scoreDay():null};
+  try{localStorage.setItem(STORE,JSON.stringify(saved));}catch(_){/* local storage may be disabled */}
+  renderSemester();
+}
+function scoreDay(){return lessons[current].qs.reduce((n,q,i)=>n+(clean(answers[i]||'')===clean(q[1])?1:0),0);}
+function renderSemester(){
+  const done=lessons.reduce((n,_,i)=>n+(saved.days?.[i]?.checked?1:0),0);
+  $('semester-status').textContent=`${done} dari ${lessons.length} hari selesai`;
+  $('semester-modules').innerHTML=modules.map((m,i)=>`<div class="module-card ${m.active?'module-active':''}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${m.active?'AKTIF':m.state.toUpperCase()}</span></div>`).join('');
+}
+function renderDays(){
+  $('day-list').innerHTML=lessons.map((d,i)=>{const done=Boolean(saved.days?.[i]?.checked);return `<button class="day-button ${i===current?'active':''} ${done?'done':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`}).join('');
+  document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{
+    persist();current=Number(b.dataset.day);const state=saved.days?.[current];checked=Boolean(state?.checked);answers=Array.isArray(state?.answers)?[...state.answers]:Array(10).fill('');persist();render();
+  }));
+}
+function render(){
+  const d=lessons[current];renderDays();renderSemester();
+  $('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;
+  $('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&clean(answers[i]||'')===clean(q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" inputmode="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i]||'')}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${q[1]}. `}${q[2]}</div>`:''}</article>`}).join('');
+  document.querySelectorAll('.answer-wrap input').forEach(el=>el.addEventListener('input',e=>{answers[Number(e.target.dataset.index)]=e.target.value;updateProgress();persist();}));
+  $('check-btn').disabled=checked;$('check-btn').textContent=checked?'Sudah diperiksa':'Periksa jawaban';
+  $('reset-btn').onclick=()=>{checked=false;answers=Array(10).fill('');persist();render();};
+  $('result').hidden=!checked;
+  if(checked){const score=scoreDay();$('result').innerHTML=`${score===10?'Hebat sekali! ':score>=7?'Bagus! ':'Terus berlatih! '}Nilaimu ${score} dari 10.<small>${score===10?'Semua jawaban tepat. Kamu bisa lanjut ke hari berikutnya.':'Lihat pembahasan di bawah soal. Tekan “Ulangi hari ini” untuk mencoba kembali.'}</small>`;}
+  $('check-btn').onclick=()=>{
+    const missing=answers.filter(v=>!String(v).trim()).length;
+    if(missing){$('result').hidden=false;$('result').innerHTML=`Masih ada ${missing} soal yang belum dijawab.<small>Isi semua jawaban dulu, lalu periksa lagi.</small>`;return;}
+    checked=true;persist();render();
+  };
+  updateProgress();
+}
+function updateProgress(){const n=answers.filter(v=>String(v).trim()).length;$('progress-num').textContent=n;$('progress-bar').style.width=`${n*10}%`;}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 render();
