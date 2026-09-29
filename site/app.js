@@ -13,10 +13,22 @@ const lessons=[
 ['Tentukan FPB dari 12 dan 20.','4','FPB(12, 20) = 4.'],['Tentukan KPK dari 4 dan 10.','20','KPK(4, 10) = 20.'],['Tali 30 cm dan 45 cm dipotong sama panjang sepanjang mungkin. Berapa cm tiap potong?','15','Cari FPB: FPB(30, 45) = 15 cm.'],['Alarm berbunyi setiap 5 dan 8 menit. Kapan bunyi bersama lagi?','40','Cari KPK: KPK(5, 8) = 40 menit.'],['Ada 28 jeruk dan 42 apel dibagi rata ke kantong. Berapa kantong paling banyak?','14','Cari FPB: FPB(28, 42) = 14 kantong.'],['Tentukan KPK dari 6 dan 9.','18','KPK(6, 9) = 18.'],['Tentukan FPB dari 36 dan 48.','12','FPB(36, 48) = 12.'],['Lampu menyala tiap 3 dan 7 detik. Kapan menyala bersama lagi?','21','Cari KPK: KPK(3, 7) = 21 detik.'],['Ada 40 pensil dan 56 penghapus dibagi rata. Berapa kelompok paling banyak?','8','Cari FPB: FPB(40, 56) = 8 kelompok.'],['Tentukan KPK dari 8 dan 10.','40','KPK(8, 10) = 40.']]},
 {name:'Tantangan akhir',type:'TANTANGAN',desc:'Tunjukkan bahwa kamu sudah bisa membedakan FPB dan KPK.',tip:'Sebelum menghitung, sebutkan alasannya: membagi rata atau mencari kejadian berulang?',qs:[
 ['Tentukan FPB dari 42 dan 56.','14','FPB(42, 56) = 14.'],['Tentukan KPK dari 12 dan 18.','36','KPK(12, 18) = 36.'],['Ada 48 kue dan 60 permen dibagikan rata. Berapa anak paling banyak yang menerima?','12','Cari FPB: FPB(48, 60) = 12 anak.'],['Dua bus tiba tiap 12 dan 20 menit. Kapan tiba bersama lagi?','60','Cari KPK: KPK(12, 20) = 60 menit.'],['Ada 54 mawar dan 72 melati dibuat buket dengan komposisi sama. Berapa buket paling banyak?','18','Cari FPB: FPB(54, 72) = 18 buket.'],['Tentukan FPB dari 45 dan 75.','15','FPB(45, 75) = 15.'],['Tentukan KPK dari 14 dan 21.','42','KPK(14, 21) = 42.'],['Beni olahraga tiap 4 hari, Doni tiap 6 hari. Kapan berolahraga bersama lagi?','12','Cari KPK: KPK(4, 6) = 12 hari.'],['Pita 64 cm dan 80 cm dipotong sama panjang, sepanjang mungkin. Berapa cm tiap potong?','16','Cari FPB: FPB(64, 80) = 16 cm.'],['Tentukan KPK dari 15 dan 20.','60','KPK(15, 20) = 60.']]}
+,{name:'Tantangan Expert: Jam & tanggal',type:'EXPERT',desc:'Pilih FPB atau KPK dari petunjuk waktu, lalu hitung dengan teliti.',tip:'Untuk jadwal berulang yang bertemu lagi, cari KPK. Untuk membagi durasi menjadi potongan sama yang paling panjang, cari FPB.',qs:[
+['Alarm A berbunyi setiap 18 menit dan alarm B setiap 24 menit. Keduanya berbunyi bersama pukul 07.00. Pukul berapa keduanya berbunyi bersama lagi?',['08:12','8:12'],'KPK(18, 24) = 72 menit. 07.00 + 72 menit = 08.12.'],
+['Bus A berangkat setiap 35 menit dan bus B setiap 50 menit. Keduanya berangkat bersama pukul 06.30. Kapan berangkat bersama lagi?',['12:20','12.20'],'KPK(35, 50) = 350 menit = 5 jam 50 menit. Pukul 06.30 + 5 jam 50 menit = 12.20.'],
+['Lonceng A berbunyi setiap 12 menit dan lonceng B setiap 20 menit. Keduanya berbunyi pukul 09.15. Pukul berapa berbunyi bersama lagi?',['10:15','10.15'],'KPK(12, 20) = 60 menit. Satu jam setelah 09.15 adalah 10.15.'],
+['Pengingat obat A muncul setiap 6 jam dan B setiap 8 jam. Keduanya muncul Selasa pukul 05.00. Kapan muncul bersama lagi?',['Rabu 05:00','Rabu 05.00','Rabu pukul 05:00'],'KPK(6, 8) = 24 jam. Jadi pengingat bersama lagi pada Rabu pukul 05.00.'],
+['Lampu merah berkedip setiap 45 detik dan lampu hijau setiap 60 detik. Keduanya berkedip pukul 12.00. Pukul berapa berkedip bersama lagi?',['12:03','12.03'],'KPK(45, 60) = 180 detik = 3 menit. Jadi waktunya pukul 12.03.'],
+['Rara mengunjungi perpustakaan setiap 6 hari dan Dini setiap 8 hari. Mereka datang bersama pada 3 Mei. Tanggal berapa mereka datang bersama lagi?',['27 Mei','27/5'],'KPK(6, 8) = 24 hari. Tanggal 3 Mei ditambah 24 hari adalah 27 Mei.'],
+['Pasar sekolah diadakan setiap 9 hari dan klub sains bertemu setiap 12 hari. Keduanya berlangsung pada 4 Maret. Tanggal berapa jadwalnya bersamaan lagi?',['9 April','9/4'],'KPK(9, 12) = 36 hari. Dari 4 Maret, 36 hari kemudian adalah 9 April.'],
+['Alya berlatih piano setiap 14 hari dan berenang setiap 21 hari. Kedua kegiatan jatuh pada 5 Agustus. Tanggal berapa keduanya jatuh bersamaan lagi?',['16 September','16/9'],'KPK(14, 21) = 42 hari. Dari 5 Agustus, 42 hari kemudian adalah 16 September.'],
+['Dua rekaman latihan berdurasi 96 menit dan 144 menit akan dibagi menjadi bagian-bagian sama panjang tanpa sisa. Berapa durasi terpanjang setiap bagian?',['48 menit','48'],'FPB(96, 144) = 48. Jadi setiap bagian dapat berdurasi 48 menit.'],
+['Dua sesi kegiatan berdurasi 150 menit dan 210 menit akan dipecah menjadi blok waktu sama panjang tanpa sisa. Berapa durasi blok paling panjang?',['30 menit','30'],'FPB(150, 210) = 30. Jadi blok paling panjang adalah 30 menit.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
-  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan interaktif · 10 soal per hari',state:'Sedang dipelajari',active:true},
+  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Sedang dipelajari',active:true},
   {title:'Pecahan dan desimal',detail:'Membandingkan dan melakukan operasi hitung',state:'Berikutnya'},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
@@ -24,7 +36,12 @@ const modules=[
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
-const clean=s=>s.toLowerCase().replace(/[\s.]/g,'').replace(/，/g,',');
+const clean=s=>String(s).toLowerCase().replace(/[\s.]/g,'').replace(/，/g,',');
+const answerMatches=(input,expected)=>{
+  const options=Array.isArray(expected)?expected:[expected];
+  return options.some(option=>clean(option)===clean(input||''));
+};
+const answerLabel=expected=>Array.isArray(expected)?expected[0]:expected;
 let saved={};
 try{saved=JSON.parse(localStorage.getItem(STORE)||'{}')||{};}catch(_){saved={};}
 let current=Math.min(Math.max(Number(saved.current)||0,0),lessons.length-1);
@@ -37,14 +54,14 @@ function persist(){
   try{localStorage.setItem(STORE,JSON.stringify(saved));}catch(_){/* local storage may be disabled */}
   renderSemester();
 }
-function scoreDay(){return lessons[current].qs.reduce((n,q,i)=>n+(clean(answers[i]||'')===clean(q[1])?1:0),0);}
+function scoreDay(){return lessons[current].qs.reduce((n,q,i)=>n+(answerMatches(answers[i],q[1])?1:0),0);}
 function renderSemester(){
   const done=lessons.reduce((n,_,i)=>n+(saved.days?.[i]?.checked?1:0),0);
   $('semester-status').textContent=`${done} dari ${lessons.length} hari selesai`;
   $('semester-modules').innerHTML=modules.map((m,i)=>`<div class="module-card ${m.active?'module-active':''}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${m.active?'AKTIF':m.state.toUpperCase()}</span></div>`).join('');
 }
 function renderDays(){
-  $('day-list').innerHTML=lessons.map((d,i)=>{const done=Boolean(saved.days?.[i]?.checked);return `<button class="day-button ${i===current?'active':''} ${done?'done':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`}).join('');
+  $('day-list').innerHTML=lessons.map((d,i)=>{const done=Boolean(saved.days?.[i]?.checked);return `<button class="day-button ${i===current?'active':''} ${done?'done':''} ${d.type==='EXPERT'?'expert-button':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`}).join('');
   document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{
     persist();current=Number(b.dataset.day);const state=saved.days?.[current];checked=Boolean(state?.checked);answers=Array.isArray(state?.answers)?[...state.answers]:Array(10).fill('');persist();render();
   }));
@@ -52,7 +69,7 @@ function renderDays(){
 function render(){
   const d=lessons[current];renderDays();renderSemester();
   $('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;
-  $('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&clean(answers[i]||'')===clean(q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" inputmode="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i]||'')}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${q[1]}. `}${q[2]}</div>`:''}</article>`}).join('');
+  $('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&answerMatches(answers[i],q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" inputmode="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i]||'')}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${answerLabel(q[1])}. `}${q[2]}</div>`:''}</article>`}).join('');
   document.querySelectorAll('.answer-wrap input').forEach(el=>el.addEventListener('input',e=>{answers[Number(e.target.dataset.index)]=e.target.value;updateProgress();persist();}));
   $('check-btn').disabled=checked;$('check-btn').textContent=checked?'Sudah diperiksa':'Periksa jawaban';
   $('reset-btn').onclick=()=>{checked=false;answers=Array(10).fill('');persist();render();};
