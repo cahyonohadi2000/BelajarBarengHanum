@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#083e59">
-  <meta name="description" content="Latihan FPB dan KPK selama tujuh hari untuk siswa kelas 5 SD.">
-  <title>Misi FPB &amp; KPK — Belajar Matematika Kelas 5</title>
+  <meta name="description" content="Latihan Matematika kelas 5 SD dengan 10 soal harian, pembahasan, dan progres belajar.">
+  <title>Belajar Bareng Hanum — Matematika Kelas 5</title>
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#" aria-label="Misi FPB dan KPK, beranda"><span class="brand-mark">×</span><span>MISI MATEMATIKA</span></a>
-    <span class="grade">KELAS 5 SD <i></i> 7 HARI</span>
+    <span class="grade">KELAS 5 SD <i></i> 1 SEMESTER</span>
   </header>
   <main>
     <section class="intro">
@@ -20,10 +20,15 @@
       <h1>Kenali pola.<br><em>Taklukkan FPB &amp; KPK.</em></h1>
       <p>Sepuluh soal setiap hari. Kerjakan pelan-pelan dan tunjukkan caramu.</p>
     </section>
+    <section class="semester-card" aria-labelledby="semester-title">
+      <div class="semester-head"><div><div class="panel-label">PETA BELAJAR</div><h2 id="semester-title">Rencana Matematika Semester Ini</h2><p>Materi disusun bertahap. Latihan interaktif pertama: FPB dan KPK.</p></div><div class="semester-count" id="semester-status">0 dari 7 hari selesai</div></div>
+      <div class="semester-modules" id="semester-modules"></div>
+    </section>
     <section class="workspace" aria-label="Latihan harian">
       <aside class="day-panel">
         <div class="panel-label">PILIH MISI</div>
         <div id="day-list" class="day-list"></div>
+        <div class="saved-note">Progres tersimpan otomatis di perangkat ini.</div>
         <div class="tip"><span>TIP PAMAN</span><p id="day-tip">Pikirkan dulu: sedang mencari pembagian paling banyak, atau kapan sesuatu bertemu lagi?</p></div>
       </aside>
       <section class="quiz-panel">
