@@ -4,14 +4,15 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 
 ## Materi tersedia
 
-- Latihan FPB dan KPK kelas 5 SD selama 7 hari
-- 10 soal setiap hari, dengan nilai dan pembahasan
-- Bisa digunakan di ponsel maupun komputer
+- Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
+- Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
+- Materi pecahan senilai dan membandingkan pecahan sebagai topik berikutnya dalam peta semester
+- Setiap sesi berisi tepat 10 soal, kunci jawaban, dan pembahasan ringkas per soal
+- Riwayat setiap nilai dan progres disimpan otomatis di perangkat (localStorage)
+- Tampilan responsif untuk ponsel dan komputer
 
 ## GitHub Pages
 
 File situs ada di folder `site/`. Workflow GitHub Actions menerbitkan folder itu ke GitHub Pages setiap ada perubahan pada `main`.
 
-Jika deployment belum berjalan, buka **Settings → Pages** lalu pilih **GitHub Actions** sebagai sumber build. Setelah berhasil, alamat situs biasanya:
-
-`https://cahyonohadi2000.github.io/BelajarBarengHanum/`
+Alamat situs: https://cahyonohadi2000.github.io/BelajarBarengHanum/
