@@ -25,11 +25,23 @@ const lessons=[
 ['Dua rekaman latihan berdurasi 96 menit dan 144 menit akan dibagi menjadi bagian-bagian sama panjang tanpa sisa. Berapa durasi terpanjang setiap bagian?',['48 menit','48'],'FPB(96, 144) = 48. Jadi setiap bagian dapat berdurasi 48 menit.'],
 ['Dua sesi kegiatan berdurasi 150 menit dan 210 menit akan dipecah menjadi blok waktu sama panjang tanpa sisa. Berapa durasi blok paling panjang?',['30 menit','30'],'FPB(150, 210) = 30. Jadi blok paling panjang adalah 30 menit.']
 ]}
+,{name:'Pecahan senilai & membandingkan',type:'PECAHAN',desc:'Sederhanakan, temukan pecahan senilai, lalu bandingkan dan urutkan pecahan.',tip:'Jika penyebut sama, bandingkan pembilang. Jika penyebut berbeda, ubah dulu menjadi pecahan senilai dengan penyebut sama.',lessonNote:'<b>Bekal Pecahan</b><span>Pecahan senilai memiliki nilai yang sama, walau angka pembilang dan penyebutnya berbeda.</span><span>Untuk membandingkan pecahan berpenyebut berbeda, samakan penyebutnya. Untuk menyederhanakan, bagi pembilang dan penyebut dengan angka yang sama.</span><small>Contoh: 3/4 = 9/12, jadi 3/4 lebih besar daripada 8/12.</small>',qs:[
+['Sederhanakan pecahan 6/8.',['3/4'],'Bagi pembilang dan penyebut dengan 2: 6/8 = 3/4.'],
+['Pecahan yang senilai dengan 2/3 dan berpenyebut 12 adalah berapa?',['8/12'],'Kalikan pembilang dan penyebut 2/3 dengan 4: 8/12.'],
+['Isi tanda yang tepat: 3/5 ___ 4/5.',['<'],'Penyebutnya sama. Karena 3 lebih kecil daripada 4, maka 3/5 < 4/5.'],
+['Isi tanda yang tepat: 5/6 ___ 4/5.',['>'],'Samakan penyebut menjadi 30: 5/6 = 25/30 dan 4/5 = 24/30. Jadi 5/6 > 4/5.'],
+['Ubah 7/4 menjadi pecahan campuran.',['1 3/4','1¾'],'7 dibagi 4 hasilnya 1 sisa 3, jadi 7/4 = 1 3/4.'],
+['Ubah 2 1/3 menjadi pecahan biasa.',['7/3'],'Dua utuh sama dengan 6/3. Tambahkan 1/3, hasilnya 7/3.'],
+['Urutkan dari yang terkecil: 1/2, 3/4, 2/3.',['1/2, 2/3, 3/4'],'Dengan penyebut 12: 1/2 = 6/12, 2/3 = 8/12, dan 3/4 = 9/12.'],
+['Agar 3/4 senilai dengan pecahan berpenyebut 20, pembilangnya harus berapa?',['15'],'Penyebut 4 dikali 5 menjadi 20, maka pembilang 3 juga dikali 5: 15/20.'],
+['Manakah yang lebih besar, 5/8 atau 3/4?',['3/4'],'Ubah 3/4 menjadi 6/8. Karena 6/8 lebih besar daripada 5/8, jawabannya 3/4.'],
+['Hanum makan 3/8 bagian kue. Rani makan 1/4 bagian kue yang sama besar. Siapa makan lebih banyak?',['Hanum'],'Ubah 1/4 menjadi 2/8. Karena 3/8 > 2/8, Hanum makan lebih banyak.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
-  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Sedang dipelajari',active:true},
-  {title:'Pecahan dan desimal',detail:'Membandingkan dan melakukan operasi hitung',state:'Berikutnya'},
+  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
+  {title:'Pecahan dan desimal',detail:'Latihan pertama: pecahan senilai dan perbandingan',state:'Materi ditambahkan',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
@@ -92,8 +104,9 @@ function renderDays(){
 function render(){
   const d=lessons[current];renderDays();renderSemester();renderHistory();
   $('day-kicker').textContent=`HARI ${current+1} · ${d.type}`;$('day-title').textContent=d.name;$('day-desc').textContent=d.desc;$('day-tip').textContent=d.tip;
-  $('lesson-note').hidden=d.type!=='EXPERT';
-  if(d.type==='EXPERT')$('lesson-note').innerHTML='<b>Bekal Expert</b><span>Jadwal berulang yang bertemu lagi → cari KPK, lalu tambahkan selang waktunya ke jam/tanggal awal.</span><span>Membagi durasi menjadi bagian sama panjang terbesar → cari FPB.</span><small>Contoh: KPK(18, 24) = 72 menit; FPB(96, 144) = 48 menit.</small>';
+  const note=d.lessonNote||(d.type==='EXPERT'?'<b>Bekal Expert</b><span>Jadwal berulang yang bertemu lagi → cari KPK, lalu tambahkan selang waktunya ke jam/tanggal awal.</span><span>Membagi durasi menjadi bagian sama panjang terbesar → cari FPB.</span><small>Contoh: KPK(18, 24) = 72 menit; FPB(96, 144) = 48 menit.</small>':'');
+  $('lesson-note').hidden=!note;
+  if(note)$('lesson-note').innerHTML=note;
   $('questions').innerHTML=d.qs.map((q,i)=>{const good=checked&&answerMatches(answers[i],q[1]);return `<article class="question ${checked?(good?'correct':'incorrect'):''}"><div class="q-top"><span class="q-num">${String(i+1).padStart(2,'0')}</span><label class="q-text" for="answer-${i}">${q[0]}</label></div><div class="answer-wrap"><input id="answer-${i}" data-index="${i}" type="text" inputmode="text" autocomplete="off" ${i===0?'autofocus':''} placeholder="Tulis jawaban di sini" value="${escapeHtml(answers[i]||'')}" ${checked?'disabled':''} aria-label="Jawaban soal ${i+1}"></div>${checked?`<div class="feedback">${good?'Tepat! ':`Jawaban: ${answerLabel(q[1])}. `}${q[2]}</div>`:''}</article>`}).join('');
   document.querySelectorAll('.answer-wrap input').forEach(el=>el.addEventListener('input',e=>{answers[Number(e.target.dataset.index)]=e.target.value;updateProgress();persist();}));
   $('check-btn').disabled=checked;$('check-btn').textContent=checked?'Sudah diperiksa':'Periksa jawaban';
