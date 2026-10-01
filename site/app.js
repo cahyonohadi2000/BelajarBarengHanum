@@ -37,11 +37,23 @@ const lessons=[
 ['Manakah yang lebih besar, 5/8 atau 3/4?',['3/4'],'Ubah 3/4 menjadi 6/8. Karena 6/8 lebih besar daripada 5/8, jawabannya 3/4.'],
 ['Hanum makan 3/8 bagian kue. Rani makan 1/4 bagian kue yang sama besar. Siapa makan lebih banyak?',['Hanum'],'Ubah 1/4 menjadi 2/8. Karena 3/8 > 2/8, Hanum makan lebih banyak.']
 ]}
+,{name:'Penjumlahan pecahan',type:'PECAHAN',desc:'Menjumlahkan pecahan berpenyebut sama maupun berbeda dan menyederhanakan hasilnya.',tip:'Jika penyebut berbeda, samakan penyebut terlebih dahulu. Setelah itu, jumlahkan pembilang dan sederhanakan hasilnya.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menjumlahkan pecahan biasa dan pecahan campuran, lalu menggunakan hasilnya dalam soal sehari-hari.</span><b>Petunjuk Konsep</b><span>Penyebut menunjukkan ukuran bagian, jadi pecahan hanya dapat langsung dijumlahkan jika penyebutnya sama.</span><small>Contoh: 1/2 + 1/4 = 2/4 + 1/4 = 3/4.</small>',qs:[
+['Hitung 2/7 + 3/7.',['5/7'],'Penyebut sudah sama. Jumlahkan pembilangnya: 2 + 3 = 5, jadi hasilnya 5/7.'],
+['Hitung 1/4 + 2/4.',['3/4'],'Penyebut sudah sama. Jumlahkan 1 + 2, sehingga hasilnya 3/4.'],
+['Hitung 1/2 + 1/4.',['3/4'],'Ubah 1/2 menjadi 2/4. Jadi 2/4 + 1/4 = 3/4.'],
+['Hitung 2/3 + 1/6.',['5/6'],'Ubah 2/3 menjadi 4/6. Jadi 4/6 + 1/6 = 5/6.'],
+['Hitung 3/8 + 1/4.',['5/8'],'Ubah 1/4 menjadi 2/8. Jadi 3/8 + 2/8 = 5/8.'],
+['Hitung 5/6 + 2/3.',['1 1/2','1½','3/2'],'Ubah 2/3 menjadi 4/6. Hasilnya 9/6 = 3/2 = 1 1/2.'],
+['Hitung 1 1/4 + 2 1/4.',['3 1/2','3½','7/2'],'Jumlahkan bagian utuh: 1 + 2 = 3. Lalu 1/4 + 1/4 = 2/4 = 1/2, jadi 3 1/2.'],
+['Isi bagian yang kosong: 1/5 + ___ = 4/5.',['3/5'],'Karena 1/5 + 3/5 = 4/5, bagian yang kosong adalah 3/5.'],
+['Hanum minum 3/10 liter jus pagi hari dan 2/5 liter siang hari. Berapa liter jumlah jus yang diminum?',['7/10','0,7 liter','0,7'],'Ubah 2/5 menjadi 4/10. Jadi 3/10 + 4/10 = 7/10 liter.'],
+['Pita merah panjangnya 3/4 meter dan pita biru 5/6 meter. Berapa meter panjang keduanya?',['1 7/12','1 7/12 meter','19/12'],'Samakan penyebut menjadi 12: 3/4 = 9/12 dan 5/6 = 10/12. Jumlahnya 19/12 = 1 7/12 meter.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Latihan pertama: pecahan senilai dan perbandingan',state:'Materi ditambahkan',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan senilai, perbandingan, dan penjumlahan pecahan',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
