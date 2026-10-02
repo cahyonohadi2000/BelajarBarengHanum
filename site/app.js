@@ -49,11 +49,23 @@ const lessons=[
 ['Hanum minum 3/10 liter jus pagi hari dan 2/5 liter siang hari. Berapa liter jumlah jus yang diminum?',['7/10','0,7 liter','0,7'],'Ubah 2/5 menjadi 4/10. Jadi 3/10 + 4/10 = 7/10 liter.'],
 ['Pita merah panjangnya 3/4 meter dan pita biru 5/6 meter. Berapa meter panjang keduanya?',['1 7/12','1 7/12 meter','19/12'],'Samakan penyebut menjadi 12: 3/4 = 9/12 dan 5/6 = 10/12. Jumlahnya 19/12 = 1 7/12 meter.']
 ]}
+,{name:'Pengurangan pecahan',type:'PECAHAN',desc:'Mengurangkan pecahan berpenyebut sama maupun berbeda dan menyederhanakan hasilnya.',tip:'Samakan penyebut terlebih dahulu. Jika bilangan atas belum cukup untuk dikurangi, pinjam satu bagian utuh lalu ubah menjadi pecahan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengurangkan pecahan biasa dan pecahan campuran, lalu memakainya untuk menyelesaikan masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Setelah penyebut sama, kurangkan pembilangnya saja. Sederhanakan hasil akhir jika pembilang dan penyebut masih dapat dibagi angka yang sama.</span><small>Contoh: 3/4 − 1/2 = 3/4 − 2/4 = 1/4.</small>',qs:[
+['Hitung 6/9 − 2/9.',['4/9'],'Penyebut sudah sama. Kurangkan pembilangnya: 6 − 2 = 4, jadi hasilnya 4/9.'],
+['Hitung 7/8 − 3/8.',['1/2','4/8'],'Penyebut sudah sama: 7/8 − 3/8 = 4/8. Sederhanakan menjadi 1/2.'],
+['Hitung 3/4 − 1/2.',['1/4'],'Ubah 1/2 menjadi 2/4. Jadi 3/4 − 2/4 = 1/4.'],
+['Hitung 5/6 − 1/3.',['1/2','3/6'],'Ubah 1/3 menjadi 2/6. Jadi 5/6 − 2/6 = 3/6 = 1/2.'],
+['Hitung 7/10 − 1/4.',['9/20'],'Samakan penyebut menjadi 20: 7/10 = 14/20 dan 1/4 = 5/20. Selisihnya 9/20.'],
+['Satu kue utuh dikurangi 3/8 bagian. Berapa bagian yang tersisa?',['5/8'],'Satu utuh sama dengan 8/8. Jadi 8/8 − 3/8 = 5/8.'],
+['Hitung 2 1/3 − 1 2/3.',['2/3'],'Pinjam satu utuh: 2 1/3 = 1 4/3. Jadi 1 4/3 − 1 2/3 = 2/3.'],
+['Isi bagian yang kosong: 5/6 − ___ = 1/3.',['1/2','3/6'],'Ubah 1/3 menjadi 2/6. Pecahan yang dicari adalah 5/6 − 2/6 = 3/6 = 1/2.'],
+['Hanum memiliki 7/8 bagian kue lalu memakan 3/8 bagian. Berapa bagian kue yang tersisa?',['1/2','4/8'],'Kurangkan pecahan berpenyebut sama: 7/8 − 3/8 = 4/8 = 1/2 bagian.'],
+['Pita Hanum panjangnya 2 1/4 meter. Setelah dipakai 5/6 meter, berapa meter sisanya?',['1 5/12','1 5/12 meter','17/12'],'Ubah ke penyebut 12: 2 1/4 = 27/12 dan 5/6 = 10/12. Sisanya 17/12 = 1 5/12 meter.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan senilai, perbandingan, dan penjumlahan pecahan',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan senilai, perbandingan, penjumlahan, dan pengurangan',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
