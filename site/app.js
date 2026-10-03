@@ -61,11 +61,23 @@ const lessons=[
 ['Hanum memiliki 7/8 bagian kue lalu memakan 3/8 bagian. Berapa bagian kue yang tersisa?',['1/2','4/8'],'Kurangkan pecahan berpenyebut sama: 7/8 − 3/8 = 4/8 = 1/2 bagian.'],
 ['Pita Hanum panjangnya 2 1/4 meter. Setelah dipakai 5/6 meter, berapa meter sisanya?',['1 5/12','1 5/12 meter','17/12'],'Ubah ke penyebut 12: 2 1/4 = 27/12 dan 5/6 = 10/12. Sisanya 17/12 = 1 5/12 meter.']
 ]}
+,{name:'Perkalian pecahan & bilangan asli',type:'PECAHAN',desc:'Mengalikan pecahan dengan bilangan asli dan menyederhanakan hasilnya.',tip:'Kalikan bilangan asli dengan pembilang, sedangkan penyebut tetap. Setelah itu, sederhanakan atau ubah menjadi pecahan campuran.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengalikan pecahan biasa atau campuran dengan bilangan asli dan menerapkannya pada soal sehari-hari.</span><b>Petunjuk Konsep</b><span>Perkalian pecahan dengan bilangan asli berarti penjumlahan berulang. Ubah pecahan campuran menjadi pecahan biasa sebelum menghitung.</span><small>Contoh: 3 × 2/5 = 2/5 + 2/5 + 2/5 = 6/5 = 1 1/5.</small>',qs:[
+['Hitung 3 × 1/5.',['3/5'],'Kalikan 3 dengan pembilang 1: (3 × 1)/5 = 3/5.'],
+['Hitung 4 × 2/7.',['1 1/7','8/7'],'Hasilnya 8/7. Ubah menjadi pecahan campuran: 1 1/7.'],
+['Hitung 5 × 3/10.',['1 1/2','1½','3/2','15/10'],'Hasilnya 15/10. Sederhanakan menjadi 3/2 = 1 1/2.'],
+['Hitung 2/3 × 6.',['4'],'Kalikan pembilang dengan 6: 12/3 = 4.'],
+['Hitung 7 × 3/14.',['1 1/2','1½','3/2','21/14'],'Hasilnya 21/14. Sederhanakan menjadi 3/2 = 1 1/2.'],
+['Isi angka yang kosong: ___ × 1/4 = 3/4.',['3'],'Tiga kali 1/4 adalah 1/4 + 1/4 + 1/4 = 3/4.'],
+['Hitung 2 1/3 × 3.',['7'],'Ubah 2 1/3 menjadi 7/3. Lalu 7/3 × 3 = 21/3 = 7.'],
+['Setiap paket berisi 3/8 kg buah. Berapa kg buah dalam 4 paket?',['1 1/2 kg','1 1/2','1½ kg','1½','3/2 kg','3/2'],'Hitung 4 × 3/8 = 12/8 = 3/2 = 1 1/2 kg.'],
+['Hanum berjalan 2/5 km setiap hari selama 5 hari. Berapa km seluruh jaraknya?',['2 km','2'],'Hitung 5 × 2/5 = 10/5 = 2 km.'],
+['Satu resep membutuhkan 1 1/4 cangkir tepung. Berapa cangkir untuk 3 resep?',['3 3/4 cangkir','3 3/4','3¾ cangkir','3¾','15/4'],'Ubah 1 1/4 menjadi 5/4. Lalu 3 × 5/4 = 15/4 = 3 3/4 cangkir.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan senilai, perbandingan, penjumlahan, dan pengurangan',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan senilai, banding, tambah, kurang, dan kali',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
