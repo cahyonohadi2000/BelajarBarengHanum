@@ -73,11 +73,23 @@ const lessons=[
 ['Hanum berjalan 2/5 km setiap hari selama 5 hari. Berapa km seluruh jaraknya?',['2 km','2'],'Hitung 5 × 2/5 = 10/5 = 2 km.'],
 ['Satu resep membutuhkan 1 1/4 cangkir tepung. Berapa cangkir untuk 3 resep?',['3 3/4 cangkir','3 3/4','3¾ cangkir','3¾','15/4'],'Ubah 1 1/4 menjadi 5/4. Lalu 3 × 5/4 = 15/4 = 3 3/4 cangkir.']
 ]}
+,{name:'Pembagian pecahan & bilangan asli',type:'PECAHAN',desc:'Membagi pecahan dengan bilangan asli dan menyederhanakan hasilnya.',tip:'Membagi pecahan dengan bilangan asli sama dengan mengalikan penyebut dengan bilangan tersebut. Sederhanakan hasil akhirnya.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membagi pecahan biasa atau campuran dengan bilangan asli dan menerapkannya dalam pembagian sama rata.</span><b>Petunjuk Konsep</b><span>Pecahan ÷ bilangan asli dapat dihitung dengan mempertahankan pembilang dan mengalikan penyebutnya. Ubah pecahan campuran menjadi pecahan biasa terlebih dahulu.</span><small>Contoh: 3/4 ÷ 2 = 3/(4 × 2) = 3/8.</small>',qs:[
+['Hitung 1/2 ÷ 2.',['1/4'],'Kalikan penyebut dengan 2: 1/(2 × 2) = 1/4.'],
+['Hitung 3/4 ÷ 3.',['1/4','3/12'],'Hasilnya 3/12. Sederhanakan dengan membagi 3, sehingga menjadi 1/4.'],
+['Hitung 5/6 ÷ 5.',['1/6','5/30'],'Hasilnya 5/30. Sederhanakan dengan membagi 5, sehingga menjadi 1/6.'],
+['Hitung 4/5 ÷ 2.',['2/5','4/10'],'Hasilnya 4/10. Sederhanakan dengan membagi 2, sehingga menjadi 2/5.'],
+['Hitung 7/8 ÷ 7.',['1/8','7/56'],'Hasilnya 7/56. Sederhanakan dengan membagi 7, sehingga menjadi 1/8.'],
+['Hitung 2/3 ÷ 4.',['1/6','2/12'],'Hasilnya 2/12. Sederhanakan dengan membagi 2, sehingga menjadi 1/6.'],
+['Hitung 1 1/2 ÷ 3.',['1/2','3/6'],'Ubah 1 1/2 menjadi 3/2. Kemudian 3/2 ÷ 3 = 3/6 = 1/2.'],
+['Isi angka yang kosong: 3/5 ÷ ___ = 1/5.',['3'],'Tiga per lima dibagi 3 sama dengan 3/15, lalu disederhanakan menjadi 1/5.'],
+['Sebanyak 3/4 liter jus dibagi rata ke 3 gelas. Berapa liter isi setiap gelas?',['1/4 liter','1/4'],'Hitung 3/4 ÷ 3 = 3/12 = 1/4 liter.'],
+['Pita sepanjang 2 2/5 meter dipotong menjadi 4 bagian sama panjang. Berapa meter panjang setiap bagian?',['3/5 meter','3/5'],'Ubah 2 2/5 menjadi 12/5. Kemudian 12/5 ÷ 4 = 12/20 = 3/5 meter.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan senilai, banding, tambah, kurang, dan kali',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan senilai, banding, tambah, kurang, kali, dan bagi',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
