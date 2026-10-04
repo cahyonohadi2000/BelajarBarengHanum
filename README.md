@@ -6,7 +6,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 
 - Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
-- Materi pecahan senilai, perbandingan, penjumlahan, pengurangan, dan perkalian pecahan dengan bilangan asli
+- Materi pecahan senilai, perbandingan, penjumlahan, pengurangan, perkalian, dan pembagian pecahan dengan bilangan asli
 - Setiap sesi berisi tepat 10 soal, kunci jawaban, dan pembahasan ringkas per soal
 - Riwayat setiap nilai dan progres disimpan otomatis di perangkat (localStorage)
 - Tampilan responsif untuk ponsel dan komputer
