@@ -85,11 +85,23 @@ const lessons=[
 ['Sebanyak 3/4 liter jus dibagi rata ke 3 gelas. Berapa liter isi setiap gelas?',['1/4 liter','1/4'],'Hitung 3/4 ÷ 3 = 3/12 = 1/4 liter.'],
 ['Pita sepanjang 2 2/5 meter dipotong menjadi 4 bagian sama panjang. Berapa meter panjang setiap bagian?',['3/5 meter','3/5'],'Ubah 2 2/5 menjadi 12/5. Kemudian 12/5 ÷ 4 = 12/20 = 3/5 meter.']
 ]}
+,{name:'Menghubungkan pecahan & desimal',type:'PECAHAN',desc:'Mengubah pecahan sederhana menjadi desimal satu angka dan sebaliknya.',tip:'Angka pertama setelah koma menunjukkan persepuluhan. Samakan penyebut pecahan menjadi 10 agar bentuk desimal mudah terlihat.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menghubungkan pecahan berpenyebut 2, 5, atau 10 dengan bilangan desimal satu angka.</span><b>Petunjuk Konsep</b><span>Ubah pecahan menjadi pecahan senilai berpenyebut 10. Pembilangnya menjadi angka pertama setelah koma. Sebaliknya, desimal satu angka dapat ditulis sebagai pecahan berpenyebut 10 lalu disederhanakan.</span><small>Contoh: 1/2 = 5/10 = 0,5 dan 0,6 = 6/10 = 3/5.</small>',qs:[
+['Ubah 3/10 menjadi bilangan desimal.',['0,3','0.3'],'Tiga per sepuluh berarti tiga bagian persepuluhan, sehingga ditulis 0,3.'],
+['Ubah 7/10 menjadi bilangan desimal.',['0,7','0.7'],'Tujuh per sepuluh ditulis sebagai 0,7.'],
+['Ubah 1/2 menjadi bilangan desimal.',['0,5','0.5'],'Kalikan pembilang dan penyebut dengan 5: 1/2 = 5/10 = 0,5.'],
+['Ubah 2/5 menjadi bilangan desimal.',['0,4','0.4'],'Kalikan pembilang dan penyebut dengan 2: 2/5 = 4/10 = 0,4.'],
+['Ubah 3/5 menjadi bilangan desimal.',['0,6','0.6'],'Kalikan pembilang dan penyebut dengan 2: 3/5 = 6/10 = 0,6.'],
+['Ubah 4/5 menjadi bilangan desimal.',['0,8','0.8'],'Kalikan pembilang dan penyebut dengan 2: 4/5 = 8/10 = 0,8.'],
+['Isi bagian kosong: 9/10 = ___.',['0,9','0.9'],'Sembilan per sepuluh sama dengan 0,9.'],
+['Ubah 0,2 menjadi pecahan paling sederhana.',['1/5','2/10'],'Bilangan 0,2 berarti 2/10. Sederhanakan dengan membagi 2 sehingga menjadi 1/5.'],
+['Sebuah botol berisi 0,5 liter air. Tuliskan 0,5 sebagai pecahan paling sederhana.',['1/2','5/10'],'Bilangan 0,5 = 5/10. Sederhanakan dengan membagi 5 sehingga menjadi 1/2 liter.'],
+['Mana yang lebih besar: 3/5 atau 0,7?',['0,7','0.7','7/10'],'Ubah 3/5 menjadi 6/10 = 0,6. Karena 0,7 lebih besar daripada 0,6, jawabannya 0,7.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan senilai, banding, tambah, kurang, kali, dan bagi',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan senilai, operasi pecahan, dan hubungan desimal',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
