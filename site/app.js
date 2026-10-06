@@ -97,11 +97,23 @@ const lessons=[
 ['Sebuah botol berisi 0,5 liter air. Tuliskan 0,5 sebagai pecahan paling sederhana.',['1/2','5/10'],'Bilangan 0,5 = 5/10. Sederhanakan dengan membagi 5 sehingga menjadi 1/2 liter.'],
 ['Mana yang lebih besar: 3/5 atau 0,7?',['0,7','0.7','7/10'],'Ubah 3/5 menjadi 6/10 = 0,6. Karena 0,7 lebih besar daripada 0,6, jawabannya 0,7.']
 ]}
+,{name:'Membandingkan & mengurutkan desimal',type:'DESIMAL',desc:'Membandingkan dan mengurutkan bilangan desimal satu angka di belakang koma.',tip:'Bandingkan angka pada tempat persepuluhan. Pada garis bilangan, nilai yang lebih besar berada lebih ke kanan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membandingkan dan mengurutkan bilangan desimal satu angka menggunakan tanda &lt;, &gt;, dan =.</span><b>Petunjuk Konsep</b><span>Perhatikan angka satuan terlebih dahulu. Jika satuannya sama, bandingkan angka persepuluhannya. Gunakan &lt; untuk lebih kecil, &gt; untuk lebih besar, dan = untuk sama dengan.</span><small>Contoh: 0,3 &lt; 0,6 karena 3 persepuluhan lebih kecil daripada 6 persepuluhan.</small>',qs:[
+['Isi dengan tanda <, >, atau =: 0,3 ___ 0,7.',['<'],'Tiga persepuluhan lebih kecil daripada tujuh persepuluhan, jadi 0,3 < 0,7.'],
+['Isi dengan tanda <, >, atau =: 0,9 ___ 0,4.',['>'],'Sembilan persepuluhan lebih besar daripada empat persepuluhan, jadi 0,9 > 0,4.'],
+['Isi dengan tanda <, >, atau =: 0,5 ___ 0,5.',['='],'Kedua bilangan memiliki nilai yang sama, jadi gunakan tanda =.'],
+['Mana yang lebih besar: 0,6 atau 0,8?',['0,8','0.8'],'Delapan persepuluhan lebih besar daripada enam persepuluhan, sehingga jawabannya 0,8.'],
+['Mana yang paling kecil: 0,4; 0,1; atau 0,7?',['0,1','0.1'],'Satu persepuluhan adalah nilai terkecil, sehingga jawabannya 0,1.'],
+['Urutkan dari yang terkecil: 0,6; 0,2; 0,9. Gunakan tanda <.',['0,2<0,6<0,9','0.2<0.6<0.9'],'Urutkan angka persepuluhannya: 2, 6, lalu 9. Jadi 0,2 < 0,6 < 0,9.'],
+['Urutkan dari yang terbesar: 0,3; 0,8; 0,5. Gunakan tanda >.',['0,8>0,5>0,3','0.8>0.5>0.3'],'Urutkan angka persepuluhannya dari terbesar: 8, 5, lalu 3. Jadi 0,8 > 0,5 > 0,3.'],
+['Isi bilangan yang tepat: 0,4 < ___ < 0,6.',['0,5','0.5'],'Bilangan satu persepuluhan di antara 0,4 dan 0,6 adalah 0,5.'],
+['Pita merah panjangnya 1,4 meter dan pita biru 1,7 meter. Pita mana yang lebih panjang?',['pita biru','biru'],'Satuan keduanya sama-sama 1. Bandingkan persepuluhannya: 7 lebih besar daripada 4, jadi pita biru lebih panjang.'],
+['Tiga botol berisi 0,9 liter, 0,5 liter, dan 0,7 liter. Urutkan isi botol dari yang paling sedikit.',['0,5<0,7<0,9','0.5<0.7<0.9'],'Bandingkan angka persepuluhannya: 5 < 7 < 9. Urutannya adalah 0,5 < 0,7 < 0,9 liter.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan senilai, operasi pecahan, dan hubungan desimal',state:'Sedang dipelajari',active:true},
+  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Sedang dipelajari',active:true},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
