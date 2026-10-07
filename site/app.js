@@ -109,12 +109,24 @@ const lessons=[
 ['Pita merah panjangnya 1,4 meter dan pita biru 1,7 meter. Pita mana yang lebih panjang?',['pita biru','biru'],'Satuan keduanya sama-sama 1. Bandingkan persepuluhannya: 7 lebih besar daripada 4, jadi pita biru lebih panjang.'],
 ['Tiga botol berisi 0,9 liter, 0,5 liter, dan 0,7 liter. Urutkan isi botol dari yang paling sedikit.',['0,5<0,7<0,9','0.5<0.7<0.9'],'Bandingkan angka persepuluhannya: 5 < 7 < 9. Urutannya adalah 0,5 < 0,7 < 0,9 liter.']
 ]}
+,{name:'Pola bilangan membesar & mengecil',type:'POLA',desc:'Menemukan aturan dan melanjutkan pola bilangan sederhana.',tip:'Bandingkan dua bilangan yang berdekatan. Cari apakah polanya bertambah, berkurang, dikali, atau dibagi dengan angka yang sama.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengenali aturan, menemukan bilangan yang hilang, dan melanjutkan pola bilangan membesar atau mengecil.</span><b>Petunjuk Konsep</b><span>Amati perubahan dari satu bilangan ke bilangan berikutnya. Coba aturan tambah atau kurang terlebih dahulu, lalu periksa apakah pola memakai kali atau bagi.</span><small>Contoh: 4, 8, 12, 16 bertambah 4 setiap langkah, sehingga bilangan berikutnya adalah 20.</small>',qs:[
+['Lanjutkan pola: 2, 4, 6, 8, ___.',['10'],'Setiap bilangan bertambah 2. Jadi setelah 8 adalah 10.'],
+['Lanjutkan pola: 5, 10, 15, 20, ___.',['25'],'Pola bertambah 5 setiap langkah. Jadi bilangan berikutnya 25.'],
+['Lanjutkan pola: 30, 27, 24, 21, ___.',['18'],'Setiap bilangan berkurang 3. Jadi setelah 21 adalah 18.'],
+['Isi bilangan yang hilang: 100, 90, 80, ___, 60.',['70'],'Pola berkurang 10 setiap langkah, sehingga bilangan yang hilang adalah 70.'],
+['Berapa selisih tetap pada pola 7, 14, 21, 28?',['7'],'Setiap bilangan bertambah 7: 14 − 7 = 7 dan 21 − 14 = 7.'],
+['Lanjutkan pola: 3, 6, 12, 24, ___.',['48'],'Setiap bilangan dikali 2. Jadi 24 × 2 = 48.'],
+['Isi bilangan yang hilang: 4, 8, ___, 16, 20.',['12'],'Pola bertambah 4, sehingga bilangan di antara 8 dan 16 adalah 12.'],
+['Jumlah kancing pada empat kartu adalah 3, 5, 7, dan 9. Jika polanya berlanjut, berapa kancing pada kartu kelima?',['11'],'Jumlah kancing bertambah 2 pada setiap kartu. Jadi kartu kelima memiliki 11 kancing.'],
+['Baris kursi pertama berisi 6 kursi, lalu 9, 12, dan 15 kursi. Berapa kursi pada baris berikutnya?',['18'],'Banyak kursi bertambah 3 setiap baris. Jadi baris berikutnya berisi 18 kursi.'],
+['Lanjutkan pola mengecil: 81, 27, 9, 3, ___.',['1'],'Setiap bilangan dibagi 3. Jadi 3 ÷ 3 = 1.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Sedang dipelajari',active:true},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Berikutnya'},
+  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia'},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Sedang dipelajari',active:true},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
 ];
