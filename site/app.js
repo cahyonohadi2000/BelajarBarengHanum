@@ -121,6 +121,18 @@ const lessons=[
 ['Baris kursi pertama berisi 6 kursi, lalu 9, 12, dan 15 kursi. Berapa kursi pada baris berikutnya?',['18'],'Banyak kursi bertambah 3 setiap baris. Jadi baris berikutnya berisi 18 kursi.'],
 ['Lanjutkan pola mengecil: 81, 27, 9, 3, ___.',['1'],'Setiap bilangan dibagi 3. Jadi 3 ÷ 3 = 1.']
 ]}
+,{name:'Mengenal rasio sederhana',type:'RASIO',desc:'Membaca, menulis, dan menyederhanakan perbandingan dua jumlah.',tip:'Rasio membandingkan dua jumlah dengan urutan yang penting. Tulis jumlah pertama : jumlah kedua, lalu sederhanakan dengan membagi keduanya memakai angka yang sama.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menuliskan, membaca, dan menyederhanakan rasio dua jumlah dalam bentuk a : b.</span><b>Petunjuk Konsep</b><span>Perhatikan urutan benda yang dibandingkan. Rasio 6 apel terhadap 3 jeruk adalah 6 : 3. Bagilah kedua bilangan dengan faktor yang sama untuk memperoleh bentuk paling sederhana.</span><small>Contoh: 6 : 3 = 2 : 1 karena kedua bilangan dibagi 3.</small>',qs:[
+['Ada 4 pensil merah dan 3 pensil biru. Tuliskan rasio pensil merah terhadap pensil biru.',['4:3','4 : 3'],'Urutannya merah lalu biru, sehingga rasionya 4 : 3.'],
+['Di meja ada 2 buku cerita dan 5 buku pelajaran. Tuliskan rasio buku cerita terhadap buku pelajaran.',['2:5','2 : 5'],'Urutannya buku cerita lalu buku pelajaran, sehingga rasionya 2 : 5.'],
+['Sebuah keranjang berisi 6 apel dan 2 jeruk. Sederhanakan rasio apel terhadap jeruk.',['3:1','3 : 1'],'Rasio 6 : 2 disederhanakan dengan membagi keduanya dengan 2 menjadi 3 : 1.'],
+['Sederhanakan rasio 8 : 12.',['2:3','2 : 3'],'FPB dari 8 dan 12 adalah 4. Bagilah keduanya dengan 4 sehingga menjadi 2 : 3.'],
+['Sederhanakan rasio 15 : 10.',['3:2','3 : 2'],'Bagilah 15 dan 10 dengan 5 sehingga menjadi 3 : 2.'],
+['Isi angka yang kosong agar rasionya senilai: 2 : 3 = 4 : ___.',['6'],'Rasio 2 : 3 dikali 2 menjadi 4 : 6, jadi angka yang hilang adalah 6.'],
+['Isi angka yang kosong agar rasionya senilai: 3 : 5 = ___ : 10.',['6'],'Bilangan kedua dikali 2, maka bilangan pertama juga dikali 2: 3 × 2 = 6.'],
+['Rasio kelereng Raka terhadap Dito adalah 2 : 1. Jika Raka memiliki 8 kelereng, berapa kelereng Dito?',['4'],'Dari 2 bagian menjadi 8 berarti dikali 4. Satu bagian milik Dito juga dikali 4, jadi 4 kelereng.'],
+['Dalam minuman, rasio sirup terhadap air adalah 1 : 4. Jika digunakan 3 gelas sirup, berapa gelas air yang diperlukan?',['12','12 gelas'],'Tiga gelas sirup berarti rasionya dikali 3. Air yang diperlukan 4 × 3 = 12 gelas.'],
+['Satu kotak berisi 9 bola kuning dan 6 bola hijau. Sederhanakan rasio bola kuning terhadap seluruh bola.',['3:5','3 : 5'],'Jumlah seluruh bola 9 + 6 = 15. Rasio kuning terhadap seluruh bola adalah 9 : 15, disederhanakan menjadi 3 : 5.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
