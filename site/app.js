@@ -133,6 +133,18 @@ const lessons=[
 ['Dalam minuman, rasio sirup terhadap air adalah 1 : 4. Jika digunakan 3 gelas sirup, berapa gelas air yang diperlukan?',['12','12 gelas'],'Tiga gelas sirup berarti rasionya dikali 3. Air yang diperlukan 4 × 3 = 12 gelas.'],
 ['Satu kotak berisi 9 bola kuning dan 6 bola hijau. Sederhanakan rasio bola kuning terhadap seluruh bola.',['3:5','3 : 5'],'Jumlah seluruh bola 9 + 6 = 15. Rasio kuning terhadap seluruh bola adalah 9 : 15, disederhanakan menjadi 3 : 5.']
 ]}
+,{name:'Rasio satuan dalam keseharian',type:'RASIO',desc:'Menentukan nilai untuk satu satuan dan menggunakannya dalam soal sehari-hari.',tip:'Cari nilai untuk 1 satuan dengan membagi kedua jumlah menggunakan bilangan yang sama. Setelah mendapat nilai per satuan, kalikan sesuai jumlah yang ditanyakan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menentukan rasio satuan dan menggunakannya untuk menyelesaikan masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Rasio satuan menunjukkan banyaknya sesuatu untuk setiap 1 satuan pembanding. Caranya, bagilah kedua jumlah sampai pembandingnya menjadi 1.</span><small>Contoh: 12 jeruk dimasukkan sama rata ke 3 kantong. Karena 12 ÷ 3 = 4, rasio satuannya adalah 4 jeruk per kantong.</small>',qs:[
+['Ada 12 pensil yang dibagikan sama rata ke dalam 3 kotak. Berapa pensil per kotak?',['4','4 pensil'],'Hitung 12 ÷ 3 = 4. Jadi setiap kotak berisi 4 pensil.'],
+['Dina membaca 20 halaman dalam 4 menit dengan kecepatan tetap. Berapa halaman yang dibaca per menit?',['5','5 halaman'],'Hitung 20 ÷ 4 = 5. Rasio satuannya adalah 5 halaman per menit.'],
+['Harga 3 buku tulis adalah Rp15.000. Berapa harga satu buku tulis?',['5000','5.000','rp5000','rp5.000'],'Hitung Rp15.000 ÷ 3 = Rp5.000. Jadi harga satu buku tulis adalah Rp5.000.'],
+['Sebanyak 24 kue diletakkan sama rata pada 6 piring. Berapa kue per piring?',['4','4 kue'],'Hitung 24 ÷ 6 = 4. Jadi setiap piring berisi 4 kue.'],
+['Tiga wadah menampung total 18 liter air dengan isi sama banyak. Berapa liter air dalam satu wadah?',['6','6 liter'],'Hitung 18 ÷ 3 = 6. Setiap wadah berisi 6 liter air.'],
+['Sebuah mesin mencetak 35 kartu dalam 5 menit dengan kecepatan tetap. Berapa kartu yang dicetak per menit?',['7','7 kartu'],'Hitung 35 ÷ 5 = 7. Mesin mencetak 7 kartu per menit.'],
+['Empat baki memuat 28 bibit dengan jumlah sama. Jika tersedia 6 baki, berapa bibit yang dapat dimuat dengan rasio yang sama?',['42','42 bibit'],'Mula-mula cari rasio satuan: 28 ÷ 4 = 7 bibit per baki. Untuk 6 baki: 7 × 6 = 42 bibit.'],
+['Sebuah mobil menempuh 72 km dalam 3 jam dengan kecepatan tetap. Berapa kilometer jarak yang ditempuh dalam 5 jam?',['120','120 km','120 kilometer'],'Rasio satuannya 72 ÷ 3 = 24 km per jam. Dalam 5 jam, jaraknya 24 × 5 = 120 km.'],
+['Untuk membuat 4 teko minuman diperlukan 12 sendok sirup. Berapa sendok sirup untuk membuat 7 teko dengan rasa yang sama?',['21','21 sendok'],'Rasio satuannya 12 ÷ 4 = 3 sendok per teko. Untuk 7 teko diperlukan 3 × 7 = 21 sendok.'],
+['Delapan ayam membutuhkan 16 cangkir pakan per hari dengan bagian sama. Berapa cangkir pakan untuk 12 ayam?',['24','24 cangkir'],'Setiap ayam mendapat 16 ÷ 8 = 2 cangkir. Untuk 12 ayam diperlukan 2 × 12 = 24 cangkir.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
