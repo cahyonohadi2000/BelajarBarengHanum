@@ -8,7 +8,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
 - Materi pola bilangan membesar dan mengecil
-- Materi rasio sederhana: membaca, menulis, menyederhanakan, dan menggunakan perbandingan dalam soal cerita
+- Materi rasio sederhana dan rasio satuan: membaca, menulis, menyederhanakan, serta menggunakan perbandingan dalam soal sehari-hari
 - Setiap sesi berisi tepat 10 soal, kunci jawaban, dan pembahasan ringkas per soal
 - Riwayat setiap nilai dan progres disimpan otomatis di perangkat (localStorage)
 - Tampilan responsif untuk ponsel dan komputer
