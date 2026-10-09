@@ -150,7 +150,7 @@ const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia'},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, dan soal cerita',state:'Sedang dipelajari',active:true},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan soal cerita',state:'Sedang dipelajari',active:true},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
 ];
