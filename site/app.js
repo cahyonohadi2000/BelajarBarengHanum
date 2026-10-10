@@ -145,12 +145,24 @@ const lessons=[
 ['Untuk membuat 4 teko minuman diperlukan 12 sendok sirup. Berapa sendok sirup untuk membuat 7 teko dengan rasa yang sama?',['21','21 sendok'],'Rasio satuannya 12 ÷ 4 = 3 sendok per teko. Untuk 7 teko diperlukan 3 × 7 = 21 sendok.'],
 ['Delapan ayam membutuhkan 16 cangkir pakan per hari dengan bagian sama. Berapa cangkir pakan untuk 12 ayam?',['24','24 cangkir'],'Setiap ayam mendapat 16 ÷ 8 = 2 cangkir. Untuk 12 ayam diperlukan 2 × 12 = 24 cangkir.']
 ]}
+,{name:'Proporsi dan tabel rasio',type:'PROPORSI',desc:'Melengkapi rasio senilai dan menyelesaikan masalah proporsi sederhana.',tip:'Cari hubungan pengalinya pada kedua baris tabel. Jika pengali tidak langsung terlihat, temukan nilai per satuan terlebih dahulu, lalu kalikan dengan jumlah yang ditanyakan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat melengkapi tabel rasio senilai dan menyelesaikan masalah proporsi dengan perkalian atau pembagian.</span><b>Petunjuk Konsep</b><span>Dua rasio disebut senilai jika kedua bilangannya berubah dengan faktor pengali yang sama. Kita dapat memakai faktor pengali atau mencari nilai per satuan.</span><small>Contoh: 2 buku berharga Rp6.000. Karena 6.000 ÷ 2 = 3.000, maka 5 buku berharga 5 × Rp3.000 = Rp15.000.</small>',qs:[
+['Dua pensil berharga Rp6.000. Jika harga tiap pensil sama, berapa harga 5 pensil?',['15000','15.000','rp15000','rp15.000'],'Harga satu pensil Rp6.000 ÷ 2 = Rp3.000. Harga 5 pensil adalah 5 × Rp3.000 = Rp15.000.'],
+['Tiga botol berisi total 6 liter air. Dengan ukuran botol yang sama, berapa liter air dalam 7 botol?',['14','14 liter'],'Setiap botol berisi 6 ÷ 3 = 2 liter. Jadi 7 botol berisi 7 × 2 = 14 liter.'],
+['Rasio manik-manik merah terhadap biru adalah 4 : 6. Jika ada 12 manik-manik merah, berapa manik-manik biru agar rasionya tetap sama?',['18','18 manik-manik'],'Dari 4 menjadi 12 dikali 3. Maka 6 juga dikali 3 sehingga manik-manik biru berjumlah 18.'],
+['Lengkapi tabel rasio berikut: 3 mangga seharga Rp12.000, 6 mangga seharga Rp24.000, dan 9 mangga seharga ___.',['36000','36.000','rp36000','rp36.000'],'Harga satu mangga Rp12.000 ÷ 3 = Rp4.000. Jadi 9 mangga berharga 9 × Rp4.000 = Rp36.000.'],
+['Lima mobil mainan membutuhkan 20 roda. Berapa roda yang dibutuhkan untuk 8 mobil mainan sejenis?',['32','32 roda'],'Setiap mobil membutuhkan 20 ÷ 5 = 4 roda. Delapan mobil membutuhkan 8 × 4 = 32 roda.'],
+['Dua cangkir tepung dapat membuat 8 kue. Berapa cangkir tepung diperlukan untuk membuat 20 kue dengan resep yang sama?',['5','5 cangkir'],'Dua cangkir untuk 8 kue berarti 1 cangkir untuk 4 kue. Untuk 20 kue diperlukan 20 ÷ 4 = 5 cangkir.'],
+['Enam meter pita berharga Rp18.000. Berapa harga 10 meter pita dengan harga per meter yang sama?',['30000','30.000','rp30000','rp30.000'],'Harga per meter Rp18.000 ÷ 6 = Rp3.000. Harga 10 meter adalah 10 × Rp3.000 = Rp30.000.'],
+['Seorang pesepeda menempuh 28 km dalam 4 jam dengan kecepatan tetap. Berapa kilometer yang ditempuh dalam 6 jam?',['42','42 km','42 kilometer'],'Jarak per jam 28 ÷ 4 = 7 km. Dalam 6 jam, jaraknya 6 × 7 = 42 km.'],
+['Lima kantong pupuk cukup untuk lahan seluas 100 m². Jika pemakaiannya sama, berapa luas lahan yang dapat diberi pupuk dengan 7 kantong?',['140','140 m2','140 m²'],'Setiap kantong cukup untuk 100 ÷ 5 = 20 m². Tujuh kantong cukup untuk 7 × 20 = 140 m².'],
+['Toko A menjual 4 penghapus seharga Rp8.000. Toko B menjual 6 penghapus seharga Rp15.000. Toko mana yang lebih murah untuk setiap penghapus?',['toko a','a'],'Harga satu penghapus di Toko A Rp2.000, sedangkan di Toko B Rp2.500. Jadi Toko A lebih murah.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia'},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan soal cerita',state:'Sedang dipelajari',active:true},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Sedang dipelajari',active:true},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
 ];
