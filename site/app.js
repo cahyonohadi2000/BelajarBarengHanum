@@ -157,13 +157,25 @@ const lessons=[
 ['Lima kantong pupuk cukup untuk lahan seluas 100 m². Jika pemakaiannya sama, berapa luas lahan yang dapat diberi pupuk dengan 7 kantong?',['140','140 m2','140 m²'],'Setiap kantong cukup untuk 100 ÷ 5 = 20 m². Tujuh kantong cukup untuk 7 × 20 = 140 m².'],
 ['Toko A menjual 4 penghapus seharga Rp8.000. Toko B menjual 6 penghapus seharga Rp15.000. Toko mana yang lebih murah untuk setiap penghapus?',['toko a','a'],'Harga satu penghapus di Toko A Rp2.000, sedangkan di Toko B Rp2.500. Jadi Toko A lebih murah.']
 ]}
+,{name:'Keliling bangun datar',type:'GEOMETRI',desc:'Menghitung keliling persegi, persegi panjang, segitiga, dan bangun bersisi lainnya.',tip:'Keliling adalah jumlah panjang seluruh sisi luar bangun. Persegi: K = 4 × sisi. Persegi panjang: K = 2 × (panjang + lebar).',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menghitung keliling beberapa bangun datar dan menemukan panjang sisi yang belum diketahui.</span><b>Petunjuk Konsep</b><span>Telusuri garis terluar bangun, lalu jumlahkan semua panjang sisinya. Pastikan semua ukuran memakai satuan yang sama.</span><small>Contoh: persegi panjang dengan panjang 8 cm dan lebar 5 cm memiliki keliling 2 × (8 + 5) = 26 cm.</small>',qs:[
+['Sebuah persegi memiliki panjang sisi 7 cm. Berapa kelilingnya?',['28','28 cm'],'Keliling persegi adalah 4 × sisi, jadi 4 × 7 = 28 cm.'],
+['Sebuah persegi panjang memiliki panjang 12 cm dan lebar 5 cm. Berapa kelilingnya?',['34','34 cm'],'Kelilingnya 2 × (12 + 5) = 2 × 17 = 34 cm.'],
+['Sebuah segitiga memiliki panjang sisi 8 cm, 7 cm, dan 9 cm. Berapa kelilingnya?',['24','24 cm'],'Jumlahkan ketiga sisinya: 8 + 7 + 9 = 24 cm.'],
+['Sebuah segi lima beraturan memiliki panjang setiap sisi 6 cm. Berapa kelilingnya?',['30','30 cm'],'Segi lima memiliki 5 sisi sama panjang, jadi kelilingnya 5 × 6 = 30 cm.'],
+['Taman berbentuk persegi panjang memiliki panjang 15 m dan lebar 8 m. Berapa meter pagar yang diperlukan untuk mengelilinginya satu kali?',['46','46 m','46 meter'],'Panjang pagar sama dengan keliling taman: 2 × (15 + 8) = 46 m.'],
+['Keliling sebuah persegi adalah 36 cm. Berapa panjang satu sisinya?',['9','9 cm'],'Panjang sisi persegi adalah keliling ÷ 4, jadi 36 ÷ 4 = 9 cm.'],
+['Keliling sebuah persegi panjang adalah 30 cm. Jika panjangnya 9 cm, berapa lebarnya?',['6','6 cm'],'Setengah keliling adalah 30 ÷ 2 = 15 cm. Lebarnya 15 − 9 = 6 cm.'],
+['Keliling sebuah segitiga adalah 32 cm. Dua sisinya masing-masing 10 cm dan 11 cm. Berapa panjang sisi ketiga?',['11','11 cm'],'Sisi ketiga adalah 32 − 10 − 11 = 11 cm.'],
+['Lapangan berbentuk persegi panjang berukuran 20 m × 12 m. Rani berjalan mengelilinginya dua kali. Berapa meter jarak yang ditempuh Rani?',['128','128 m','128 meter'],'Keliling lapangan 2 × (20 + 12) = 64 m. Dua putaran adalah 2 × 64 = 128 m.'],
+['Sebuah bangun memiliki enam sisi luar dengan panjang 8 cm, 3 cm, 3 cm, 4 cm, 5 cm, dan 7 cm. Berapa keliling bangun tersebut?',['30','30 cm'],'Jumlahkan seluruh sisi luar: 8 + 3 + 3 + 4 + 5 + 7 = 30 cm.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
   {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia'},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Sedang dipelajari',active:true},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Berikutnya'},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia'},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Sedang dipelajari',active:true},
   {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
 ];
 const STORE='belajarBarengHanum.v1';
