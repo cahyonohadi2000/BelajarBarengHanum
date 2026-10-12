@@ -169,6 +169,18 @@ const lessons=[
 ['Lapangan berbentuk persegi panjang berukuran 20 m × 12 m. Rani berjalan mengelilinginya dua kali. Berapa meter jarak yang ditempuh Rani?',['128','128 m','128 meter'],'Keliling lapangan 2 × (20 + 12) = 64 m. Dua putaran adalah 2 × 64 = 128 m.'],
 ['Sebuah bangun memiliki enam sisi luar dengan panjang 8 cm, 3 cm, 3 cm, 4 cm, 5 cm, dan 7 cm. Berapa keliling bangun tersebut?',['30','30 cm'],'Jumlahkan seluruh sisi luar: 8 + 3 + 3 + 4 + 5 + 7 = 30 cm.']
 ]}
+,{name:'Luas persegi & persegi panjang',type:'GEOMETRI',desc:'Menghitung luas persegi dan persegi panjang serta menemukan ukuran sisi yang belum diketahui.',tip:'Luas menyatakan besar daerah yang ditutupi bangun. Persegi: L = sisi × sisi. Persegi panjang: L = panjang × lebar. Gunakan satuan persegi, misalnya cm² atau m².',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menghitung luas persegi dan persegi panjang serta menentukan panjang sisi jika luasnya diketahui.</span><b>Petunjuk Konsep</b><span>Bayangkan bangun ditutup oleh petak satuan tanpa celah. Banyak petak dapat dihitung dengan mengalikan panjang dan lebar. Untuk persegi, panjang dan lebarnya sama.</span><small>Contoh: persegi panjang berukuran 8 cm × 5 cm memiliki luas 8 × 5 = 40 cm².</small>',qs:[
+['Sebuah persegi memiliki panjang sisi 6 cm. Berapa luasnya?',['36','36 cm2','36 cm²'],'Luas persegi adalah sisi × sisi, jadi 6 × 6 = 36 cm².'],
+['Sebuah persegi panjang memiliki panjang 9 cm dan lebar 4 cm. Berapa luasnya?',['36','36 cm2','36 cm²'],'Luas persegi panjang adalah panjang × lebar, jadi 9 × 4 = 36 cm².'],
+['Sebuah persegi memiliki panjang sisi 12 cm. Berapa luasnya?',['144','144 cm2','144 cm²'],'Luasnya 12 × 12 = 144 cm².'],
+['Sebuah buku gambar berbentuk persegi panjang dengan panjang 15 cm dan lebar 7 cm. Berapa luas permukaannya?',['105','105 cm2','105 cm²'],'Luas permukaan buku adalah 15 × 7 = 105 cm².'],
+['Taman berbentuk persegi panjang berukuran 8 m × 6 m. Berapa luas taman tersebut?',['48','48 m2','48 m²'],'Luas taman adalah 8 × 6 = 48 m².'],
+['Luas sebuah persegi panjang adalah 72 cm². Jika panjangnya 9 cm, berapa lebarnya?',['8','8 cm'],'Lebar = luas ÷ panjang, jadi 72 ÷ 9 = 8 cm.'],
+['Luas sebuah persegi adalah 81 cm². Berapa panjang sisinya?',['9','9 cm'],'Carilah bilangan yang jika dikalikan dengan dirinya sendiri menghasilkan 81. Karena 9 × 9 = 81, panjang sisinya 9 cm.'],
+['Sebuah mozaik berbentuk persegi panjang tersusun dari petak berukuran 1 cm². Jika ada 11 petak pada setiap baris dan 5 baris, berapa luas mozaik?',['55','55 cm2','55 cm²'],'Jumlah petaknya 11 × 5 = 55. Setiap petak luasnya 1 cm², jadi luas mozaik 55 cm².'],
+['Taplak meja berbentuk persegi panjang memiliki panjang 120 cm dan lebar 80 cm. Berapa luasnya?',['9600','9.600','9600 cm2','9.600 cm2','9600 cm²','9.600 cm²'],'Luas taplak adalah 120 × 80 = 9.600 cm².'],
+['Persegi A memiliki sisi 10 cm. Persegi panjang B berukuran 12 cm × 8 cm. Berapa selisih luas kedua bangun itu?',['4','4 cm2','4 cm²'],'Luas A = 10 × 10 = 100 cm². Luas B = 12 × 8 = 96 cm². Selisihnya 100 − 96 = 4 cm².']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
