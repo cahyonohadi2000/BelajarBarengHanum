@@ -9,7 +9,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
 - Materi pola bilangan membesar dan mengecil
 - Materi rasio dan proporsi: membaca, menulis, menyederhanakan rasio, menentukan rasio satuan, serta melengkapi tabel rasio senilai
-- Materi pengukuran dan geometri mencakup keliling bangun datar serta luas persegi dan persegi panjang
+- Materi pengukuran dan geometri mencakup keliling serta luas persegi, persegi panjang, segitiga, dan jajargenjang
 - Setiap sesi berisi tepat 10 soal, kunci jawaban, dan pembahasan ringkas per soal
 - Riwayat setiap nilai dan progres disimpan otomatis di perangkat (localStorage)
 - Tampilan responsif untuk ponsel dan komputer
@@ -19,3 +19,4 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 File situs ada di folder `site/`. Workflow GitHub Actions menerbitkan folder itu ke GitHub Pages setiap ada perubahan pada `main`.
 
 Alamat situs: https://cahyonohadi2000.github.io/BelajarBarengHanum/
+
