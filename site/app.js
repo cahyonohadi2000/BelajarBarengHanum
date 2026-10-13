@@ -181,6 +181,18 @@ const lessons=[
 ['Taplak meja berbentuk persegi panjang memiliki panjang 120 cm dan lebar 80 cm. Berapa luasnya?',['9600','9.600','9600 cm2','9.600 cm2','9600 cm²','9.600 cm²'],'Luas taplak adalah 120 × 80 = 9.600 cm².'],
 ['Persegi A memiliki sisi 10 cm. Persegi panjang B berukuran 12 cm × 8 cm. Berapa selisih luas kedua bangun itu?',['4','4 cm2','4 cm²'],'Luas A = 10 × 10 = 100 cm². Luas B = 12 × 8 = 96 cm². Selisihnya 100 − 96 = 4 cm².']
 ]}
+,{name:'Luas segitiga & jajargenjang',type:'GEOMETRI',desc:'Menghitung luas segitiga dan jajargenjang serta menemukan alas atau tinggi yang belum diketahui.',tip:'Segitiga: L = ½ × alas × tinggi. Jajargenjang: L = alas × tinggi. Tinggi harus tegak lurus terhadap alas, bukan sisi miring.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menghitung luas segitiga dan jajargenjang serta menentukan alas atau tinggi jika luasnya diketahui.</span><b>Petunjuk Konsep</b><span>Dua segitiga yang sama dapat disusun menjadi jajargenjang. Karena itu, luas segitiga adalah setengah dari alas × tinggi. Pada jajargenjang, gunakan tinggi yang tegak lurus terhadap alas.</span><small>Contoh: segitiga dengan alas 10 cm dan tinggi 6 cm memiliki luas ½ × 10 × 6 = 30 cm².</small>',qs:[
+['Sebuah segitiga memiliki alas 10 cm dan tinggi 6 cm. Berapa luasnya?',['30','30 cm2','30 cm²'],'Luas segitiga = ½ × alas × tinggi = ½ × 10 × 6 = 30 cm².'],
+['Sebuah segitiga memiliki alas 14 cm dan tinggi 8 cm. Berapa luasnya?',['56','56 cm2','56 cm²'],'Luasnya ½ × 14 × 8 = 7 × 8 = 56 cm².'],
+['Sebuah jajargenjang memiliki alas 9 cm dan tinggi 5 cm. Berapa luasnya?',['45','45 cm2','45 cm²'],'Luas jajargenjang = alas × tinggi, jadi 9 × 5 = 45 cm².'],
+['Sebuah jajargenjang memiliki alas 12 cm dan tinggi 7 cm. Berapa luasnya?',['84','84 cm2','84 cm²'],'Luasnya 12 × 7 = 84 cm².'],
+['Bendera berbentuk segitiga mempunyai alas 20 cm dan tinggi 12 cm. Berapa luas kain bendera itu?',['120','120 cm2','120 cm²'],'Luas kain = ½ × 20 × 12 = 10 × 12 = 120 cm².'],
+['Luas sebuah segitiga adalah 48 cm² dan tingginya 8 cm. Berapa panjang alasnya?',['12','12 cm'],'Alas = 2 × luas ÷ tinggi = 2 × 48 ÷ 8 = 12 cm.'],
+['Luas sebuah segitiga adalah 63 cm² dan panjang alasnya 14 cm. Berapa tingginya?',['9','9 cm'],'Tinggi = 2 × luas ÷ alas = 2 × 63 ÷ 14 = 9 cm.'],
+['Luas sebuah jajargenjang adalah 96 cm². Jika alasnya 12 cm, berapa tingginya?',['8','8 cm'],'Tinggi = luas ÷ alas = 96 ÷ 12 = 8 cm.'],
+['Luas sebuah jajargenjang adalah 72 cm² dan tingginya 6 cm. Berapa panjang alasnya?',['12','12 cm'],'Alas = luas ÷ tinggi = 72 ÷ 6 = 12 cm.'],
+['Segitiga A memiliki alas 16 cm dan tinggi 10 cm. Jajargenjang B memiliki alas 9 cm dan tinggi 8 cm. Berapa selisih luas kedua bangun?',['8','8 cm2','8 cm²'],'Luas A = ½ × 16 × 10 = 80 cm². Luas B = 9 × 8 = 72 cm². Selisihnya 80 − 72 = 8 cm².']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
@@ -269,3 +281,4 @@ function render(){
 function updateProgress(){const n=answers.filter(v=>String(v).trim()).length;$('progress-num').textContent=n;$('progress-bar').style.width=`${n*10}%`;}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 render();
+
