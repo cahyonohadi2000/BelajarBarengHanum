@@ -205,6 +205,19 @@ const lessons=[
 ['Panggung terdiri dari persegi panjang 18 m × 8 m dan dua sayap segitiga. Setiap sayap memiliki alas 4 m dan tinggi 3 m. Berapa luas seluruh panggung?',['156','156 m2','156 m²'],'Luas persegi panjang 18 × 8 = 144 m². Dua segitiga luasnya 2 × (½ × 4 × 3) = 12 m². Totalnya 156 m².'],
 ['Bangun A terdiri dari persegi panjang 8 cm × 6 cm dan segitiga beralas 8 cm serta tinggi 4 cm. Bangun B adalah persegi bersisi 7 cm. Berapa selisih luas A dan B?',['15','15 cm2','15 cm²'],'Luas A = 8 × 6 + ½ × 8 × 4 = 48 + 16 = 64 cm². Luas B = 7 × 7 = 49 cm². Selisihnya 64 − 49 = 15 cm².']
 ]}
+,{name:'Mengenal & mengukur sudut',type:'GEOMETRI',desc:'Mengenali jenis sudut dan menentukan besar sudut dalam derajat pada benda serta putaran sehari-hari.',tip:'Satu putaran penuh = 360°, setengah putaran = 180°, dan seperempat putaran = 90°. Sudut lancip kurang dari 90°, siku-siku tepat 90°, dan tumpul lebih dari 90° tetapi kurang dari 180°.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengenali jenis sudut dan menentukan besar sudut sederhana menggunakan satuan derajat.</span><b>Petunjuk Konsep</b><span>Sudut adalah besar bukaan antara dua garis. Saat membaca busur derajat, letakkan titik pusat pada titik sudut dan mulai dari angka 0° pada salah satu kaki sudut.</span><small>Contoh: seperempat putaran membentuk sudut siku-siku sebesar 90°. Pada jam, jarak antara dua angka yang berdekatan adalah 30°.</small>',qs:[
+['Berapa derajat besar satu putaran penuh?',['360','360°'],'Satu putaran penuh kembali ke arah awal dan besarnya 360°.'],
+['Dua garis saling tegak lurus membentuk sudut jenis apa?',['siku-siku','siku siku'],'Garis yang saling tegak lurus membentuk sudut siku-siku sebesar 90°.'],
+['Berapa derajat besar seperempat putaran?',['90','90°'],'Seperempat dari 360° adalah 360° ÷ 4 = 90°.'],
+['Sudut sebesar 45° termasuk sudut apa?',['lancip','sudut lancip'],'Sudut lancip besarnya lebih dari 0° dan kurang dari 90°. Karena 45° < 90°, sudut itu lancip.'],
+['Sudut sebesar 120° termasuk sudut apa?',['tumpul','sudut tumpul'],'Sudut tumpul lebih dari 90° tetapi kurang dari 180°. Jadi 120° adalah sudut tumpul.'],
+['Pada busur derajat, satu kaki sudut berada di 0° dan kaki lainnya menunjuk 70°. Berapa besar sudut itu?',['70','70°'],'Pembacaan dimulai dari 0°. Kaki lainnya menunjuk 70°, sehingga besar sudutnya 70°.'],
+['Jarum menit bergerak dari angka 12 ke angka 4. Berapa derajat sudut putarannya?',['120','120°'],'Jarak antarangka pada jam adalah 30°. Dari 12 ke 4 ada 4 langkah, jadi 4 × 30° = 120°.'],
+['Berapa derajat besar sudut lurus atau setengah putaran?',['180','180°'],'Setengah dari satu putaran penuh adalah 360° ÷ 2 = 180°.'],
+['Sudut A besarnya 35°. Sudut B lebih besar 20° daripada sudut A. Berapa besar sudut B?',['55','55°'],'Besar sudut B = 35° + 20° = 55°.'],
+['Jam menunjukkan pukul 02.00. Berapa besar sudut terkecil antara jarum pendek dan jarum panjang?',['60','60°'],'Pada pukul 02.00, jarum panjang di 12 dan jarum pendek di 2. Ada 2 jarak angka, jadi sudutnya 2 × 30° = 60°.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
