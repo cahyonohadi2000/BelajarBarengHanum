@@ -218,6 +218,19 @@ const lessons=[
 ['Jam menunjukkan pukul 02.00. Berapa besar sudut terkecil antara jarum pendek dan jarum panjang?',['60','60°'],'Pada pukul 02.00, jarum panjang di 12 dan jarum pendek di 2. Ada 2 jarak angka, jadi sudutnya 2 × 30° = 60°.']
 ]}
 
+,{name:'Mengenal kubus & balok',type:'GEOMETRI',desc:'Mengenali unsur, bentuk sisi, dan tampak sederhana pada kubus serta balok.',tip:'Kubus dan balok sama-sama memiliki 6 sisi, 12 rusuk, dan 8 titik sudut. Semua sisi kubus berbentuk persegi, sedangkan sisi balok umumnya berbentuk persegi panjang.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menyebutkan unsur kubus dan balok, membandingkan cirinya, serta mengenali tampak atas atau depan.</span><b>Petunjuk Konsep</b><span>Sisi adalah bidang pembatas, rusuk adalah garis pertemuan dua sisi, dan titik sudut adalah pertemuan beberapa rusuk. Amati benda dari arah yang diminta untuk menentukan bentuk tampaknya.</span><small>Contoh: sebuah kubus memiliki 6 sisi persegi, 12 rusuk, dan 8 titik sudut. Kotak sepatu berbentuk balok; dari atas tampak sebagai persegi panjang.</small>',qs:[
+['Berapa banyak sisi yang dimiliki sebuah kubus?',['6','6 sisi'],'Kubus memiliki 6 sisi: atas, bawah, depan, belakang, kiri, dan kanan.'],
+['Berapa banyak titik sudut yang dimiliki sebuah kubus?',['8','8 titik sudut'],'Kubus memiliki 8 titik sudut, yaitu titik tempat beberapa rusuk bertemu.'],
+['Berapa banyak rusuk yang dimiliki sebuah balok?',['12','12 rusuk'],'Balok memiliki 12 rusuk: 4 di bagian atas, 4 di bagian bawah, dan 4 tegak.'],
+['Semua sisi sebuah kubus berbentuk bangun datar apa?',['persegi'],'Keenam sisi kubus berbentuk persegi dan berukuran sama.'],
+['Berapa banyak sisi yang dimiliki sebuah balok?',['6','6 sisi'],'Balok memiliki 6 sisi yang tersusun dalam 3 pasang sisi berhadapan.'],
+['Ada berapa pasang sisi berhadapan pada balok?',['3','3 pasang'],'Enam sisi balok membentuk 3 pasang sisi berhadapan: atas–bawah, depan–belakang, dan kiri–kanan.'],
+['Sebuah kotak berbentuk balok memiliki panjang 8 cm, lebar 5 cm, dan tinggi 4 cm. Ukuran apa yang terlihat dari atas?',['8 cm × 5 cm','8×5','8 x 5','8 cm x 5 cm'],'Tampak atas memperlihatkan panjang dan lebar, yaitu 8 cm × 5 cm. Tinggi tidak terlihat sebagai ukuran bidang atas.'],
+['Balok memiliki panjang 10 cm dan tinggi 6 cm. Jika dilihat tepat dari depan, bentuk bidang yang tampak adalah apa?',['persegi panjang'],'Tampak depan balok berbentuk persegi panjang dengan ukuran panjang × tinggi.'],
+['Dadu dan kotak tisu masing-masing menyerupai bangun ruang apa?',['kubus dan balok','kubus, balok'],'Dadu menyerupai kubus karena rusuknya sama panjang, sedangkan kotak tisu umumnya menyerupai balok.'],
+['Bangun gabungan disusun dari 4 kubus kecil pada baris bawah dan 2 kubus kecil di atasnya. Berapa jumlah seluruh kubus kecil?',['6','6 kubus'],'Jumlahkan semua penyusunnya: 4 + 2 = 6 kubus kecil.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
