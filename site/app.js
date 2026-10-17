@@ -316,7 +316,7 @@ function renderDays(){
     return `<section class="lesson-group" id="lesson-group-${mi+1}" aria-labelledby="lesson-group-title-${mi+1}"><div class="lesson-group-heading"><b id="lesson-group-title-${mi+1}">${m.title}</b><span>${entries.length?`${entries.length} sesi latihan`:'Belum ada sesi'}</span></div><div class="lesson-group-days">${body}</div></section>`;
   }).join('');
   document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{
-    persist();current=Number(b.dataset.day);const state=saved.days?.[current];checked=Boolean(state?.checked);answers=Array.isArray(state?.answers)?[...state.answers]:Array(10).fill('');persist();render();
+    persist();current=Number(b.dataset.day);const state=saved.days?.[current];checked=Boolean(state?.checked);answers=Array.isArray(state?.answers)?[...state.answers]:Array(10).fill('');persist();render();requestAnimationFrame(()=>document.getElementById('quiz-panel')?.scrollIntoView({behavior:'smooth',block:'start'}));
   }));
 }
 function render(){
