@@ -246,12 +246,12 @@ const lessons=[
 
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
-  {title:'Faktor, FPB, dan KPK',detail:'7 hari latihan + tantangan expert · 10 soal/sesi',state:'Latihan tersedia'},
-  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia'},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia'},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Sedang dipelajari',active:true},
-  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya'}
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
+  {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
+  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Sedang dipelajari',active:true,start:19,end:26},
+  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya',start:26,end:26}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
@@ -285,7 +285,11 @@ function scoreDay(){return lessons[current].qs.reduce((n,q,i)=>n+(answerMatches(
 function renderSemester(){
   const done=lessons.reduce((n,_,i)=>n+(saved.days?.[i]?.checked?1:0),0);
   $('semester-status').textContent=`${done} dari ${lessons.length} hari selesai`;
-  $('semester-modules').innerHTML=modules.map((m,i)=>`<div class="module-card ${m.active?'module-active':''}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${m.active?'AKTIF':m.state.toUpperCase()}</span></div>`).join('');
+  $('semester-modules').innerHTML=modules.map((m,i)=>{
+    const count=Math.max(0,Math.min(m.end,lessons.length)-Math.min(m.start,lessons.length));
+    const groupLabel=count?`Menuju ${m.title}, kelompok ${count} sesi latihan`:`Menuju kelompok ${m.title}, latihan belum tersedia`;
+    return `<a class="module-card module-link ${m.active?'module-active':''} ${count?'':'module-upcoming'}" href="#lesson-group-${i+1}" aria-label="${groupLabel}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${count?`${count} SESI · KLIK UNTUK BUKA`:m.state.toUpperCase()}</span></a>`;
+  }).join('');
 }
 function renderHistory(){
   const records=Array.isArray(saved.records)?saved.records:[];
@@ -303,7 +307,14 @@ function renderHistory(){
   }).join('');
 }
 function renderDays(){
-  $('day-list').innerHTML=lessons.map((d,i)=>{const done=Boolean(saved.days?.[i]?.checked);return `<button class="day-button ${i===current?'active':''} ${done?'done':''} ${d.type==='EXPERT'?'expert-button':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`}).join('');
+  $('day-list').innerHTML=modules.map((m,mi)=>{
+    const entries=lessons.map((lesson,index)=>({lesson,index})).filter(({index})=>index>=m.start&&index<m.end);
+    const body=entries.length?entries.map(({lesson:d,index:i})=>{
+      const done=Boolean(saved.days?.[i]?.checked);
+      return `<button class="day-button ${i===current?'active':''} ${done?'done':''} ${d.type==='EXPERT'?'expert-button':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`;
+    }).join(''):`<p class="group-empty">Latihan untuk kategori ini belum tersedia. Materi ini ada di peta belajar.</p>`;
+    return `<section class="lesson-group" id="lesson-group-${mi+1}" aria-labelledby="lesson-group-title-${mi+1}"><div class="lesson-group-heading"><b id="lesson-group-title-${mi+1}">${m.title}</b><span>${entries.length?`${entries.length} sesi latihan`:'Belum ada sesi'}</span></div><div class="lesson-group-days">${body}</div></section>`;
+  }).join('');
   document.querySelectorAll('.day-button').forEach(b=>b.addEventListener('click',()=>{
     persist();current=Number(b.dataset.day);const state=saved.days?.[current];checked=Boolean(state?.checked);answers=Array.isArray(state?.answers)?[...state.answers]:Array(10).fill('');persist();render();
   }));
