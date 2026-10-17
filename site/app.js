@@ -231,6 +231,19 @@ const lessons=[
 ['Bangun gabungan disusun dari 4 kubus kecil pada baris bawah dan 2 kubus kecil di atasnya. Berapa jumlah seluruh kubus kecil?',['6','6 kubus'],'Jumlahkan semua penyusunnya: 4 + 2 = 6 kubus kecil.']
 ]}
 
+,{name:'Menyusun & mengurai kubus',type:'GEOMETRI',desc:'Menghitung kubus penyusun, melengkapi bangun, dan membaca tampak atas serta tampak depan.',tip:'Hitung susunan secara teratur: per baris, per lapis, atau per menara. Untuk bangun penuh, banyak kubus = panjang × lebar × tinggi. Pada tampak atas, perhatikan posisi yang terisi; pada tampak depan, perhatikan tinggi tiap menara.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menyusun dan mengurai bangun ruang dari kubus satuan serta membaca visualisasi sederhana dari arah atas dan depan.</span><b>Petunjuk Konsep</b><span>Kelompokkan kubus agar tidak ada yang dihitung dua kali. Bangun dapat diurai menjadi lapisan atau menara, lalu jumlahkan kubus pada setiap bagian.</span><small>Contoh: alas berisi 3 × 2 kubus dan tingginya 2 lapis. Jumlah kubus = 3 × 2 × 2 = 12.</small>',qs:[
+['Tujuh kubus disusun lurus dalam satu baris. Berapa kubus yang terlihat sebagai posisi terisi dari atas?',['7','7 kubus','7 posisi'],'Setiap kubus menempati satu posisi. Karena disusun satu baris tanpa bertumpuk, tampak atas menunjukkan 7 posisi terisi.'],
+['Satu lapisan kubus tersusun dalam 3 baris dan setiap baris berisi 2 kubus. Berapa jumlah kubus pada lapisan itu?',['6','6 kubus'],'Jumlah kubus = 3 baris × 2 kubus = 6 kubus.'],
+['Sebuah bangun memiliki 2 lapisan. Setiap lapisan terdiri dari 4 kubus. Berapa jumlah seluruh kubus?',['8','8 kubus'],'Ada 2 lapisan dengan 4 kubus per lapisan, jadi 2 × 4 = 8 kubus.'],
+['Tiga menara kubus memiliki tinggi 3 kubus, 2 kubus, dan 1 kubus. Berapa jumlah seluruh kubus?',['6','6 kubus'],'Jumlahkan tinggi ketiga menara: 3 + 2 + 1 = 6 kubus.'],
+['Alas persegi berukuran 3 × 3 posisi akan diisi penuh dengan satu lapis kubus. Jika sudah ada 7 kubus, berapa kubus lagi yang dibutuhkan?',['2','2 kubus'],'Alas penuh membutuhkan 3 × 3 = 9 kubus. Kekurangannya 9 − 7 = 2 kubus.'],
+['Balok padat tersusun dari kubus satuan dengan panjang 4 kubus, lebar 3 kubus, dan tinggi 2 kubus. Berapa kubus satuan penyusunnya?',['24','24 kubus'],'Jumlah kubus satuan = 4 × 3 × 2 = 24 kubus.'],
+['Dari depan terlihat tiga menara berdampingan dengan tinggi 2, 1, dan 3 petak. Berapa jumlah petak pada tampak depan?',['6','6 petak'],'Jumlah petak yang terlihat adalah 2 + 1 + 3 = 6 petak.'],
+['Sebuah susunan menempati alas 2 baris × 4 kolom tanpa posisi kosong. Berapa posisi yang terlihat pada tampak atas?',['8','8 posisi','8 petak'],'Tampak atas menunjukkan semua posisi alas yang terisi: 2 × 4 = 8 posisi.'],
+['Enam persegi sama besar disusun menjadi jaring-jaring yang benar. Jika dilipat, jaring-jaring itu membentuk bangun apa?',['kubus'],'Kubus tersusun dari 6 sisi berbentuk persegi, sehingga jaring-jaring tersebut dapat dilipat menjadi kubus.'],
+['Sebuah susunan awalnya terdiri dari 18 kubus kecil. Lima kubus dilepas. Berapa kubus yang masih tersisa?',['13','13 kubus'],'Kurangkan kubus yang dilepas: 18 − 5 = 13 kubus.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta'},
