@@ -243,15 +243,27 @@ const lessons=[
 ['Enam persegi sama besar disusun menjadi jaring-jaring yang benar. Jika dilipat, jaring-jaring itu membentuk bangun apa?',['kubus'],'Kubus tersusun dari 6 sisi berbentuk persegi, sehingga jaring-jaring tersebut dapat dilipat menjadi kubus.'],
 ['Sebuah susunan awalnya terdiri dari 18 kubus kecil. Lima kubus dilepas. Berapa kubus yang masih tersisa?',['13','13 kubus'],'Kurangkan kubus yang dilepas: 18 − 5 = 13 kubus.']
 ]}
-
+,
+{name:'Membaca & menyajikan data dalam tabel',type:'DATA',desc:'Mengelompokkan hasil pengamatan, membaca jumlah, dan menyajikan data sederhana.',tip:'Data mentah dapat dikelompokkan menurut kategori. Catat setiap kategori dan frekuensinya; pastikan jumlah pada tabel sama dengan jumlah seluruh data.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengelompokkan data berdasarkan kategori, membaca frekuensi pada tabel, dan menyajikan data sederhana dalam tabel.</span><b>Petunjuk Konsep</b><span>Frekuensi adalah banyaknya data pada setiap kategori. Hitung satu per satu, lalu periksa kembali dengan menjumlahkan semua frekuensi.</span><small>Contoh: data buah apel, pisang, apel, jeruk, apel disajikan sebagai apel 3, pisang 1, dan jeruk 1.</small>',qs:[
+['Tabel pilihan olahraga menunjukkan sepak bola 8 siswa, bulu tangkis 5 siswa, dan basket 3 siswa. Olahraga apa yang paling banyak dipilih?',['sepak bola'],'Bandingkan frekuensinya: 8 paling besar, jadi sepak bola paling banyak dipilih.'],
+['Tabel pengamatan burung mencatat pipit 6 ekor, merpati 4 ekor, dan kutilang 5 ekor. Berapa jumlah semua burung?',['15','15 ekor'],'Jumlahkan semua frekuensi: 6 + 4 + 5 = 15 ekor.'],
+['Pada tabel pilihan permainan, congklak dipilih 9 anak dan lompat tali 6 anak. Berapa selisih jumlah pemilihnya?',['3','3 anak'],'Selisihnya adalah 9 − 6 = 3 anak.'],
+['Data warna tas yang terlihat: merah, biru, merah, hijau, biru, merah, kuning, merah. Berapa tas berwarna merah?',['4','4 tas'],'Hitung kemunculan kata merah. Ada 4 tas merah.'],
+['Tabel ukuran sepatu mencatat ukuran 30 sebanyak 5 siswa, ukuran 31 sebanyak 7 siswa, dan ukuran 32 sebanyak 3 siswa. Jika 2 siswa baru memakai ukuran 32, berapa frekuensi ukuran 32 sekarang?',['5','5 siswa'],'Frekuensi baru ukuran 32 = 3 + 2 = 5 siswa.'],
+['Sajikan data rasa es krim berikut sebagai banyaknya tiap rasa: cokelat, vanila, cokelat, stroberi, vanila, cokelat, stroberi.',['cokelat:3,vanila:2,stroberi:2','cokelat 3, vanila 2, stroberi 2','cokelat 3; vanila 2; stroberi 2'],'Hitung tiap rasa: cokelat muncul 3 kali, vanila 2 kali, dan stroberi 2 kali.'],
+['Tabel peminjaman buku mencatat Senin 7 buku, Selasa 12 buku, Rabu 9 buku, dan Kamis 5 buku. Pada hari apa buku paling banyak dipinjam?',['selasa'],'Frekuensi terbesar adalah 12 buku pada hari Selasa.'],
+['Data jumlah tanaman di kebun dicatat dalam tabel: mawar 8, melati 6, dan anggrek 4. Berapa tanaman melati dan anggrek jika digabung?',['10','10 tanaman'],'Jumlah melati dan anggrek adalah 6 + 4 = 10 tanaman.'],
+['Dalam tabel koleksi kelereng, merah ada 8 dan biru ada 6. Jumlah seluruh kelereng 20. Berapa kelereng hijau?',['6','6 kelereng'],'Jumlah yang sudah diketahui 8 + 6 = 14. Kelereng hijau = 20 − 14 = 6.'],
+['Data dikumpulkan berdasarkan warna tas siswa. Kategori apa yang dicatat pada tabel?',['warna','warna tas'],'Data dikelompokkan menurut karakteristik warna, jadi kategori yang dicatat adalah warna tas.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Sedang dipelajari',active:true,start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran',state:'Berikutnya',start:26,end:26}
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
+  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran · 1 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:27}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
