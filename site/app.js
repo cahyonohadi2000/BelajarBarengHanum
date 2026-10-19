@@ -256,6 +256,19 @@ const lessons=[
 ['Dalam tabel koleksi kelereng, merah ada 8 dan biru ada 6. Jumlah seluruh kelereng 20. Berapa kelereng hijau?',['6','6 kelereng'],'Jumlah yang sudah diketahui 8 + 6 = 14. Kelereng hijau = 20 − 14 = 6.'],
 ['Data dikumpulkan berdasarkan warna tas siswa. Kategori apa yang dicatat pada tabel?',['warna','warna tas'],'Data dikelompokkan menurut karakteristik warna, jadi kategori yang dicatat adalah warna tas.']
 ]}
+,
+{name:'Membaca diagram gambar (piktogram)',type:'DATA',desc:'Membaca dan membandingkan banyak benda melalui gambar berskala sederhana.',tip:'Perhatikan keterangan nilai setiap simbol. Banyak benda = jumlah simbol × nilai satu simbol.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membaca jumlah pada piktogram sederhana, membandingkan kategori, dan menentukan banyak simbol atau benda.</span><b>Petunjuk Konsep</b><span>Ikuti kunci piktogram lebih dulu. Jika 1 gambar mewakili 2 benda, maka 5 gambar mewakili 5 × 2 = 10 benda.</span><small>Contoh: ★ = 3 buku. Empat bintang berarti 4 × 3 = 12 buku.</small>',qs:[
+['Keterangan 📘 = 2 buku. Piktogram rak A menunjukkan 📘📘📘📘📘📘. Berapa buku di rak A?',['12','12 buku'],'Ada 6 gambar. Setiap gambar mewakili 2 buku, jadi 6 × 2 = 12 buku.'],
+['Dalam piktogram, 🍎 mewakili 3 apel. Kelas mengumpulkan 🍎🍎🍎🍎. Berapa apel terkumpul?',['12','12 apel'],'Ada 4 gambar apel. Jadi 4 × 3 = 12 apel.'],
+['Keterangan ★ = 2 siswa. Sepak bola ★★★★★ dan bulu tangkis ★★★. Berapa seluruh siswa yang memilih dua olahraga itu?',['16','16 siswa'],'Jumlah simbolnya 5 + 3 = 8. Setiap simbol mewakili 2 siswa, jadi 8 × 2 = 16 siswa.'],
+['Keterangan 🪴 = 4 tanaman. Mawar 🪴🪴🪴🪴🪴🪴 dan melati 🪴🪴🪴🪴. Berapa selisih jumlah kedua tanaman?',['8','8 tanaman'],'Selisih simbol 6 − 4 = 2. Setiap simbol mewakili 4 tanaman, jadi selisihnya 2 × 4 = 8 tanaman.'],
+['Pada piktogram pilihan kegiatan, 1 gambar mewakili 1 anak. Membaca ada 5 gambar, menggambar 8 gambar, dan menyanyi 6 gambar. Kegiatan mana yang paling banyak dipilih?',['menggambar'],'Jumlah terbesar adalah 8 gambar, yaitu kegiatan menggambar.'],
+['Keterangan ★ = 2 kelereng. Merah memiliki 5 gambar, biru 4 gambar, dan seluruh kelereng ada 24. Berapa gambar yang mewakili kelereng hijau?',['3','3 gambar'],'Totalnya 24 ÷ 2 = 12 gambar. Merah dan biru memakai 5 + 4 = 9 gambar, jadi hijau 12 − 9 = 3 gambar.'],
+['Satu gambar ✏️ mewakili 3 pensil. Untuk menyajikan 18 pensil, berapa gambar ✏️ yang diperlukan?',['6','6 gambar'],'Banyak gambar adalah 18 ÷ 3 = 6 gambar.'],
+['Satu gambar 🐟 mewakili 5 ikan. Piktogram menunjukkan 7 gambar 🐟. Berapa jumlah ikannya?',['35','35 ikan'],'Tujuh gambar mewakili 7 × 5 = 35 ikan.'],
+['Keterangan ★ = 2 hewan. Kucing memiliki 4 gambar dan burung 7 gambar. Kategori mana yang jumlahnya 6 hewan lebih banyak?',['burung'],'Selisihnya 7 − 4 = 3 gambar. Tiga gambar mewakili 3 × 2 = 6 hewan, sehingga burung lebih banyak.'],
+['Satu lambang 🍐 mewakili 3 buah pir. Jika ada 15 buah pir, berapa lambang 🍐 yang digambar?',['5','5 lambang','5 gambar'],'Bagi jumlah pir dengan nilai setiap lambang: 15 ÷ 3 = 5 lambang.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -263,7 +276,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Membaca data dan latihan campuran · 1 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:27}
+  {title:'Data, peluang, dan pengulangan',detail:'Membaca tabel dan piktogram sederhana · 2 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:28}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
