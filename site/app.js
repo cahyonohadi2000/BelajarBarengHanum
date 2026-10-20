@@ -269,6 +269,19 @@ const lessons=[
 ['Keterangan ★ = 2 hewan. Kucing memiliki 4 gambar dan burung 7 gambar. Kategori mana yang jumlahnya 6 hewan lebih banyak?',['burung'],'Selisihnya 7 − 4 = 3 gambar. Tiga gambar mewakili 3 × 2 = 6 hewan, sehingga burung lebih banyak.'],
 ['Satu lambang 🍐 mewakili 3 buah pir. Jika ada 15 buah pir, berapa lambang 🍐 yang digambar?',['5','5 lambang','5 gambar'],'Bagi jumlah pir dengan nilai setiap lambang: 15 ÷ 3 = 5 lambang.']
 ]}
+,
+{name:'Membaca diagram batang sederhana',type:'DATA',desc:'Membaca skala, tinggi batang, dan informasi dari diagram batang sederhana.',tip:'Lihat angka pada sumbu dan perhatikan nilai setiap kotak atau interval sebelum membaca tinggi batang.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membaca skala diagram batang, membandingkan tinggi batang, dan memakai informasi diagram untuk menjawab pertanyaan.</span><b>Petunjuk Konsep</b><span>Setiap kotak batang dapat mewakili lebih dari satu benda. Kalikan banyak kotak dengan nilai pada keterangan skala. Periksa angka pada sumbu sebelum membandingkan.</span><small>Contoh: jika 1 kotak = 2 buku dan batang memiliki 4 kotak, jumlahnya 4 × 2 = 8 buku.</small>',qs:[
+['Diagram jumlah buku (1 kotak = 2 buku): Senin ■■■, Selasa ■■■■■, Rabu ■■. Berapa buku yang dipinjam pada Senin?',['6','6 buku'],'Batang Senin memiliki 3 kotak. Setiap kotak bernilai 2 buku, jadi 3 × 2 = 6 buku.'],
+['Diagram pilihan kegiatan (1 kotak = 2 anak): membaca ■■■■, olahraga ■■■■■■, menggambar ■■■. Kegiatan mana yang dipilih paling banyak?',['olahraga'],'Batang olahraga paling panjang, dengan 6 kotak. Jadi olahraga paling banyak dipilih.'],
+['Diagram hasil panen (1 kotak = 5 kg): kebun A ■■, B ■■■, C ■■■■. Berapa kg hasil panen kebun C?',['20','20 kg'],'Batang C memiliki 4 kotak. Jadi 4 × 5 = 20 kg.'],
+['Pada diagram (1 kotak = 3 siswa), Senin memiliki 4 kotak dan Rabu 7 kotak. Berapa selisih jumlah siswa pada kedua hari?',['9','9 siswa'],'Selisihnya 7 − 4 = 3 kotak. Setiap kotak bernilai 3 siswa, jadi 3 × 3 = 9 siswa.'],
+['Diagram penjualan (1 kotak = 4 roti): Jumat ■■■, Sabtu ■■■■, Minggu ■■. Berapa roti terjual selama tiga hari?',['36','36 roti'],'Jumlah kotak 3 + 4 + 2 = 9. Jadi 9 × 4 = 36 roti.'],
+['Pada sumbu diagram tertulis 0, 2, 4, 6, 8. Ujung batang berhenti tepat di angka 6. Berapa nilai data batang itu?',['6','6 satuan'],'Baca angka pada sumbu di ujung batang: nilainya 6 satuan.'],
+['Diagram (1 kotak = 1 gelas) menunjukkan susu ■■, jus ■■■, dan air ■■■■■. Urutkan minuman dari jumlah paling sedikit ke paling banyak.',['susu,jus,air','susu, jus, air'],'Jumlah kotaknya berturut-turut 2, 3, dan 5. Jadi urutannya susu, jus, lalu air.'],
+['Pada diagram jumlah stiker, kelas A mendapat 4 kotak dan kelas B 6 kotak. Jika jumlah seluruhnya 15 stiker, berapa stiker yang didapat kelas C?',['5','5 stiker'],'Kotak A dan B berjumlah 4 + 6 = 10. Kelas C mendapat 15 − 10 = 5 stiker.'],
+['Diagram (1 kotak = 2 buah) menunjukkan apel ■■■, jeruk ■■■■■, dan pir ■■■■. Pernyataan “jeruk 4 buah lebih banyak daripada apel” benar atau salah?',['benar'],'Selisihnya 5 − 3 = 2 kotak. Dua kotak mewakili 2 × 2 = 4 buah, jadi pernyataan itu benar.'],
+['Untuk menggambar batang jumlah 18 pensil dengan skala 1 kotak = 3 pensil, berapa kotak panjang batangnya?',['6','6 kotak'],'Banyak kotak adalah 18 ÷ 3 = 6 kotak.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -276,7 +289,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Membaca tabel dan piktogram sederhana · 2 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:28}
+  {title:'Data, peluang, dan pengulangan',detail:'Membaca tabel, piktogram, dan diagram batang · 3 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:29}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
