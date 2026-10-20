@@ -278,7 +278,7 @@ const lessons=[
 ['Diagram penjualan (1 kotak = 4 roti): Jumat ■■■, Sabtu ■■■■, Minggu ■■. Berapa roti terjual selama tiga hari?',['36','36 roti'],'Jumlah kotak 3 + 4 + 2 = 9. Jadi 9 × 4 = 36 roti.'],
 ['Pada sumbu diagram tertulis 0, 2, 4, 6, 8. Ujung batang berhenti tepat di angka 6. Berapa nilai data batang itu?',['6','6 satuan'],'Baca angka pada sumbu di ujung batang: nilainya 6 satuan.'],
 ['Diagram (1 kotak = 1 gelas) menunjukkan susu ■■, jus ■■■, dan air ■■■■■. Urutkan minuman dari jumlah paling sedikit ke paling banyak.',['susu,jus,air','susu, jus, air'],'Jumlah kotaknya berturut-turut 2, 3, dan 5. Jadi urutannya susu, jus, lalu air.'],
-['Pada diagram jumlah stiker, kelas A mendapat 4 kotak dan kelas B 6 kotak. Jika jumlah seluruhnya 15 stiker, berapa stiker yang didapat kelas C?',['5','5 stiker'],'Kotak A dan B berjumlah 4 + 6 = 10. Kelas C mendapat 15 − 10 = 5 stiker.'],
+['Pada diagram jumlah stiker (1 kotak = 1 stiker), kelas A mendapat 4 kotak dan kelas B 6 kotak. Jika jumlah seluruhnya 15 stiker, berapa stiker yang didapat kelas C?',['5','5 stiker'],'Kotak A dan B berjumlah 4 + 6 = 10 stiker. Kelas C mendapat 15 − 10 = 5 stiker.'],
 ['Diagram (1 kotak = 2 buah) menunjukkan apel ■■■, jeruk ■■■■■, dan pir ■■■■. Pernyataan “jeruk 4 buah lebih banyak daripada apel” benar atau salah?',['benar'],'Selisihnya 5 − 3 = 2 kotak. Dua kotak mewakili 2 × 2 = 4 buah, jadi pernyataan itu benar.'],
 ['Untuk menggambar batang jumlah 18 pensil dengan skala 1 kotak = 3 pensil, berapa kotak panjang batangnya?',['6','6 kotak'],'Banyak kotak adalah 18 ÷ 3 = 6 kotak.']
 ]}
