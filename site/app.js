@@ -282,6 +282,19 @@ const lessons=[
 ['Diagram (1 kotak = 2 buah) menunjukkan apel ■■■, jeruk ■■■■■, dan pir ■■■■. Pernyataan “jeruk 4 buah lebih banyak daripada apel” benar atau salah?',['benar'],'Selisihnya 5 − 3 = 2 kotak. Dua kotak mewakili 2 × 2 = 4 buah, jadi pernyataan itu benar.'],
 ['Untuk menggambar batang jumlah 18 pensil dengan skala 1 kotak = 3 pensil, berapa kotak panjang batangnya?',['6','6 kotak'],'Banyak kotak adalah 18 ÷ 3 = 6 kotak.']
 ]}
+,{name:'Menafsirkan data & menarik kesimpulan',type:'DATA',desc:'Menggunakan data untuk membandingkan, menghitung perubahan, dan membuat kesimpulan sederhana.',tip:'Baca judul, label, dan skala. Kesimpulan harus sesuai dengan angka yang benar-benar ditampilkan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengambil informasi dari data, membandingkan nilai, menghitung perubahan, dan memilih kesimpulan yang didukung data.</span><b>Petunjuk Konsep</b><span>Periksa apa yang diukur dan satuannya. Untuk mencari selisih, kurangkan nilai besar dengan nilai kecil. Kesimpulan yang baik tidak boleh melebihi informasi pada data.</span><small>Contoh: data 18, 24, dan 21 menunjukkan nilai tertinggi 24 serta selisih tertinggi dan terendah 6.</small>',qs:[
+['Tabel pengunjung perpustakaan: Senin 18 anak, Selasa 24 anak, Rabu 21 anak. Hari apa pengunjung paling banyak?',['Selasa'],'Nilai terbesar adalah 24, sehingga pengunjung paling banyak datang pada Selasa.'],
+['Tinggi tanaman: minggu ke-1 = 12 cm, minggu ke-2 = 15 cm, minggu ke-3 = 19 cm. Berapa pertambahan tinggi dari minggu ke-1 ke minggu ke-3?',['7','7 cm'],'Kurangkan tinggi akhir dengan tinggi awal: 19 − 12 = 7 cm.'],
+['Peminjaman buku: cerita 8 buku, sains 12 buku, komik 10 buku. Berapa selisih buku sains dan komik?',['2','2 buku'],'Buku sains 12 dan komik 10. Selisihnya 12 − 10 = 2 buku.'],
+['Sampah daur ulang: kelas A 14 kg, kelas B 18 kg, kelas C 16 kg. Berapa kg jumlah seluruhnya?',['48','48 kg'],'Jumlahkan semua data: 14 + 18 + 16 = 48 kg.'],
+['Suhu udara: pagi 25°C, siang 31°C, malam 27°C. Berapa kenaikan suhu dari pagi ke siang?',['6','6°C','6 °C'],'Suhu naik dari 25°C menjadi 31°C. Kenaikannya 31 − 25 = 6°C.'],
+['Cara berangkat ke sekolah: berjalan 9 anak, bersepeda 6 anak, naik mobil 5 anak. Berapa anak lebih banyak yang berjalan daripada naik mobil?',['4','4 anak'],'Bandingkan 9 anak dan 5 anak. Selisihnya 9 − 5 = 4 anak.'],
+['Air yang diminum: Senin 6 gelas, Selasa 8 gelas, Rabu 8 gelas, Kamis 10 gelas. Apakah jumlah pada Selasa dan Rabu berubah? Jawab ya atau tidak.',['tidak'],'Selasa dan Rabu sama-sama 8 gelas, sehingga jumlahnya tidak berubah.'],
+['Penjualan pita: merah 5 gulung, biru 9 gulung, kuning 6 gulung. Pernyataan “pita biru paling banyak dan pita merah paling sedikit” benar atau salah?',['benar'],'Nilai terbesar adalah biru, 9 gulung, sedangkan nilai terkecil adalah merah, 5 gulung. Pernyataan itu benar.'],
+['Waktu membaca: Ani 25 menit, Budi 30 menit, Citra 20 menit, Deni 30 menit. Siapa dua anak dengan waktu membaca paling lama?',['Budi dan Deni','Budi,Deni','Deni dan Budi','Deni,Budi'],'Waktu terlama adalah 30 menit dan dicapai oleh Budi serta Deni.'],
+['Pilihan camilan: roti 12 anak, buah 15 anak, puding 8 anak. Bolehkah disimpulkan bahwa semua anak memilih buah? Jawab ya atau tidak.',['tidak'],'Tidak. Buah memang paling banyak dipilih, tetapi hanya 15 anak; data juga menunjukkan ada anak yang memilih roti dan puding.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -289,7 +302,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Membaca tabel, piktogram, dan diagram batang · 3 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:29}
+  {title:'Data, peluang, dan pengulangan',detail:'Tabel, piktogram, diagram batang, dan interpretasi data · 4 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:30}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
