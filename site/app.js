@@ -295,6 +295,19 @@ const lessons=[
 ['Pilihan camilan: roti 12 anak, buah 15 anak, puding 8 anak. Bolehkah disimpulkan bahwa semua anak memilih buah? Jawab ya atau tidak.',['tidak'],'Tidak. Buah memang paling banyak dipilih, tetapi hanya 15 anak; data juga menunjukkan ada anak yang memilih roti dan puding.']
 ]}
 
+,{name:'Peluang kejadian sederhana',type:'PELUANG',desc:'Mengenali kejadian pasti, mungkin, dan tidak mungkin serta membandingkan kemungkinan.',tip:'Lihat semua hasil yang dapat terjadi. Semakin banyak hasil yang mendukung suatu kejadian, semakin besar kemungkinannya.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengelompokkan kejadian sebagai pasti, mungkin, atau tidak mungkin dan membandingkan dua kemungkinan sederhana.</span><b>Petunjuk Konsep</b><span>Kejadian pasti selalu terjadi, kejadian mungkin dapat terjadi tetapi tidak selalu, dan kejadian tidak mungkin tidak dapat terjadi. Jika pilihan sejenis lebih banyak, peluang terpilihnya juga lebih besar.</span><small>Contoh: dalam kantong berisi 4 kelereng merah dan 1 biru, mengambil merah lebih mungkin daripada mengambil biru.</small>',qs:[
+['Sebuah kantong hanya berisi 5 kelereng merah. Mengambil kelereng biru merupakan kejadian apa?',['tidak mungkin'],'Tidak ada kelereng biru di dalam kantong, sehingga kejadian itu tidak mungkin.'],
+['Sebuah dadu memiliki angka 1 sampai 6. Mendapat angka kurang dari 7 merupakan kejadian apa?',['pasti'],'Semua sisi dadu bernilai kurang dari 7, sehingga kejadian itu pasti.'],
+['Satu koin dilempar sekali. Mendapat sisi gambar merupakan kejadian apa?',['mungkin'],'Koin dapat menunjukkan sisi gambar atau sisi angka. Jadi sisi gambar mungkin muncul, tetapi tidak pasti.'],
+['Kotak berisi 6 pensil merah dan 2 pensil hijau. Warna apa yang lebih mungkin terambil tanpa melihat?',['merah','pensil merah'],'Pensil merah berjumlah 6, lebih banyak daripada pensil hijau yang berjumlah 2. Jadi merah lebih mungkin terambil.'],
+['Kartu bernomor 1 sampai 10 diambil satu. Mana yang lebih mungkin: mendapat bilangan genap atau mendapat bilangan lebih dari 8?',['bilangan genap','genap'],'Ada 5 bilangan genap, yaitu 2, 4, 6, 8, 10, sedangkan bilangan lebih dari 8 hanya 9 dan 10. Jadi bilangan genap lebih mungkin.'],
+['Pemutar memiliki 4 bagian sama besar: 2 kuning, 1 merah, dan 1 biru. Apakah merah dan biru memiliki kemungkinan yang sama? Jawab ya atau tidak.',['ya'],'Merah dan biru masing-masing menempati 1 dari 4 bagian yang sama besar, sehingga kemungkinannya sama.'],
+['Di dalam kotak ada 6 bola biru, 3 bola kuning, dan 1 bola merah. Warna apa yang paling kecil kemungkinannya terambil?',['merah','bola merah'],'Bola merah hanya 1, paling sedikit dibandingkan warna lain. Jadi merah paling kecil kemungkinannya.'],
+['Besok Hanum akan sarapan. Kejadian “Hanum sarapan nasi” termasuk pasti, mungkin, atau tidak mungkin?',['mungkin'],'Hanum dapat memilih nasi atau makanan lain. Sarapan nasi dapat terjadi, tetapi tidak selalu terjadi.'],
+['Kartu huruf A, I, U, E, dan O dimasukkan ke kotak. Mengambil huruf vokal merupakan kejadian apa?',['pasti'],'Semua kartu berisi huruf vokal, sehingga kartu apa pun yang terambil pasti huruf vokal.'],
+['Urutkan tingkat kemungkinan dari paling kecil ke paling besar: pasti, tidak mungkin, mungkin.',['tidak mungkin,mungkin,pasti','tidak mungkin, mungkin, pasti'],'Urutan dari peluang paling kecil adalah tidak mungkin, kemudian mungkin, lalu pasti.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -302,7 +315,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Tabel, piktogram, diagram batang, dan interpretasi data · 4 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:30}
+  {title:'Data, peluang, dan pengulangan',detail:'Tabel, diagram, interpretasi data, dan peluang sederhana · 5 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:31}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
