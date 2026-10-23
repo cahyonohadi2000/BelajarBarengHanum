@@ -308,6 +308,19 @@ const lessons=[
 ['Urutkan tingkat kemungkinan dari paling kecil ke paling besar: pasti, tidak mungkin, mungkin.',['tidak mungkin,mungkin,pasti','tidak mungkin, mungkin, pasti'],'Urutan dari peluang paling kecil adalah tidak mungkin, kemudian mungkin, lalu pasti.']
 ]}
 
+,{name:'Percobaan peluang & frekuensi hasil',type:'PELUANG',desc:'Mencatat hasil percobaan sederhana, membandingkan frekuensi, dan membuat perkiraan.',tip:'Frekuensi adalah banyaknya suatu hasil muncul. Hasil yang paling sering muncul pada percobaan belum tentu selalu muncul berikutnya.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membaca catatan hasil percobaan peluang, menghitung frekuensi, membandingkan hasil, dan membuat perkiraan sederhana.</span><b>Petunjuk Konsep</b><span>Lakukan percobaan berulang, catat setiap hasil, lalu hitung banyak kemunculannya. Jumlah seluruh frekuensi harus sama dengan banyak percobaan.</span><small>Contoh: koin dilempar 10 kali dan muncul gambar 6 kali serta angka 4 kali. Frekuensi gambar = 6, tetapi lemparan berikutnya tetap belum dapat dipastikan.</small>',qs:[
+['Koin dilempar 10 kali. Sisi gambar muncul 6 kali dan sisi angka 4 kali. Berapa jumlah seluruh percobaan?',['10','10 kali'],'Jumlah frekuensinya 6 + 4 = 10, sama dengan banyak percobaan.'],
+['Pada percobaan koin yang sama, sisi mana yang lebih sering muncul?',['gambar','sisi gambar'],'Gambar muncul 6 kali, lebih banyak daripada angka yang muncul 4 kali.'],
+['Gambar muncul 6 kali dan angka 4 kali. Berapa selisih frekuensi kedua hasil itu?',['2','2 kali'],'Selisih frekuensinya adalah 6 − 4 = 2 kali.'],
+['Pemutar warna diputar 20 kali. Hasilnya merah 8 kali, biru 5 kali, dan hijau 7 kali. Warna apa yang paling sering muncul?',['merah'],'Merah memiliki frekuensi terbesar, yaitu 8 kali.'],
+['Urutkan hasil pemutar dari frekuensi paling kecil ke paling besar: merah 8, biru 5, hijau 7.',['biru,hijau,merah','biru, hijau, merah'],'Frekuensinya 5, 7, dan 8. Jadi urutannya biru, hijau, lalu merah.'],
+['Dadu dilempar 12 kali. Bilangan genap muncul 7 kali dan ganjil 5 kali. Berapa kali bilangan genap muncul?',['7','7 kali'],'Catatan percobaan menunjukkan bilangan genap muncul sebanyak 7 kali.'],
+['Karena bilangan genap lebih sering muncul pada 12 lemparan sebelumnya, apakah lemparan berikutnya pasti genap? Jawab ya atau tidak.',['tidak'],'Tidak. Hasil percobaan sebelumnya membantu membuat perkiraan, tetapi hasil lemparan berikutnya tidak dapat dipastikan.'],
+['Bola diambil lalu dikembalikan ke kantong sebanyak 12 kali. Kuning muncul 9 kali dan hijau 3 kali. Berdasarkan percobaan, warna mana yang lebih mungkin muncul?',['kuning','bola kuning'],'Kuning muncul 9 kali, lebih sering daripada hijau yang muncul 3 kali. Berdasarkan percobaan, kuning lebih mungkin.'],
+['Kartu bintang muncul 12 kali dari 20 pengambilan. Tuliskan frekuensi bintang dalam bentuk “... dari ...”.',['12 dari 20','12/20'],'Bintang tercatat muncul 12 kali dalam total 20 pengambilan, jadi frekuensinya 12 dari 20.'],
+['Kelompok A memutar pemutar 10 kali dan mendapat merah 6 kali. Kelompok B mendapat merah 4 kali. Apakah hasil berbeda berarti salah satu kelompok pasti keliru? Jawab ya atau tidak.',['tidak'],'Tidak. Percobaan peluang dapat menghasilkan frekuensi berbeda meskipun alat dan jumlah percobaannya sama.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -315,7 +328,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Tabel, diagram, interpretasi data, dan peluang sederhana · 5 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:31}
+  {title:'Data, peluang, dan pengulangan',detail:'Tabel, diagram, interpretasi data, dan percobaan peluang · 6 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:32}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
