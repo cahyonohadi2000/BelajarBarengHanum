@@ -321,6 +321,19 @@ const lessons=[
 ['Kelompok A memutar pemutar 10 kali dan mendapat merah 6 kali. Kelompok B mendapat merah 4 kali. Apakah hasil berbeda berarti salah satu kelompok pasti keliru? Jawab ya atau tidak.',['tidak'],'Tidak. Percobaan peluang dapat menghasilkan frekuensi berbeda meskipun alat dan jumlah percobaannya sama.']
 ]}
 
+,{name:'Pengulangan akhir semester',type:'CAMPURAN',desc:'Meninjau kembali konsep penting semester ini melalui soal campuran.',tip:'Baca setiap soal lalu tentukan konsepnya lebih dahulu. Kerjakan dengan langkah singkat dan periksa satuan jawaban.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat memilih dan menggunakan konsep yang tepat untuk menyelesaikan soal campuran dari berbagai materi semester ini.</span><b>Petunjuk Konsep</b><span>Tandai kata kunci: pembagian sama rata memakai FPB, kejadian berulang memakai KPK, pecahan perlu penyebut yang sesuai, dan soal bangun datar harus memakai rumus serta satuan.</span><small>Contoh: sebelum menghitung, tulis dulu “konsep: keliling” atau “konsep: pecahan” agar tidak salah memilih cara.</small>',qs:[
+['Ada 18 pensil merah dan 30 pensil biru yang akan dibagi menjadi paket sama lengkap sebanyak mungkin. Berapa paket dapat dibuat?',['6','6 paket'],'Cari FPB(18, 30). Faktor persekutuan terbesarnya 6, jadi dapat dibuat 6 paket.'],
+['Alarm A berbunyi setiap 8 menit dan alarm B setiap 12 menit. Keduanya berbunyi pukul 07.30. Pukul berapa keduanya berbunyi bersama lagi?',['07:54','07.54','7:54','7.54'],'KPK(8, 12) = 24 menit. Pukul 07.30 ditambah 24 menit menjadi 07.54.'],
+['Manakah yang lebih besar, 5/6 atau 7/9?',['5/6'],'Samakan penyebut menjadi 18: 5/6 = 15/18 dan 7/9 = 14/18. Jadi 5/6 lebih besar.'],
+['Hitung 3/4 + 2/3.',['1 5/12','17/12'],'Samakan penyebut menjadi 12: 3/4 = 9/12 dan 2/3 = 8/12. Jumlahnya 17/12 = 1 5/12.'],
+['Urutkan dari terkecil ke terbesar dengan tanda <: 0,42; 0,4; 0,405.',['0,4<0,405<0,42'],'Tulis dengan jumlah angka desimal sama: 0,400; 0,405; 0,420. Jadi 0,4 < 0,405 < 0,42.'],
+['Lanjutkan pola berikut: 7, 12, 17, 22, ___.',['27'],'Setiap suku bertambah 5. Jadi 22 + 5 = 27.'],
+['Rasio anak laki-laki dan perempuan adalah 3 : 5. Jika ada 12 anak laki-laki, berapa anak perempuan?',['20','20 anak'],'Dari 3 bagian menjadi 12 berarti dikali 4. Maka 5 bagian × 4 = 20 anak perempuan.'],
+['Persegi panjang memiliki panjang 11 cm dan lebar 7 cm. Berapa kelilingnya?',['36','36 cm'],'Keliling = 2 × (panjang + lebar) = 2 × (11 + 7) = 36 cm.'],
+['Sebuah sudut besarnya 135°. Termasuk sudut apakah itu?',['tumpul','sudut tumpul'],'Sudut 135° lebih dari 90° dan kurang dari 180°, sehingga termasuk sudut tumpul.'],
+['Hasil pilihan buah: apel 14 anak, jeruk 9 anak, pisang 7 anak. Jika satu pilihan diambil secara acak dari catatan itu, buah apa yang paling mungkin terambil?',['apel'],'Apel memiliki frekuensi terbesar, yaitu 14. Karena itu apel paling mungkin terambil.']
+]}
+
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
@@ -328,7 +341,7 @@ const modules=[
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Tabel, diagram, interpretasi data, dan percobaan peluang · 6 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:32}
+  {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
