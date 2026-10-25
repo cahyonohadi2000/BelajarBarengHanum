@@ -4,6 +4,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 
 ## Materi tersedia
 
+- Bilangan cacah sampai 1.000.000: membaca, menulis, menentukan nilai tempat, mengurai, membandingkan, dan mengurutkan bilangan
 - Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
