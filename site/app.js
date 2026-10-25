@@ -334,14 +334,27 @@ const lessons=[
 ['Hasil pilihan buah: apel 14 anak, jeruk 9 anak, pisang 7 anak. Jika satu pilihan diambil secara acak dari catatan itu, buah apa yang paling mungkin terambil?',['apel'],'Apel memiliki frekuensi terbesar, yaitu 14. Karena itu apel paling mungkin terambil.']
 ]}
 
+,{name:'Bilangan cacah sampai 1.000.000',type:'BILANGAN',desc:'Membaca, menulis, mengurai, membandingkan, dan menentukan nilai tempat bilangan cacah.',tip:'Baca bilangan dari kelompok terbesar. Nilai sebuah angka ditentukan oleh posisinya: satuan, puluhan, ratusan, ribuan, puluh ribuan, atau ratus ribuan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membaca, menulis, mengurai, membandingkan, dan menentukan nilai tempat bilangan cacah sampai 1.000.000.</span><b>Petunjuk Konsep</b><span>Pisahkan bilangan menjadi kelompok ribuan agar mudah dibaca. Perhatikan posisi setiap angka dari kanan: satuan, puluhan, ratusan, ribuan, puluh ribuan, lalu ratus ribuan.</span><small>Contoh: 425.306 dibaca empat ratus dua puluh lima ribu tiga ratus enam dan dapat diurai menjadi 400.000 + 20.000 + 5.000 + 300 + 6.</small>',qs:[
+['Tuliskan dengan angka: tiga ratus dua puluh empat ribu seratus lima.',['324.105','324105'],'Tiga ratus dua puluh empat ribu = 324.000, lalu ditambah 105 menjadi 324.105.'],
+['Bagaimana cara membaca bilangan 507.042?',['lima ratus tujuh ribu empat puluh dua'],'Kelompok ribuannya 507 ribu dan kelompok satuannya 42, sehingga dibaca lima ratus tujuh ribu empat puluh dua.'],
+['Pada bilangan 682.451, angka 8 menempati nilai tempat apa?',['puluh ribuan'],'Dari kanan, angka 8 berada pada posisi puluh ribuan. Nilainya 80.000.'],
+['Berapa nilai angka 7 pada bilangan 375.204?',['70.000','70000'],'Angka 7 berada pada tempat puluh ribuan, sehingga nilainya 70.000.'],
+['Uraikan bilangan 406.219 menjadi bentuk panjang.',['400.000+6.000+200+10+9','400000+6000+200+10+9'],'Nilai setiap angka bukan nol adalah 400.000, 6.000, 200, 10, dan 9.'],
+['Susun menjadi bilangan: 700.000 + 40.000 + 2.000 + 500 + 8.',['742.508','742508'],'Gabungkan semua nilai tempat: 700.000 + 40.000 + 2.000 + 500 + 8 = 742.508.'],
+['Isi tanda yang tepat: 598.765 ___ 598.675.',['>'],'Angka ratus ribu, puluh ribu, dan ribunya sama. Pada tempat ratusan, 7 lebih besar daripada 6, jadi 598.765 > 598.675.'],
+['Urutkan dari terkecil ke terbesar: 210.045, 201.450, 210.405.',['201.450,210.045,210.405','201450,210045,210405'],'201.450 paling kecil. Di antara dua bilangan 210 ribu, 210.045 lebih kecil daripada 210.405.'],
+['Bilangan berapakah yang nilainya 1 lebih besar daripada 999.999?',['1.000.000','1000000'],'Menambahkan 1 pada 999.999 menghasilkan 1.000.000.'],
+['Perpustakaan memiliki 125.480 buku, lalu menerima 10.000 buku baru. Berapa jumlah bukunya sekarang?',['135.480','135480','135.480 buku'],'Menambahkan 10.000 menaikkan angka pada tempat puluh ribuan: 125.480 + 10.000 = 135.480 buku.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi',state:'Dalam peta',start:0,end:0},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 1 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:34},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
-  {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Sedang dipelajari',active:true,start:26,end:33}
+  {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
 const $=id=>document.getElementById(id);
