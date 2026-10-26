@@ -347,9 +347,22 @@ const lessons=[
 ['Perpustakaan memiliki 125.480 buku, lalu menerima 10.000 buku baru. Berapa jumlah bukunya sekarang?',['135.480','135480','135.480 buku'],'Menambahkan 10.000 menaikkan angka pada tempat puluh ribuan: 125.480 + 10.000 = 135.480 buku.']
 ]}
 
+,{name:'Penjumlahan & pengurangan bilangan cacah',type:'OPERASI HITUNG',desc:'Menjumlahkan dan mengurangkan bilangan cacah sampai 100.000 dalam berbagai situasi.',tip:'Susun angka sesuai nilai tempatnya. Untuk memeriksa hasil, gunakan operasi kebalikan: hasil penjumlahan dapat dicek dengan pengurangan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat melakukan penjumlahan dan pengurangan bilangan cacah sampai 100.000 serta menggunakannya untuk menyelesaikan masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Tulis satuan tepat di bawah satuan, puluhan di bawah puluhan, dan seterusnya. Mulailah menghitung dari kanan. Gunakan pembulatan jika soal meminta perkiraan.</span><small>Contoh: 24.675 + 13.200 = 37.875. Periksa dengan 37.875 − 13.200 = 24.675.</small>',qs:[
+['Hitung 23.475 + 14.320.',['37.795','37795'],'Jumlahkan sesuai nilai tempat: 23.475 + 14.320 = 37.795.'],
+['Hitung 67.250 − 28.935.',['38.315','38315'],'Kurangkan bersusun dari kanan. Hasil 67.250 − 28.935 = 38.315.'],
+['Isi bilangan yang kosong: 45.600 + ___ = 72.150.',['26.550','26550'],'Cari bilangan yang hilang dengan pengurangan: 72.150 − 45.600 = 26.550.'],
+['Isi bilangan yang kosong: ___ − 18.750 = 34.125.',['52.875','52875'],'Bilangan awal diperoleh dengan penjumlahan: 34.125 + 18.750 = 52.875.'],
+['Perkirakan hasil 48.721 + 31.180 dengan membulatkan setiap bilangan ke ribuan terdekat.',['80.000','80000'],'48.721 dibulatkan menjadi 49.000 dan 31.180 menjadi 31.000. Perkiraannya 49.000 + 31.000 = 80.000.'],
+['Perpustakaan sekolah memiliki 26.450 buku lalu menerima 13.875 buku baru. Berapa jumlah buku sekarang?',['40.325','40325','40.325 buku'],'Jumlahkan buku lama dan baru: 26.450 + 13.875 = 40.325 buku.'],
+['Toko memiliki persediaan 85.000 pensil. Sebanyak 27.650 pensil terjual. Berapa pensil yang tersisa?',['57.350','57350','57.350 pensil'],'Kurangkan jumlah terjual dari persediaan: 85.000 − 27.650 = 57.350 pensil.'],
+['Panitia mengumpulkan Rp35.750, lalu mendapat tambahan Rp12.500 dan memakai Rp8.250. Berapa rupiah yang tersisa?',['40.000','40000','Rp40.000','Rp 40.000'],'Hitung berurutan: 35.750 + 12.500 = 48.250, lalu 48.250 − 8.250 = 40.000.'],
+['Apakah 44.580 + 7.920 = 52.500? Jawab benar atau salah.',['benar'],'44.580 + 7.920 = 52.500, sehingga pernyataan tersebut benar.'],
+['Mana yang lebih besar: 60.000 − 18.750 atau 21.500 + 19.250?',['60.000 − 18.750','60.000-18.750','60000-18750'],'Hasil pertama 41.250, sedangkan hasil kedua 40.750. Jadi 60.000 − 18.750 lebih besar.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 1 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:34},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 2 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:35},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
