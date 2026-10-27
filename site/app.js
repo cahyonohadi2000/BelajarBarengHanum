@@ -360,9 +360,22 @@ const lessons=[
 ['Mana yang lebih besar: 60.000 − 18.750 atau 21.500 + 19.250?',['60.000 − 18.750','60.000-18.750','60000-18750'],'Hasil pertama 41.250, sedangkan hasil kedua 40.750. Jadi 60.000 − 18.750 lebih besar.']
 ]}
 
+,{name:'Perkalian & pembagian bilangan cacah',type:'OPERASI HITUNG',desc:'Mengalikan dan membagi bilangan cacah sampai 100.000 serta memakainya dalam masalah sehari-hari.',tip:'Perkalian adalah penjumlahan berulang, sedangkan pembagian memisahkan menjadi kelompok sama banyak. Gunakan operasi kebalikan untuk memeriksa jawaban.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat melakukan perkalian dan pembagian bilangan cacah sampai 100.000 serta memilih operasi yang tepat dalam masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Pada perkalian bersusun, kalikan dari nilai tempat paling kanan. Pada pembagian, perkirakan lebih dahulu lalu periksa dengan mengalikan hasil bagi dan pembagi.</span><small>Contoh: 1.250 × 4 = 5.000. Sebaliknya, 5.000 ÷ 4 = 1.250.</small>',qs:[
+['Hitung 2.450 × 6.',['14.700','14700'],'Kalikan 2.450 dengan 6: 2.450 × 6 = 14.700.'],
+['Hitung 128 × 35.',['4.480','4480'],'Uraikan 35 menjadi 30 + 5: 128 × 30 = 3.840 dan 128 × 5 = 640. Jumlahnya 4.480.'],
+['Hitung 72.000 ÷ 8.',['9.000','9000'],'Karena 9.000 × 8 = 72.000, maka 72.000 ÷ 8 = 9.000.'],
+['Hitung 9.450 ÷ 35.',['270'],'35 × 270 = 9.450, sehingga hasil pembagiannya 270.'],
+['Isi angka yang kosong: 48 × ___ = 3.840.',['80'],'Cari faktor yang hilang dengan pembagian: 3.840 ÷ 48 = 80.'],
+['Isi bilangan yang kosong: ___ ÷ 24 = 125.',['3.000','3000'],'Kalikan hasil bagi dengan pembagi: 125 × 24 = 3.000.'],
+['Sebuah gudang menyimpan 36 kotak. Setiap kotak berisi 125 buku. Berapa jumlah seluruh buku?',['4.500','4500','4.500 buku'],'Hitung 36 × 125 = 4.500. Jadi jumlah seluruhnya 4.500 buku.'],
+['Sebanyak 8.640 pensil dimasukkan sama rata ke dalam 32 kardus. Berapa pensil dalam setiap kardus?',['270','270 pensil'],'Hitung 8.640 ÷ 32 = 270. Jadi setiap kardus berisi 270 pensil.'],
+['Sekolah menata 24 baris kursi, setiap baris berisi 125 kursi. Setelah 750 kursi dipindahkan, berapa kursi yang tersisa?',['2.250','2250','2.250 kursi'],'Jumlah awal 24 × 125 = 3.000 kursi. Sisanya 3.000 − 750 = 2.250 kursi.'],
+['Mana yang lebih besar: 215 × 24 atau 31.500 ÷ 6?',['31.500 ÷ 6','31.500/6','31500÷6','31500/6'],'215 × 24 = 5.160, sedangkan 31.500 ÷ 6 = 5.250. Jadi 31.500 ÷ 6 lebih besar.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 2 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:35},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 3 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:36},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
