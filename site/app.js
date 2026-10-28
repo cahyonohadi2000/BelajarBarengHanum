@@ -373,9 +373,22 @@ const lessons=[
 ['Mana yang lebih besar: 215 × 24 atau 31.500 ÷ 6?',['31.500 ÷ 6','31.500/6','31500÷6','31500/6'],'215 × 24 = 5.160, sedangkan 31.500 ÷ 6 = 5.250. Jadi 31.500 ÷ 6 lebih besar.']
 ]}
 
+,{name:'Operasi hitung campuran bilangan cacah',type:'OPERASI HITUNG',desc:'Menyelesaikan operasi campuran dan masalah sehari-hari dengan urutan hitung yang tepat.',tip:'Kerjakan isi tanda kurung lebih dahulu. Setelah itu dahulukan perkalian atau pembagian, lalu penjumlahan atau pengurangan. Operasi yang setingkat dikerjakan dari kiri ke kanan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menentukan urutan operasi dan menyelesaikan operasi hitung campuran bilangan cacah sampai 100.000 dalam masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Urutannya: (1) tanda kurung, (2) perkalian dan pembagian dari kiri ke kanan, (3) penjumlahan dan pengurangan dari kiri ke kanan.</span><small>Contoh: 2.000 + 300 × 4 = 2.000 + 1.200 = 3.200. Jika memakai kurung, (2.000 + 300) × 4 = 9.200.</small>',qs:[
+['Hitung 4.800 + 125 × 24.',['7.800','7800'],'Kerjakan perkalian dahulu: 125 × 24 = 3.000. Lalu 4.800 + 3.000 = 7.800.'],
+['Hitung 36.000 ÷ 9 − 1.750.',['2.250','2250'],'Kerjakan pembagian dahulu: 36.000 ÷ 9 = 4.000. Lalu 4.000 − 1.750 = 2.250.'],
+['Hitung (2.450 + 1.550) × 12.',['48.000','48000'],'Kerjakan tanda kurung: 2.450 + 1.550 = 4.000. Kemudian 4.000 × 12 = 48.000.'],
+['Hitung 72.000 ÷ (15 + 9).',['3.000','3000'],'Jumlahkan isi kurung: 15 + 9 = 24. Lalu 72.000 ÷ 24 = 3.000.'],
+['Hitung 18 × 250 + 6.400 ÷ 8.',['5.300','5300'],'Kerjakan kali dan bagi dahulu: 18 × 250 = 4.500 dan 6.400 ÷ 8 = 800. Jumlahnya 5.300.'],
+['Isi bilangan yang kosong: 6.000 + ___ × 20 = 10.000.',['200'],'Selisih 10.000 − 6.000 = 4.000. Bilangan yang dicari adalah 4.000 ÷ 20 = 200.'],
+['Ada 12 kotak, masing-masing berisi 125 pensil. Sebanyak 275 pensil dipakai. Berapa pensil yang tersisa?',['1.225','1225','1.225 pensil'],'Jumlah awal 12 × 125 = 1.500 pensil. Sisanya 1.500 − 275 = 1.225 pensil.'],
+['Sembilan bus membawa masing-masing 48 siswa. Mereka bergabung dengan 72 guru, lalu dibagi menjadi 7 kelompok sama banyak. Berapa orang dalam setiap kelompok?',['72','72 orang'],'Jumlah peserta 9 × 48 + 72 = 432 + 72 = 504. Setiap kelompok berisi 504 ÷ 7 = 72 orang.'],
+['Toko menerima 45 pak buku, setiap pak berisi 120 buku. Setelah 850 buku terjual, berapa buku yang tersisa?',['4.550','4550','4.550 buku'],'Jumlah buku 45 × 120 = 5.400. Setelah terjual, sisanya 5.400 − 850 = 4.550 buku.'],
+['Bandingkan (8.400 ÷ 7) + 2.650 dan 175 × 22. Apakah hasil pertama lebih besar, lebih kecil, atau sama?',['sama','sama besar'],'Hasil pertama 1.200 + 2.650 = 3.850. Hasil kedua 175 × 22 = 3.850. Jadi keduanya sama.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 3 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:36},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 4 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:37},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
