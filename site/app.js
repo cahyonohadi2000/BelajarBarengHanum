@@ -386,9 +386,22 @@ const lessons=[
 ['Bandingkan (8.400 ÷ 7) + 2.650 dan 175 × 22. Apakah hasil pertama lebih besar, lebih kecil, atau sama?',['sama','sama besar'],'Hasil pertama 1.200 + 2.650 = 3.850. Hasil kedua 175 × 22 = 3.850. Jadi keduanya sama.']
 ]}
 
+,{name:'Uang & transaksi sehari-hari',type:'UANG',desc:'Menghitung nilai uang, total belanja, kembalian, dan sisa anggaran dalam kehidupan sehari-hari.',tip:'Tuliskan semua nilai uang dengan satuan rupiah. Untuk mencari kembalian, kurangkan total belanja dari jumlah uang yang dibayarkan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menghitung nilai kumpulan uang, total belanja, kembalian, dan sisa anggaran dengan tepat.</span><b>Petunjuk Konsep</b><span>Samakan satuan menjadi rupiah, hitung jumlah barang terlebih dahulu, lalu bandingkan total belanja dengan uang yang tersedia.</span><small>Contoh: Harga buku Rp18.500 dibayar Rp20.000. Kembaliannya Rp20.000 − Rp18.500 = Rp1.500.</small>',qs:[
+['Hanum memiliki 3 lembar Rp20.000 dan 2 lembar Rp5.000. Berapa jumlah uangnya?',['70.000','70000','Rp70.000','Rp 70.000'],'Tiga lembar Rp20.000 bernilai Rp60.000 dan dua lembar Rp5.000 bernilai Rp10.000. Jumlahnya Rp70.000.'],
+['Sebuah tas berharga Rp67.500. Jika dibayar dengan Rp100.000, berapa kembaliannya?',['32.500','32500','Rp32.500','Rp 32.500'],'Kembalian = Rp100.000 − Rp67.500 = Rp32.500.'],
+['Harga satu buku tulis Rp7.500. Berapa harga 6 buku tulis?',['45.000','45000','Rp45.000','Rp 45.000'],'Total harga = 6 × Rp7.500 = Rp45.000.'],
+['Hanum membeli kotak pensil Rp28.500 dan penggaris Rp16.750. Ia membayar Rp50.000. Berapa kembaliannya?',['4.750','4750','Rp4.750','Rp 4.750'],'Total belanja Rp28.500 + Rp16.750 = Rp45.250. Kembalian Rp50.000 − Rp45.250 = Rp4.750.'],
+['Hanum memiliki Rp75.000 dan membeli 4 buku cerita seharga Rp18.000 per buku. Berapa sisa uangnya?',['3.000','3000','Rp3.000','Rp 3.000'],'Harga 4 buku = 4 × Rp18.000 = Rp72.000. Sisanya Rp75.000 − Rp72.000 = Rp3.000.'],
+['Harga sepatu Rp92.500. Hanum membayar dengan dua lembar Rp50.000. Berapa uang kembaliannya?',['7.500','7500','Rp7.500','Rp 7.500'],'Dua lembar Rp50.000 bernilai Rp100.000. Kembaliannya Rp100.000 − Rp92.500 = Rp7.500.'],
+['Lima pensil satuan berharga Rp4.000 per buah. Satu pak berisi 5 pensil berharga Rp18.500. Pilihan mana yang lebih murah dan berapa selisihnya?',['satu pak, Rp1.500','satu pak 1.500','pak, 1.500','pak 1500'],'Membeli satuan membutuhkan 5 × Rp4.000 = Rp20.000. Satu pak lebih murah Rp20.000 − Rp18.500 = Rp1.500.'],
+['Dengan anggaran Rp120.000, Hanum membeli 3 buku seharga Rp21.500 per buku dan 2 penggaris seharga Rp8.250 per buah. Berapa sisa anggarannya?',['39.000','39000','Rp39.000','Rp 39.000'],'Harga buku Rp64.500 dan penggaris Rp16.500, sehingga total Rp81.000. Sisa anggaran Rp120.000 − Rp81.000 = Rp39.000.'],
+['Setelah membeli alat tulis seharga Rp32.500, uang Hanum tersisa Rp47.500. Berapa uang Hanum sebelum berbelanja?',['80.000','80000','Rp80.000','Rp 80.000'],'Uang awal = harga belanja + sisa uang = Rp32.500 + Rp47.500 = Rp80.000.'],
+['Delapan kelas masing-masing mengumpulkan Rp27.500 untuk kegiatan sosial. Sekolah menambahkan Rp35.000. Berapa total uang yang terkumpul?',['255.000','255000','Rp255.000','Rp 255.000'],'Uang dari kelas = 8 × Rp27.500 = Rp220.000. Ditambah Rp35.000 menjadi Rp255.000.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, nilai tempat, dan operasi · 4 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:37},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, dan masalah uang · 5 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:38},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
