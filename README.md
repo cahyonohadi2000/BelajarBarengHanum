@@ -8,6 +8,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Penjumlahan dan pengurangan bilangan cacah sampai 100.000, termasuk bilangan yang belum diketahui, estimasi, dan masalah sehari-hari
 - Perkalian dan pembagian bilangan cacah sampai 100.000, termasuk operasi kebalikan dan masalah sehari-hari
 - Operasi hitung campuran bilangan cacah sampai 100.000 dengan urutan operasi, tanda kurung, dan masalah kontekstual
+- Masalah uang dan transaksi sehari-hari: nilai uang, total belanja, kembalian, perbandingan harga, dan sisa anggaran
 - Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
