@@ -399,9 +399,22 @@ const lessons=[
 ['Delapan kelas masing-masing mengumpulkan Rp27.500 untuk kegiatan sosial. Sekolah menambahkan Rp35.000. Berapa total uang yang terkumpul?',['255.000','255000','Rp255.000','Rp 255.000'],'Uang dari kelas = 8 × Rp27.500 = Rp220.000. Ditambah Rp35.000 menjadi Rp255.000.']
 ]}
 
+,{name:'Nilai yang belum diketahui',type:'ALJABAR',desc:'Menemukan bilangan yang belum diketahui dalam kalimat matematika sampai 1.000.',tip:'Gunakan operasi kebalikan. Penjumlahan berpasangan dengan pengurangan, sedangkan perkalian berpasangan dengan pembagian.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menemukan nilai yang belum diketahui pada kalimat penjumlahan, pengurangan, perkalian, dan pembagian bilangan cacah sampai 1.000.</span><b>Petunjuk Konsep</b><span>Tentukan posisi kotak kosong, lalu gunakan operasi kebalikan. Setelah menemukan jawabannya, masukkan kembali nilai itu untuk memeriksa kesamaan.</span><small>Contoh: 325 + □ = 700. Maka □ = 700 − 325 = 375. Periksa: 325 + 375 = 700.</small>',qs:[
+['Isi nilai yang belum diketahui: 275 + □ = 640.',['365'],'Gunakan pengurangan: 640 − 275 = 365. Periksa: 275 + 365 = 640.'],
+['Isi nilai yang belum diketahui: □ + 185 = 720.',['535'],'Bilangan awal diperoleh dengan 720 − 185 = 535. Periksa: 535 + 185 = 720.'],
+['Isi nilai yang belum diketahui: 900 − □ = 375.',['525'],'Bilangan yang dikurangkan adalah 900 − 375 = 525. Periksa: 900 − 525 = 375.'],
+['Isi nilai yang belum diketahui: □ − 248 = 502.',['750'],'Bilangan awal diperoleh dengan 502 + 248 = 750. Periksa: 750 − 248 = 502.'],
+['Isi nilai yang belum diketahui: 24 × □ = 864.',['36'],'Gunakan pembagian: 864 ÷ 24 = 36. Periksa: 24 × 36 = 864.'],
+['Isi nilai yang belum diketahui: □ × 18 = 630.',['35'],'Faktor yang belum diketahui adalah 630 ÷ 18 = 35. Periksa: 35 × 18 = 630.'],
+['Isi nilai yang belum diketahui: 936 ÷ □ = 24.',['39'],'Pembagi yang dicari adalah 936 ÷ 24 = 39. Periksa: 936 ÷ 39 = 24.'],
+['Isi nilai yang belum diketahui: □ ÷ 16 = 45.',['720'],'Bilangan yang dibagi adalah 45 × 16 = 720. Periksa: 720 ÷ 16 = 45.'],
+['Jika 7 × n = 560, berapakah nilai n?',['80'],'Bagi kedua sisi dengan 7: n = 560 ÷ 7 = 80.'],
+['Enam kotak berisi jumlah stiker yang sama. Setelah ditambah 114 stiker lepas, jumlah seluruhnya 834. Berapa stiker dalam setiap kotak?',['120','120 stiker'],'Kalimat matematikanya 6 × □ + 114 = 834. Kurangi 114 menjadi 720, lalu 720 ÷ 6 = 120 stiker per kotak.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, dan masalah uang · 5 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:38},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 6 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:39},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
