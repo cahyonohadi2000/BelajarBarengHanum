@@ -412,9 +412,22 @@ const lessons=[
 ['Enam kotak berisi jumlah stiker yang sama. Setelah ditambah 114 stiker lepas, jumlah seluruhnya 834. Berapa stiker dalam setiap kotak?',['120','120 stiker'],'Kalimat matematikanya 6 × □ + 114 = 834. Kurangi 114 menjadi 720, lalu 720 ÷ 6 = 120 stiker per kotak.']
 ]}
 
+,{name:'Soal cerita nilai yang belum diketahui',type:'ALJABAR CERITA',desc:'Menerjemahkan situasi sehari-hari menjadi kalimat matematika, lalu menemukan nilai yang belum diketahui.',tip:'Tentukan dulu apa yang ditanyakan. Tulis kalimat matematika dengan kotak atau huruf, gunakan operasi kebalikan, lalu periksa jawaban di dalam cerita.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat memodelkan soal cerita menjadi kalimat matematika dan menemukan nilai yang belum diketahui pada bilangan cacah sampai 1.000.</span><b>Petunjuk Konsep</b><span>1) Tandai informasi yang diketahui. 2) Misalkan nilai yang dicari dengan □. 3) Susun kalimat matematika. 4) Gunakan operasi kebalikan dan periksa kembali.</span><small>Contoh: Setelah memberikan 125 stiker, Sinta masih memiliki 340 stiker. Kalimatnya □ − 125 = 340, sehingga □ = 340 + 125 = 465.</small>',qs:[
+['Hanum memiliki sejumlah stiker. Setelah memberikan 185 stiker kepada teman-temannya, tersisa 427 stiker. Berapa stiker Hanum mula-mula?',['612','612 stiker'],'Kalimat matematikanya □ − 185 = 427. Gunakan penjumlahan: 427 + 185 = 612 stiker.'],
+['Perpustakaan menerima 236 buku baru sehingga jumlah bukunya menjadi 875. Berapa buku yang dimiliki perpustakaan sebelum menerima buku baru?',['639','639 buku'],'Kalimat matematikanya □ + 236 = 875. Gunakan pengurangan: 875 − 236 = 639 buku.'],
+['Sebanyak 546 buku disusun sama banyak pada 7 rak. Berapa buku di setiap rak?',['78','78 buku'],'Kalimat matematikanya 7 × □ = 546. Gunakan pembagian: 546 ÷ 7 = 78 buku per rak.'],
+['Sebanyak 864 permen dimasukkan ke beberapa kantong. Setiap kantong berisi 48 permen. Berapa kantong yang diperlukan?',['18','18 kantong'],'Kalimat matematikanya 864 ÷ □ = 48. Karena 864 ÷ 48 = 18, diperlukan 18 kantong.'],
+['Sekolah membeli 9 pak pensil dengan isi sama. Setelah 126 pensil dibagikan, tersisa 504 pensil. Berapa isi setiap pak?',['70','70 pensil'],'Jumlah pensil mula-mula 504 + 126 = 630. Kalimatnya 9 × □ = 630, sehingga 630 ÷ 9 = 70 pensil per pak.'],
+['Sebuah bus memiliki 8 baris kursi dengan jumlah sama dan 36 kursi tambahan. Jumlah seluruh kursi 516. Berapa kursi pada setiap baris?',['60','60 kursi'],'Kalimat matematikanya 8 × □ + 36 = 516. Kurangi 36: 480, lalu 480 ÷ 8 = 60 kursi.'],
+['Seutas tali dipotong sepanjang 275 cm dan masih tersisa 489 cm. Berapa panjang tali sebelum dipotong?',['764','764 cm'],'Kalimat matematikanya □ − 275 = 489. Gunakan penjumlahan: 489 + 275 = 764 cm.'],
+['Rani membeli 4 buku dengan harga Rp85.000 per buku. Setelah membayar, uangnya tersisa Rp210.000. Berapa uang Rani mula-mula?',['550.000','550000','Rp550.000','Rp 550.000'],'Harga 4 buku = 4 × Rp85.000 = Rp340.000. Uang mula-mula = Rp340.000 + Rp210.000 = Rp550.000.'],
+['Enam kelompok memiliki jumlah peserta yang sama. Setelah 72 peserta pulang, masih ada 408 peserta. Berapa peserta mula-mula dalam setiap kelompok?',['80','80 peserta'],'Kalimat matematikanya 6 × □ − 72 = 408. Tambahkan 72 menjadi 480, lalu 480 ÷ 6 = 80 peserta per kelompok.'],
+['Lima jeriken berisi air sama banyak. Setelah ditambah 145 liter air, jumlahnya menjadi 895 liter. Berapa liter air di setiap jeriken sebelum penambahan?',['150','150 liter'],'Kalimat matematikanya 5 × □ + 145 = 895. Kurangi 145 menjadi 750, lalu 750 ÷ 5 = 150 liter.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 6 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:39},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 7 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:40},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
