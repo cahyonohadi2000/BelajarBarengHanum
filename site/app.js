@@ -425,9 +425,22 @@ const lessons=[
 ['Lima jeriken berisi air sama banyak. Setelah ditambah 145 liter air, jumlahnya menjadi 895 liter. Berapa liter air di setiap jeriken sebelum penambahan?',['150','150 liter'],'Kalimat matematikanya 5 × □ + 145 = 895. Kurangi 145 menjadi 750, lalu 750 ÷ 5 = 150 liter.']
 ]}
 
+,{name:'Sifat operasi hitung',type:'STRATEGI HITUNG',desc:'Mengenal dan menggunakan sifat komutatif, asosiatif, serta distributif untuk menghitung lebih mudah.',tip:'Komutatif menukar urutan, asosiatif mengubah pengelompokan, dan distributif memecah perkalian. Pengurangan serta pembagian tidak bersifat komutatif.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengenali dan menggunakan sifat komutatif, asosiatif, dan distributif pada bilangan cacah untuk menyelesaikan perhitungan secara efisien.</span><b>Petunjuk Konsep</b><span>Komutatif: a + b = b + a dan a × b = b × a. Asosiatif: (a + b) + c = a + (b + c). Distributif: a × (b + c) = (a × b) + (a × c).</span><small>Contoh: 8 × 47 = 8 × (40 + 7) = 320 + 56 = 376.</small>',qs:[
+['Lengkapi kalimat matematika: 27 + 45 = 45 + □.',['27'],'Penjumlahan bersifat komutatif, sehingga urutan dapat ditukar: 27 + 45 = 45 + 27.'],
+['Lengkapi kalimat matematika: 8 × 35 = 35 × □.',['8'],'Perkalian bersifat komutatif. Menukar urutan faktor tidak mengubah hasil, jadi kotaknya berisi 8.'],
+['Lengkapi pengelompokan: (125 + 75) + 40 = 125 + (□ + 40).',['75'],'Sifat asosiatif mengubah pengelompokan tanpa mengubah urutan bilangan. Bilangan yang hilang adalah 75.'],
+['Lengkapi pengelompokan: (4 × 25) × 9 = 4 × (□ × 9).',['25'],'Perkalian bersifat asosiatif. Faktor tetap 4, 25, dan 9; hanya pengelompokannya yang berubah.'],
+['Lengkapi bentuk distributif: 6 × (40 + 3) = (6 × 40) + (6 × □).',['3'],'Angka 6 dikalikan ke setiap bilangan di dalam kurung. Karena suku kedua adalah 3, kotaknya berisi 3.'],
+['Hitung dengan cara distributif: 9 × 48 = 9 × (50 − 2). Berapa hasilnya?',['432'],'Hitung 9 × 50 − 9 × 2 = 450 − 18 = 432.'],
+['Sifat apakah yang ditunjukkan oleh 36 + 59 = 59 + 36?',['komutatif','sifat komutatif'],'Urutan 36 dan 59 ditukar, tetapi hasil penjumlahan tetap sama. Ini adalah sifat komutatif.'],
+['Apakah 72 − 18 = 18 − 72? Jawab ya atau tidak.',['tidak'],'Tidak. Pengurangan tidak bersifat komutatif: 72 − 18 = 54, sedangkan 18 − 72 bukan 54.'],
+['Ada 24 kotak, masing-masing berisi 98 pensil. Gunakan 24 × (100 − 2). Berapa jumlah seluruh pensil?',['2352','2.352','2352 pensil','2.352 pensil'],'Dengan distributif: 24 × 100 − 24 × 2 = 2.400 − 48 = 2.352 pensil.'],
+['Hitung dengan mengeluarkan faktor yang sama: (7 × 63) + (7 × 37) = 7 × (63 + 37). Berapa hasilnya?',['700'],'Jumlah di dalam kurung adalah 100, sehingga 7 × 100 = 700.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 7 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:40},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 8 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:41},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
