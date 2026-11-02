@@ -438,9 +438,22 @@ const lessons=[
 ['Hitung dengan mengeluarkan faktor yang sama: (7 × 63) + (7 × 37) = 7 × (63 + 37). Berapa hasilnya?',['700'],'Jumlah di dalam kurung adalah 100, sehingga 7 × 100 = 700.']
 ]}
 
+,{name:'Pembulatan & estimasi bilangan',type:'NUMBER SENSE',desc:'Membulatkan bilangan dan memperkirakan hasil operasi untuk memeriksa kewajaran jawaban.',tip:'Lihat angka di sebelah kanan nilai tempat yang akan dibulatkan: 0–4 tetap, 5–9 naik satu. Estimasi tidak harus tepat, tetapi harus dekat dan masuk akal.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membulatkan bilangan cacah ke nilai tempat tertentu, memperkirakan hasil operasi, dan menilai apakah suatu jawaban masuk akal.</span><b>Petunjuk Konsep</b><span>Pilih nilai tempat pembulatan, lihat satu angka di sebelah kanannya, lalu bulatkan. Untuk estimasi operasi, bulatkan bilangan agar mudah dihitung dan bandingkan perkiraan dengan jawaban sebenarnya.</span><small>Contoh: 47.680 dibulatkan ke ribuan terdekat menjadi 48.000 karena angka ratusannya 6.</small>',qs:[
+['Bulatkan 47.382 ke ribuan terdekat.',['47.000','47000'],'Angka ratusannya 3, kurang dari 5. Jadi 47.382 dibulatkan turun menjadi 47.000.'],
+['Bulatkan 265.749 ke puluhan ribu terdekat.',['270.000','270000'],'Angka ribuannya 5, sehingga angka puluhan ribu naik dari 6 menjadi 7. Hasilnya 270.000.'],
+['Bulatkan 8.746 ke ratusan terdekat.',['8.700','8700'],'Angka puluhannya 4, kurang dari 5. Jadi 8.746 dibulatkan menjadi 8.700.'],
+['Perkirakan 38.642 + 21.317 dengan membulatkan setiap bilangan ke ribuan terdekat.',['60.000','60000'],'38.642 ≈ 39.000 dan 21.317 ≈ 21.000. Jadi perkiraannya 39.000 + 21.000 = 60.000.'],
+['Perkirakan 79.430 − 24.680 dengan membulatkan setiap bilangan ke ribuan terdekat.',['54.000','54000'],'79.430 ≈ 79.000 dan 24.680 ≈ 25.000. Selisih perkiraannya 79.000 − 25.000 = 54.000.'],
+['Perkirakan 398 × 21 dengan membulatkan 398 ke ratusan dan 21 ke puluhan terdekat.',['8.000','8000'],'398 ≈ 400 dan 21 ≈ 20. Jadi perkiraannya 400 × 20 = 8.000.'],
+['Perkirakan 5.940 ÷ 29 dengan membulatkan menjadi 6.000 ÷ 30.',['200'],'6.000 ÷ 30 = 200. Nilai ini dekat dengan hasil pembagian sebenarnya.'],
+['Hasil tepat 48 × 203 adalah 9.744. Apakah hasil ini masuk akal jika perkiraannya 50 × 200 = 10.000? Jawab ya atau tidak.',['ya'],'Ya. Hasil tepat 9.744 dekat dengan perkiraan 10.000, sehingga masuk akal.'],
+['Sekolah menjual sekitar 198 tiket dengan harga sekitar Rp24.500 per tiket. Gunakan 200 × Rp25.000 untuk memperkirakan uang yang terkumpul.',['5.000.000','5000000','Rp5.000.000','Rp 5.000.000'],'198 ≈ 200 dan Rp24.500 ≈ Rp25.000. Perkiraannya 200 × Rp25.000 = Rp5.000.000.'],
+['Doni menghitung 326 × 19 dan mendapat 61.940. Apakah jawabannya masuk akal? Jawab ya atau tidak.',['tidak'],'Tidak. Perkiraannya 300 × 20 = 6.000, jadi 61.940 terlalu besar. Hasil tepatnya 326 × 19 = 6.194.']
+]}
+
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 8 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:41},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 9 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:42},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
