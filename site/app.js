@@ -450,10 +450,23 @@ const lessons=[
 ['Sekolah menjual sekitar 198 tiket dengan harga sekitar Rp24.500 per tiket. Gunakan 200 × Rp25.000 untuk memperkirakan uang yang terkumpul.',['5.000.000','5000000','Rp5.000.000','Rp 5.000.000'],'198 ≈ 200 dan Rp24.500 ≈ Rp25.000. Perkiraannya 200 × Rp25.000 = Rp5.000.000.'],
 ['Doni menghitung 326 × 19 dan mendapat 61.940. Apakah jawabannya masuk akal? Jawab ya atau tidak.',['tidak'],'Tidak. Perkiraannya 300 × 20 = 6.000, jadi 61.940 terlalu besar. Hasil tepatnya 326 × 19 = 6.194.']
 ]}
+,{name:'Soal cerita operasi hitung dua langkah',type:'PEMECAHAN MASALAH',desc:'Memilih dan menggabungkan dua operasi hitung untuk menyelesaikan masalah sehari-hari.',tip:'Baca pertanyaan terakhir, tulis apa yang diketahui, tentukan operasi pertama dan kedua, lalu periksa apakah hasil beserta satuannya masuk akal.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat memodelkan dan menyelesaikan soal cerita dua langkah menggunakan penjumlahan, pengurangan, perkalian, atau pembagian bilangan cacah.</span><b>Petunjuk Konsep</b><span>1) Garisbawahi informasi penting. 2) Tentukan hasil sementara yang harus dicari. 3) Lakukan operasi kedua untuk menjawab pertanyaan. 4) Tulis satuan dan periksa kewajaran hasil.</span><small>Contoh: Ada 8 kotak berisi 24 pensil. Setelah 35 pensil dibagikan, sisanya 8 × 24 − 35 = 157 pensil.</small>',qs:[
+['Perpustakaan memiliki 18 kotak buku. Setiap kotak berisi 24 buku, lalu datang lagi 135 buku. Berapa jumlah buku sekarang?',['567','567 buku'],'Buku dalam kotak = 18 × 24 = 432. Tambahkan 135 buku: 432 + 135 = 567 buku.'],
+['Sebanyak 960 jeruk dimasukkan sama banyak ke keranjang yang masing-masing berisi 32 jeruk. Setelah 7 keranjang terjual, berapa keranjang yang tersisa?',['23','23 keranjang'],'Jumlah awal keranjang = 960 ÷ 32 = 30. Setelah 7 terjual, tersisa 30 − 7 = 23 keranjang.'],
+['Delapan belas bus masing-masing memiliki 35 kursi. Jika 86 kursi kosong, berapa penumpang yang ada?',['544','544 penumpang'],'Jumlah kursi = 18 × 35 = 630. Kursi terisi = 630 − 86 = 544, jadi ada 544 penumpang.'],
+['Sekolah membeli 28 pak pensil. Setiap pak berisi 36 pensil. Sebanyak 675 pensil dibagikan. Berapa pensil yang tersisa?',['333','333 pensil'],'Jumlah pensil = 28 × 36 = 1.008. Sisa pensil = 1.008 − 675 = 333 pensil.'],
+['Perpustakaan memiliki 1.250 buku. Perpustakaan membeli 18 kotak, masing-masing berisi 25 buku, lalu menyingkirkan 175 buku rusak. Berapa buku yang tersisa?',['1.525','1525','1.525 buku','1525 buku'],'Buku baru = 18 × 25 = 450. Jumlah akhir = 1.250 + 450 − 175 = 1.525 buku.'],
+['Toko menyiapkan 1.440 kue pada 24 baki dengan isi sama banyak. Setelah 9 baki terjual, berapa kue yang belum terjual?',['900','900 kue'],'Setiap baki berisi 1.440 ÷ 24 = 60 kue. Baki tersisa = 24 − 9 = 15, sehingga kue tersisa = 15 × 60 = 900.'],
+['Petani memanen 48 peti mangga. Setiap peti beratnya 35 kg. Jika 980 kg telah dijual, berapa kilogram mangga yang tersisa?',['700','700 kg'],'Berat panen = 48 × 35 = 1.680 kg. Sisa mangga = 1.680 − 980 = 700 kg.'],
+['Panitia menjual 275 tiket seharga Rp18.000 per tiket. Biaya acara Rp1.250.000. Berapa uang yang tersisa setelah biaya dibayar?',['3.700.000','3700000','Rp3.700.000','Rp 3.700.000'],'Uang tiket = 275 × Rp18.000 = Rp4.950.000. Setelah membayar Rp1.250.000, tersisa Rp3.700.000.'],
+['Hanum berjalan mengelilingi lapangan 6 kali. Setiap putaran 750 meter, lalu ia berjalan lagi 1.350 meter menuju rumah. Berapa meter seluruh jaraknya?',['5.850','5850','5.850 meter','5850 meter'],'Jarak mengelilingi lapangan = 6 × 750 = 4.500 meter. Tambahkan 1.350 meter: total 5.850 meter.'],
+['Ada 8 tangki kecil, masing-masing berisi 125 liter air. Sebanyak 365 liter digunakan, lalu ditambahkan lagi 240 liter. Berapa liter air sekarang?',['875','875 liter'],'Air awal = 8 × 125 = 1.000 liter. Setelah dipakai dan ditambah lagi: 1.000 − 365 + 240 = 875 liter.']
+]}
+
 
 ];
 const modules=[
-  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 9 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:42},
+  {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
