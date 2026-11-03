@@ -12,6 +12,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Aljabar awal: menemukan nilai yang belum diketahui dalam kalimat penjumlahan, pengurangan, perkalian, dan pembagian sampai 1.000, termasuk memodelkan soal cerita sehari-hari
 - Sifat operasi hitung: komutatif, asosiatif, dan distributif sebagai strategi menghitung lebih efisien
 - Pembulatan dan estimasi bilangan: nilai tempat, perkiraan hasil operasi, dan pemeriksaan kewajaran jawaban
+- Soal cerita operasi hitung dua langkah: memilih urutan operasi, menghitung hasil sementara, dan memeriksa kewajaran jawaban
 - Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
