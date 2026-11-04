@@ -15,7 +15,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Soal cerita operasi hitung dua langkah: memilih urutan operasi, menghitung hasil sementara, dan memeriksa kewajaran jawaban
 - Rangkaian latihan FPB dan KPK kelas 5 SD: 7 sesi dasar, cerita, campuran, dan tantangan
 - Tantangan Expert FPB/KPK dengan konteks jam dan tanggal
-- Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal, serta membandingkan dan mengurutkan desimal
+- Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal–persen, konteks persen sederhana, serta membandingkan dan mengurutkan desimal
 - Materi pola bilangan membesar dan mengecil
 - Materi rasio dan proporsi: membaca, menulis, menyederhanakan rasio, menentukan rasio satuan, serta melengkapi tabel rasio senilai
 - Materi pengukuran dan geometri mencakup keliling, luas persegi, persegi panjang, segitiga, jajargenjang, bangun gabungan, pengenalan dan pengukuran sudut, serta unsur, visualisasi, penyusunan, dan penguraian kubus-balok
