@@ -463,12 +463,25 @@ const lessons=[
 ['Ada 8 tangki kecil, masing-masing berisi 125 liter air. Sebanyak 365 liter digunakan, lalu ditambahkan lagi 240 liter. Berapa liter air sekarang?',['875','875 liter'],'Air awal = 8 × 125 = 1.000 liter. Setelah dipakai dan ditambah lagi: 1.000 − 365 + 240 = 875 liter.']
 ]}
 
+,{name:'Pecahan, desimal, dan persen',type:'PECAHAN & PERSEN',desc:'Menghubungkan pecahan, desimal, dan persen serta menggunakannya dalam masalah sehari-hari.',tip:'Persen berarti per seratus. Ubah pecahan menjadi penyebut 100 atau desimal, lalu tuliskan sebagai persen.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengubah pecahan, desimal, dan persen ke bentuk yang senilai serta menggunakannya dalam konteks sederhana.</span><b>Petunjuk Konsep</b><span>Persen berarti per seratus. Pecahan dapat diubah menjadi persen dengan membuat penyebut 100 atau mengalikannya dengan 100%. Desimal diubah menjadi persen dengan mengalikan 100.</span><small>Contoh: 3/4 = 75/100 = 75% = 0,75.</small>',qs:[
+['Ubah pecahan 1/2 menjadi persen.',['50%','50 persen'],'1/2 = 50/100, sehingga nilainya sama dengan 50%.'],
+['Ubah pecahan 3/4 menjadi persen.',['75%','75 persen'],'3/4 dikalikan 25/25 menjadi 75/100. Jadi 3/4 = 75%.'],
+['Ubah pecahan 2/5 menjadi persen.',['40%','40 persen'],'2/5 dikalikan 20/20 menjadi 40/100. Jadi nilainya 40%.'],
+['Ubah desimal 0,25 menjadi persen.',['25%','25 persen'],'0,25 berarti 25 per seratus, sehingga sama dengan 25%.'],
+['Ubah desimal 0,6 menjadi persen.',['60%','60 persen'],'0,6 = 60/100, sehingga sama dengan 60%.'],
+['Ubah 35% menjadi bentuk desimal.',['0,35','0.35'],'35% berarti 35/100. Dalam bentuk desimal nilainya 0,35.'],
+['Ubah 20% menjadi pecahan paling sederhana.',['1/5','1 per 5'],'20% = 20/100. Bagi pembilang dan penyebut dengan 20 sehingga menjadi 1/5.'],
+['Di kelas ada 40 murid. Sebanyak 25% membawa bekal dari rumah. Berapa murid yang membawa bekal?',['10','10 murid'],'25% = 1/4. Seperempat dari 40 adalah 40 ÷ 4 = 10 murid.'],
+['Harga sebuah tas Rp150.000 mendapat potongan 20%. Berapa harga tas setelah mendapat potongan?',['120.000','120000','Rp120.000','Rp 120.000'],'Potongan = 20% × Rp150.000 = Rp30.000. Harga setelah potongan = Rp150.000 − Rp30.000 = Rp120.000.'],
+['Sebanyak 3/5 bagian kebun sudah ditanami. Berapa persen bagian kebun yang sudah ditanami?',['60%','60 persen'],'3/5 dikalikan 20/20 menjadi 60/100. Jadi bagian yang sudah ditanami adalah 60%.']
+]}
+
 
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan dan desimal',detail:'Pecahan, operasi, hubungan, dan urutan desimal',state:'Latihan tersedia',start:8,end:15},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
@@ -502,11 +515,12 @@ function persist(){
   renderSemester();
 }
 function scoreDay(){return lessons[current].qs.reduce((n,q,i)=>n+(answerMatches(answers[i],q[1])?1:0),0);}
+const moduleLessonIndices=m=>[...new Set([...Array.from({length:Math.max(0,m.end-m.start)},(_,i)=>m.start+i),...(m.extra||[])])].filter(i=>i>=0&&i<lessons.length);
 function renderSemester(){
   const done=lessons.reduce((n,_,i)=>n+(saved.days?.[i]?.checked?1:0),0);
   $('semester-status').textContent=`${done} dari ${lessons.length} hari selesai`;
   $('semester-modules').innerHTML=modules.map((m,i)=>{
-    const count=Math.max(0,Math.min(m.end,lessons.length)-Math.min(m.start,lessons.length));
+    const count=moduleLessonIndices(m).length;
     const groupLabel=count?`Menuju ${m.title}, kelompok ${count} sesi latihan`:`Menuju kelompok ${m.title}, latihan belum tersedia`;
     return `<a class="module-card module-link ${m.active?'module-active':''} ${count?'':'module-upcoming'}" href="#lesson-group-${i+1}" aria-label="${groupLabel}"><span class="module-index">${String(i+1).padStart(2,'0')}</span><div class="module-copy"><b>${m.title}</b><small>${m.detail}</small></div><span class="module-state">${count?`${count} SESI · KLIK UNTUK BUKA`:m.state.toUpperCase()}</span></a>`;
   }).join('');
@@ -528,7 +542,7 @@ function renderHistory(){
 }
 function renderDays(){
   $('day-list').innerHTML=modules.map((m,mi)=>{
-    const entries=lessons.map((lesson,index)=>({lesson,index})).filter(({index})=>index>=m.start&&index<m.end);
+    const entries=moduleLessonIndices(m).map(index=>({lesson:lessons[index],index}));
     const body=entries.length?entries.map(({lesson:d,index:i})=>{
       const done=Boolean(saved.days?.[i]?.checked);
       return `<button class="day-button ${i===current?'active':''} ${done?'done':''} ${d.type==='EXPERT'?'expert-button':''}" data-day="${i}" aria-pressed="${i===current}"><span class="day-number">${done?'✓':String(i+1).padStart(2,'0')}</span><span><span class="day-name">${d.name}</span><span class="day-sub">10 soal · ${d.type.toLowerCase()}${done?` · nilai ${saved.days[i].score}/10`:''}</span></span><span class="day-mark">${done?'✓':''}</span></button>`;
