@@ -475,13 +475,26 @@ const lessons=[
 ['Harga sebuah tas Rp150.000 mendapat potongan 20%. Berapa harga tas setelah mendapat potongan?',['120.000','120000','Rp120.000','Rp 120.000'],'Potongan = 20% × Rp150.000 = Rp30.000. Harga setelah potongan = Rp150.000 − Rp30.000 = Rp120.000.'],
 ['Sebanyak 3/5 bagian kebun sudah ditanami. Berapa persen bagian kebun yang sudah ditanami?',['60%','60 persen'],'3/5 dikalikan 20/20 menjadi 60/100. Jadi bagian yang sudah ditanami adalah 60%.']
 ]}
+,{name:'Soal cerita operasi pecahan',type:'PEMECAHAN MASALAH',desc:'Memilih operasi pecahan yang tepat untuk menyelesaikan masalah sehari-hari.',tip:'Tentukan apa yang diketahui dan ditanyakan. Pilih tambah, kurang, kali, atau bagi; untuk tambah dan kurang, samakan penyebut.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat memodelkan dan menyelesaikan soal cerita sehari-hari menggunakan penjumlahan, pengurangan, perkalian, atau pembagian pecahan dengan bilangan asli.</span><b>Petunjuk Konsep</b><span>Baca pertanyaan lebih dulu, tandai jumlah yang diketahui, lalu pilih operasinya. Samakan penyebut untuk penjumlahan dan pengurangan. Ubah pecahan campuran menjadi pecahan biasa bila perlu.</span><small>Contoh: Hanum membaca 2/5 buku pada Senin dan 1/4 pada Selasa. Jumlahnya 8/20 + 5/20 = 13/20 bagian buku.</small>',qs:[
+['Sebuah wadah berisi 3/4 liter air. Kemudian ditambahkan 2/5 liter. Berapa liter air di dalam wadah sekarang?',['1 3/20 liter','1 3/20','23/20 liter','23/20'],'Samakan penyebut menjadi 20: 3/4 = 15/20 dan 2/5 = 8/20. Jumlahnya 23/20 = 1 3/20 liter.'],
+['Pita sepanjang 2 1/2 meter dipakai 3/4 meter. Berapa meter pita yang tersisa?',['1 3/4 meter','1 3/4','1¾ meter','1¾','7/4 meter','7/4'],'Ubah 2 1/2 menjadi 10/4. Sisanya 10/4 − 3/4 = 7/4 = 1 3/4 meter.'],
+['Sebanyak 5/8 bagian kebun ditanami sayur dan 1/4 bagian ditanami bunga. Berapa bagian kebun yang belum ditanami?',['1/8'],'Ubah 1/4 menjadi 2/8. Bagian yang ditanami 5/8 + 2/8 = 7/8, sehingga yang belum ditanami 1 − 7/8 = 1/8.'],
+['Ada 6 botol. Setiap botol berisi 3/5 liter sirup. Berapa liter sirup seluruhnya?',['3 3/5 liter','3 3/5','3⅗ liter','3⅗','18/5 liter','18/5'],'Kalikan 6 × 3/5 = 18/5. Ubah menjadi pecahan campuran: 3 3/5 liter.'],
+['Tepung sebanyak 2 1/4 kilogram dibagi rata ke dalam 3 kantong. Berapa kilogram isi setiap kantong?',['3/4 kilogram','3/4 kg','3/4'],'Ubah 2 1/4 menjadi 9/4. Lalu 9/4 ÷ 3 = 9/12 = 3/4 kilogram.'],
+['Hanum membaca 3/10 bagian buku pada Sabtu dan 2/5 bagian pada Minggu. Berapa bagian buku yang dibaca selama dua hari?',['7/10'],'Ubah 2/5 menjadi 4/10. Jumlahnya 3/10 + 4/10 = 7/10 bagian buku.'],
+['Sebanyak 7/8 bagian kue dibagi rata kepada 7 anak. Berapa bagian kue yang diterima setiap anak?',['1/8'],'Hitung 7/8 ÷ 7 = 7/56. Sederhanakan menjadi 1/8 bagian untuk setiap anak.'],
+['Hanum berjalan mengelilingi taman 4 kali. Setiap putaran panjangnya 3/8 kilometer. Berapa kilometer seluruh jaraknya?',['1 1/2 kilometer','1 1/2 km','1 1/2','1½ kilometer','1½ km','1½','3/2 kilometer','3/2 km','3/2'],'Kalikan 4 × 3/8 = 12/8 = 3/2 = 1 1/2 kilometer.'],
+['Ibu mempunyai 3 1/3 liter jus. Sebanyak 1 5/6 liter disajikan. Berapa liter jus yang tersisa?',['1 1/2 liter','1 1/2','1½ liter','1½','3/2 liter','3/2'],'Samakan penyebut: 3 1/3 = 3 2/6. Kurangi 1 5/6 dengan meminjam satu utuh: 2 8/6 − 1 5/6 = 1 3/6 = 1 1/2 liter.'],
+['Petani memanen 5 keranjang mangga. Setiap keranjang berisi 2 1/4 kilogram. Setelah 3 3/4 kilogram dijual, berapa kilogram mangga yang tersisa?',['7 1/2 kilogram','7 1/2 kg','7 1/2','7½ kilogram','7½ kg','7½','15/2 kilogram','15/2 kg','15/2'],'Hasil panen 5 × 2 1/4 = 5 × 9/4 = 45/4 = 11 1/4 kilogram. Kurangi 3 3/4 kilogram: 11 1/4 − 3 3/4 = 7 1/2 kilogram.']
+]}
+
 
 
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43]},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
