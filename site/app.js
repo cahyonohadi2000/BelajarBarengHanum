@@ -488,13 +488,26 @@ const lessons=[
 ['Petani memanen 5 keranjang mangga. Setiap keranjang berisi 2 1/4 kilogram. Setelah 3 3/4 kilogram dijual, berapa kilogram mangga yang tersisa?',['7 1/2 kilogram','7 1/2 kg','7 1/2','7½ kilogram','7½ kg','7½','15/2 kilogram','15/2 kg','15/2'],'Hasil panen 5 × 2 1/4 = 5 × 9/4 = 45/4 = 11 1/4 kilogram. Kurangi 3 3/4 kilogram: 11 1/4 − 3 3/4 = 7 1/2 kilogram.']
 ]}
 
+,{name:'Penjumlahan & pengurangan desimal',type:'DESIMAL',desc:'Menjumlahkan dan mengurangkan bilangan desimal dalam perhitungan langsung dan masalah sehari-hari.',tip:'Sejajarkan tanda koma dan nilai tempat. Tambahkan nol di belakang desimal bila membantu, lalu hitung seperti bilangan cacah.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menjumlahkan dan mengurangkan bilangan desimal sampai dua angka di belakang koma serta menerapkannya dalam masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Susun bilangan dengan tanda koma sejajar: satuan di bawah satuan, persepuluhan di bawah persepuluhan, dan perseratusan di bawah perseratusan. Tambahkan nol jika jumlah angka desimal berbeda.</span><small>Contoh: 2,4 + 1,35 = 2,40 + 1,35 = 3,75.</small>',qs:[
+['Hitung 2,4 + 1,35.',['3,75','3.75'],'Tulis 2,4 sebagai 2,40. Jumlahkan dengan tanda koma sejajar: 2,40 + 1,35 = 3,75.'],
+['Hitung 5,8 − 2,46.',['3,34','3.34'],'Tulis 5,8 sebagai 5,80. Kurangkan: 5,80 − 2,46 = 3,34.'],
+['Hitung 1,25 + 0,8.',['2,05','2.05'],'Tulis 0,8 sebagai 0,80. Jadi 1,25 + 0,80 = 2,05.'],
+['Hitung 7 − 3,65.',['3,35','3.35'],'Tulis 7 sebagai 7,00. Kemudian 7,00 − 3,65 = 3,35.'],
+['Isi bilangan yang kosong: 2,75 + ___ = 5,2.',['2,45','2.45'],'Cari bilangan yang hilang dengan pengurangan: 5,20 − 2,75 = 2,45.'],
+['Sebuah botol berisi 1,5 liter air, lalu ditambahkan 0,75 liter. Berapa liter air sekarang?',['2,25 liter','2,25','2.25 liter','2.25'],'Tulis 1,5 sebagai 1,50. Jumlahnya 1,50 + 0,75 = 2,25 liter.'],
+['Pita panjangnya 4,2 meter. Setelah dipakai 1,85 meter, berapa meter pita yang tersisa?',['2,35 meter','2,35','2.35 meter','2.35'],'Tulis 4,2 sebagai 4,20. Sisanya 4,20 − 1,85 = 2,35 meter.'],
+['Hanum membeli 2,35 kg apel, 1,6 kg jeruk, dan 0,45 kg anggur. Berapa kilogram berat seluruh buah?',['4,4 kilogram','4,4 kg','4,4','4.4 kilogram','4.4 kg','4.4','4,40 kilogram','4,40 kg','4,40'],'Jumlahkan 2,35 + 1,60 + 0,45 = 4,40 kilogram, sama dengan 4,4 kilogram.'],
+['Jarak rumah ke taman 3,5 km. Hanum sudah berjalan 1,28 km. Berapa kilometer jarak yang masih harus ditempuh?',['2,22 kilometer','2,22 km','2,22','2.22 kilometer','2.22 km','2.22'],'Tulis 3,5 sebagai 3,50. Kurangkan 3,50 − 1,28 = 2,22 kilometer.'],
+['Tangki berisi 6,25 liter air. Ditambahkan 2,4 liter, lalu digunakan 1,75 liter. Berapa liter air yang tersisa?',['6,9 liter','6,9','6.9 liter','6.9','6,90 liter','6,90'],'Air setelah ditambah: 6,25 + 2,40 = 8,65 liter. Setelah digunakan: 8,65 − 1,75 = 6,90 liter, sama dengan 6,9 liter.']
+]}
+
 
 
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44]},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
