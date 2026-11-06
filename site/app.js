@@ -501,13 +501,26 @@ const lessons=[
 ['Tangki berisi 6,25 liter air. Ditambahkan 2,4 liter, lalu digunakan 1,75 liter. Berapa liter air yang tersisa?',['6,9 liter','6,9','6.9 liter','6.9','6,90 liter','6,90'],'Air setelah ditambah: 6,25 + 2,40 = 8,65 liter. Setelah digunakan: 8,65 − 1,75 = 6,90 liter, sama dengan 6,9 liter.']
 ]}
 
+,{name:'Perkalian desimal & bilangan asli',type:'DESIMAL',desc:'Mengalikan bilangan desimal dengan bilangan asli dan menggunakannya dalam masalah sehari-hari.',tip:'Kalikan seperti bilangan cacah, lalu tempatkan kembali tanda koma sesuai banyak angka di belakang koma pada bilangan desimal.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengalikan bilangan desimal sampai dua angka di belakang koma dengan bilangan asli serta menerapkannya dalam masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Perkalian desimal dengan bilangan asli dapat dipahami sebagai penjumlahan berulang. Saat menghitung bersusun, kalikan tanpa koma lebih dulu, lalu kembalikan tanda komanya.</span><small>Contoh: 4 × 1,25 = 1,25 + 1,25 + 1,25 + 1,25 = 5,00.</small>',qs:[
+['Hitung 3 × 0,4.',['1,2','1.2'],'Tiga kali 0,4 berarti 0,4 + 0,4 + 0,4 = 1,2.'],
+['Hitung 5 × 1,25.',['6,25','6.25'],'Kalikan 125 × 5 = 625. Karena 1,25 memiliki dua angka desimal, hasilnya 6,25.'],
+['Hitung 7 × 0,6.',['4,2','4.2'],'Kalikan 6 × 7 = 42. Tempatkan satu angka di belakang koma sehingga hasilnya 4,2.'],
+['Hitung 8 × 2,05.',['16,4','16.4','16,40','16.40'],'Kalikan 205 × 8 = 1.640. Tempatkan dua angka di belakang koma: 16,40, sama dengan 16,4.'],
+['Isi bilangan yang kosong: ___ × 0,75 = 3.',['4'],'Karena 0,75 + 0,75 + 0,75 + 0,75 = 3, bilangan yang tepat adalah 4.'],
+['Ada 6 botol. Setiap botol berisi 0,35 liter jus. Berapa liter jus seluruhnya?',['2,1 liter','2,1','2.1 liter','2.1','2,10 liter','2.10 liter'],'Kalikan 6 × 0,35 = 2,10 liter, sama dengan 2,1 liter.'],
+['Empat potong pita masing-masing panjangnya 1,25 meter. Berapa meter panjang seluruh pita?',['5 meter','5','5,00 meter','5,00'],'Kalikan 4 × 1,25 = 5,00 meter, sama dengan 5 meter.'],
+['Hanum berjalan 1,8 kilometer setiap hari selama 5 hari. Berapa kilometer seluruh jaraknya?',['9 kilometer','9 km','9','9,0 kilometer','9,0 km'],'Kalikan 5 × 1,8 = 9,0 kilometer, sama dengan 9 kilometer.'],
+['Tiga keranjang masing-masing berisi 2,45 kilogram jeruk. Berapa kilogram berat seluruh jeruk?',['7,35 kilogram','7,35 kg','7,35','7.35 kilogram','7.35 kg','7.35'],'Kalikan 3 × 2,45 = 7,35 kilogram.'],
+['Ada 8 karung beras, masing-masing berisi 1,75 kilogram. Setelah 2,5 kilogram digunakan, berapa kilogram beras yang tersisa?',['11,5 kilogram','11,5 kg','11,5','11.5 kilogram','11.5 kg','11.5','11,50 kilogram','11,50 kg'],'Jumlah awal 8 × 1,75 = 14 kilogram. Setelah digunakan 2,5 kilogram, sisanya 14 − 2,5 = 11,5 kilogram.']
+]}
+
 
 
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45]},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
