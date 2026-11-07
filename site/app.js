@@ -526,6 +526,19 @@ const lessons=[
 ['Jeruk seberat 7,35 kilogram dibagi rata ke dalam 3 keranjang. Berapa kilogram isi setiap keranjang?',['2,45 kilogram','2,45 kg','2,45','2.45 kilogram','2.45 kg','2.45'],'Hitung 7,35 ÷ 3 = 2,45 kilogram untuk setiap keranjang.'],
 ['Tersedia 9,6 liter minuman. Setelah 1,2 liter digunakan, sisanya dibagi rata ke 4 wadah. Berapa liter isi setiap wadah?',['2,1 liter','2,1','2.1 liter','2.1','2,10 liter','2,10'],'Sisa minuman 9,6 − 1,2 = 8,4 liter. Kemudian 8,4 ÷ 4 = 2,1 liter per wadah.']
 ]}
+,{name:'Operasi hitung campuran desimal',type:'DESIMAL',desc:'Menggabungkan penjumlahan, pengurangan, perkalian, dan pembagian desimal sesuai urutan operasi.',tip:'Kerjakan perkalian atau pembagian terlebih dahulu, lalu penjumlahan atau pengurangan. Jika ada tanda kurung, hitung bagian di dalamnya lebih dulu.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat menyelesaikan operasi hitung campuran yang melibatkan bilangan desimal sampai dua angka di belakang koma dan menggunakannya dalam masalah sehari-hari.</span><b>Petunjuk Konsep</b><span>Urutan operasi: tanda kurung, kemudian perkalian atau pembagian, lalu penjumlahan atau pengurangan. Operasi yang setingkat dikerjakan dari kiri ke kanan.</span><small>Contoh: 1,5 + 2 × 0,75 = 1,5 + 1,5 = 3.</small>',qs:[
+['Hitung 2,5 + 1,2 × 3.',['6,1','6.1'],'Kerjakan perkalian lebih dulu: 1,2 × 3 = 3,6. Kemudian 2,5 + 3,6 = 6,1.'],
+['Hitung (4,8 − 1,8) ÷ 3.',['1','1,0','1.0'],'Hitung di dalam tanda kurung: 4,8 − 1,8 = 3. Kemudian 3 ÷ 3 = 1.'],
+['Hitung 6,4 ÷ 4 + 0,75.',['2,35','2.35'],'Kerjakan pembagian lebih dulu: 6,4 ÷ 4 = 1,6. Kemudian 1,6 + 0,75 = 2,35.'],
+['Hitung 3 × 1,25 − 0,5.',['3,25','3.25'],'Kerjakan perkalian: 3 × 1,25 = 3,75. Kemudian 3,75 − 0,5 = 3,25.'],
+['Hitung 2,4 + 3,6 ÷ 6.',['3','3,0','3.0'],'Kerjakan pembagian: 3,6 ÷ 6 = 0,6. Kemudian 2,4 + 0,6 = 3.'],
+['Hitung 5,5 − 2 × 1,25.',['3','3,0','3.0'],'Kerjakan perkalian: 2 × 1,25 = 2,5. Kemudian 5,5 − 2,5 = 3.'],
+['Ada 4 botol, masing-masing berisi 0,75 liter air. Kemudian ditambahkan lagi 1,2 liter. Berapa liter air seluruhnya?',['4,2 liter','4,2','4.2 liter','4.2'],'Air dalam botol: 4 × 0,75 = 3 liter. Setelah ditambah 1,2 liter, jumlahnya 4,2 liter.'],
+['Sebanyak 8,4 liter jus dibagi rata ke 4 wadah. Setiap wadah lalu ditambah 0,65 liter. Berapa liter isi setiap wadah sekarang?',['2,75 liter','2,75','2.75 liter','2.75'],'Bagian awal setiap wadah: 8,4 ÷ 4 = 2,1 liter. Setelah ditambah 0,65 liter menjadi 2,75 liter.'],
+['Pita sepanjang 6 meter dipakai untuk membuat 4 hiasan. Setiap hiasan membutuhkan 0,75 meter. Berapa meter pita yang tersisa?',['3 meter','3','3,0 meter','3,0'],'Pita yang dipakai: 4 × 0,75 = 3 meter. Sisanya 6 − 3 = 3 meter.'],
+['Hanum berjalan 1,5 kilometer per hari selama 4 hari, lalu berjalan lagi 2,25 kilometer pada hari kelima. Berapa kilometer seluruh jaraknya?',['8,25 kilometer','8,25 km','8,25','8.25 kilometer','8.25 km','8.25'],'Jarak empat hari: 4 × 1,5 = 6 kilometer. Tambahkan 2,25 kilometer sehingga seluruhnya 8,25 kilometer.']
+]}
+
 
 
 
@@ -533,7 +546,7 @@ const lessons=[
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47]},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
