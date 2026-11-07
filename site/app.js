@@ -514,13 +514,26 @@ const lessons=[
 ['Ada 8 karung beras, masing-masing berisi 1,75 kilogram. Setelah 2,5 kilogram digunakan, berapa kilogram beras yang tersisa?',['11,5 kilogram','11,5 kg','11,5','11.5 kilogram','11.5 kg','11.5','11,50 kilogram','11,50 kg'],'Jumlah awal 8 × 1,75 = 14 kilogram. Setelah digunakan 2,5 kilogram, sisanya 14 − 2,5 = 11,5 kilogram.']
 ]}
 
+,{name:'Pembagian desimal & bilangan asli',type:'DESIMAL',desc:'Membagi bilangan desimal dengan bilangan asli dan menggunakannya dalam pembagian sama rata.',tip:'Bagilah sesuai nilai tempat dan letakkan tanda koma hasil tepat di atas tanda koma bilangan yang dibagi. Tambahkan nol bila pembagian belum selesai.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat membagi bilangan desimal sampai dua angka di belakang koma dengan bilangan asli serta menerapkannya dalam pembagian sama rata.</span><b>Petunjuk Konsep</b><span>Pembagian desimal berarti membagi suatu jumlah menjadi bagian sama besar. Gunakan pembagian bersusun dan pertahankan nilai tempat; hasil dapat diperiksa dengan perkalian.</span><small>Contoh: 5 ÷ 4 = 1,25 karena 4 × 1,25 = 5.</small>',qs:[
+['Hitung 1,2 ÷ 3.',['0,4','0.4'],'Dua belas persepuluhan dibagi 3 menjadi 4 persepuluhan, jadi 1,2 ÷ 3 = 0,4.'],
+['Hitung 6,25 ÷ 5.',['1,25','1.25'],'Bagilah 6,25 menjadi 5 bagian sama besar. Hasilnya 1,25 karena 5 × 1,25 = 6,25.'],
+['Hitung 4,2 ÷ 7.',['0,6','0.6'],'Empat puluh dua persepuluhan dibagi 7 menjadi 6 persepuluhan, jadi hasilnya 0,6.'],
+['Hitung 16,4 ÷ 8.',['2,05','2.05'],'Tulis 16,4 sebagai 16,40. Pembagian 16,40 ÷ 8 menghasilkan 2,05.'],
+['Hitung 3 ÷ 4 dalam bentuk desimal.',['0,75','0.75'],'Tulis 3 sebagai 3,00. Pembagian 3,00 ÷ 4 = 0,75.'],
+['Sebanyak 2,1 liter jus dibagi rata ke dalam 6 botol. Berapa liter isi setiap botol?',['0,35 liter','0,35','0.35 liter','0.35'],'Hitung 2,10 ÷ 6 = 0,35 liter untuk setiap botol.'],
+['Pita sepanjang 5 meter dipotong menjadi 4 bagian sama panjang. Berapa meter panjang setiap bagian?',['1,25 meter','1,25','1.25 meter','1.25'],'Hitung 5 ÷ 4 = 1,25 meter untuk setiap bagian.'],
+['Hanum menempuh 9 kilometer dalam 5 hari dengan jarak sama setiap hari. Berapa kilometer jarak per hari?',['1,8 kilometer','1,8 km','1,8','1.8 kilometer','1.8 km','1.8'],'Hitung 9 ÷ 5 = 1,8 kilometer setiap hari.'],
+['Jeruk seberat 7,35 kilogram dibagi rata ke dalam 3 keranjang. Berapa kilogram isi setiap keranjang?',['2,45 kilogram','2,45 kg','2,45','2.45 kilogram','2.45 kg','2.45'],'Hitung 7,35 ÷ 3 = 2,45 kilogram untuk setiap keranjang.'],
+['Tersedia 9,6 liter minuman. Setelah 1,2 liter digunakan, sisanya dibagi rata ke 4 wadah. Berapa liter isi setiap wadah?',['2,1 liter','2,1','2.1 liter','2.1','2,10 liter','2,10'],'Sisa minuman 9,6 − 1,2 = 8,4 liter. Kemudian 8,4 ÷ 4 = 2,1 liter per wadah.']
+]}
+
 
 
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
-  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46]},
+  {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
