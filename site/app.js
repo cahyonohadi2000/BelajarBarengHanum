@@ -539,6 +539,19 @@ const lessons=[
 ['Hanum berjalan 1,5 kilometer per hari selama 4 hari, lalu berjalan lagi 2,25 kilometer pada hari kelima. Berapa kilometer seluruh jaraknya?',['8,25 kilometer','8,25 km','8,25','8.25 kilometer','8.25 km','8.25'],'Jarak empat hari: 4 × 1,5 = 6 kilometer. Tambahkan 2,25 kilometer sehingga seluruhnya 8,25 kilometer.']
 ]}
 
+,{name:'Soal cerita rasio & proporsi',type:'RASIO',desc:'Menggunakan rasio dan perbandingan senilai untuk menyelesaikan masalah sehari-hari.',tip:'Tuliskan pasangan besaran dalam urutan yang sama. Cari nilai satu bagian atau faktor pengalinya, lalu gunakan untuk menemukan nilai yang ditanyakan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat memodelkan dan menyelesaikan soal cerita rasio serta proporsi sederhana dengan tabel atau nilai satuan.</span><b>Petunjuk Konsep</b><span>Pada perbandingan senilai, jika satu besaran dikali suatu angka, besaran pasangannya juga dikali angka yang sama. Pastikan urutan kedua besaran tidak tertukar.</span><small>Contoh: rasio buku cerita : buku sains = 2 : 3. Jika ada 8 buku cerita, faktor pengalinya 4, sehingga buku sains = 3 × 4 = 12.</small>',qs:[
+['Rasio kelereng merah dan biru adalah 2 : 3. Jika ada 8 kelereng merah, berapa banyak kelereng biru?',['12','12 kelereng'],'Dari 2 menjadi 8 dikali 4. Maka banyak kelereng biru juga 3 × 4 = 12.'],
+['Tiga kotak berisi 18 pensil dengan isi sama banyak. Berapa pensil yang terdapat dalam 5 kotak?',['30','30 pensil'],'Satu kotak berisi 18 ÷ 3 = 6 pensil. Jadi 5 kotak berisi 5 × 6 = 30 pensil.'],
+['Rasio sirup dan air dalam minuman adalah 1 : 4. Jika digunakan 3 gelas sirup, berapa gelas air yang diperlukan?',['12','12 gelas'],'Dari 1 gelas sirup menjadi 3 gelas dikali 3. Air yang diperlukan juga 4 × 3 = 12 gelas.'],
+['Rasio apel dan jeruk dalam keranjang adalah 5 : 2. Jika terdapat 15 apel, berapa banyak jeruk?',['6','6 jeruk'],'Dari 5 apel menjadi 15 apel dikali 3. Maka banyak jeruk 2 × 3 = 6.'],
+['Seorang pesepeda menempuh 24 kilometer dalam 3 jam dengan kecepatan tetap. Berapa kilometer jarak yang ditempuh dalam 5 jam?',['40 kilometer','40 km','40'],'Jarak per jam adalah 24 ÷ 3 = 8 kilometer. Dalam 5 jam jaraknya 5 × 8 = 40 kilometer.'],
+['Sebanyak 2 kilogram pakan cukup untuk 8 ayam. Dengan aturan yang sama, berapa kilogram pakan untuk 20 ayam?',['5 kilogram','5 kg','5'],'Pakan per ayam adalah 2 ÷ 8 = 0,25 kilogram. Untuk 20 ayam diperlukan 20 × 0,25 = 5 kilogram.'],
+['Harga 6 buku tulis adalah Rp42.000. Berapa harga 9 buku tulis dengan harga satuan yang sama?',['Rp63.000','63000','63.000'],'Harga satu buku Rp42.000 ÷ 6 = Rp7.000. Jadi harga 9 buku adalah 9 × Rp7.000 = Rp63.000.'],
+['Rasio siswa laki-laki dan perempuan adalah 4 : 5. Jika jumlah seluruh siswa 36 orang, berapa banyak siswa perempuan?',['20','20 siswa','20 orang'],'Jumlah bagian 4 + 5 = 9. Setiap bagian bernilai 36 ÷ 9 = 4 siswa. Siswa perempuan berjumlah 5 × 4 = 20.'],
+['Rasio cat merah dan cat putih adalah 3 : 2. Jika jumlah campuran 25 liter, berapa liter cat merah?',['15 liter','15'],'Jumlah bagian 3 + 2 = 5. Setiap bagian bernilai 25 ÷ 5 = 5 liter. Cat merah = 3 × 5 = 15 liter.'],
+['Untuk membuat 4 gelang diperlukan 28 manik-manik. Berapa manik-manik yang diperlukan untuk membuat 7 gelang dengan ukuran sama?',['49','49 manik-manik'],'Satu gelang memerlukan 28 ÷ 4 = 7 manik-manik. Tujuh gelang memerlukan 7 × 7 = 49 manik-manik.']
+]}
+
 
 
 
@@ -547,7 +560,7 @@ const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
-  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19},
+  {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
   {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
