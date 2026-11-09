@@ -552,6 +552,19 @@ const lessons=[
 ['Untuk membuat 4 gelang diperlukan 28 manik-manik. Berapa manik-manik yang diperlukan untuk membuat 7 gelang dengan ukuran sama?',['49','49 manik-manik'],'Satu gelang memerlukan 28 ÷ 4 = 7 manik-manik. Tujuh gelang memerlukan 7 × 7 = 49 manik-manik.']
 ]}
 
+,{name:'Konversi satuan panjang & berat',type:'PENGUKURAN',desc:'Mengubah satuan panjang dan berat serta menggunakannya dalam masalah sehari-hari.',tip:'Turun satu tingkat pada tangga satuan berarti dikali 10, sedangkan naik satu tingkat berarti dibagi 10. Samakan satuan sebelum menjumlahkan atau mengurangkan.',lessonNote:'<b>Tujuan Belajar</b><span>Hanum dapat mengonversi satuan panjang dan berat yang umum, lalu menyelesaikan soal cerita dengan satuan yang berbeda.</span><b>Petunjuk Konsep</b><span>Panjang: 1 km = 1.000 m dan 1 m = 100 cm. Berat: 1 kg = 1.000 g. Sebelum menghitung, ubah semua besaran ke satuan yang sama.</span><small>Contoh: 2,5 km = 2,5 × 1.000 = 2.500 m.</small>',qs:[
+['Ubah 3,5 kilometer menjadi meter.',['3500 meter','3.500 meter','3500 m','3.500 m','3500'],'Karena 1 kilometer = 1.000 meter, maka 3,5 × 1.000 = 3.500 meter.'],
+['Ubah 4.250 meter menjadi kilometer.',['4,25 kilometer','4,25 km','4.25 kilometer','4.25 km','4,25','4.25'],'Bagi 4.250 dengan 1.000. Hasilnya 4,25 kilometer.'],
+['Ubah 2 meter 35 sentimeter menjadi sentimeter.',['235 sentimeter','235 cm','235'],'Dua meter sama dengan 200 sentimeter. Tambahkan 35 sentimeter sehingga menjadi 235 sentimeter.'],
+['Ubah 780 sentimeter menjadi meter.',['7,8 meter','7,8 m','7.8 meter','7.8 m','7,8','7.8'],'Karena 100 sentimeter = 1 meter, maka 780 ÷ 100 = 7,8 meter.'],
+['Ubah 4,5 kilogram menjadi gram.',['4500 gram','4.500 gram','4500 g','4.500 g','4500'],'Karena 1 kilogram = 1.000 gram, maka 4,5 × 1.000 = 4.500 gram.'],
+['Ubah 2.750 gram menjadi kilogram.',['2,75 kilogram','2,75 kg','2.75 kilogram','2.75 kg','2,75','2.75'],'Bagi 2.750 dengan 1.000. Hasilnya 2,75 kilogram.'],
+['Pita merah panjangnya 2,4 meter dan pita biru 85 sentimeter. Berapa sentimeter panjang keduanya?',['325 sentimeter','325 cm','325'],'Ubah 2,4 meter menjadi 240 sentimeter. Jumlahnya 240 + 85 = 325 sentimeter.'],
+['Karung berisi 5 kilogram beras. Sebanyak 1.250 gram digunakan. Berapa kilogram beras yang tersisa?',['3,75 kilogram','3,75 kg','3.75 kilogram','3.75 kg','3,75','3.75'],'Ubah 1.250 gram menjadi 1,25 kilogram. Sisanya 5 − 1,25 = 3,75 kilogram.'],
+['Hanum berjalan 1,75 kilometer pada pagi hari dan 850 meter pada sore hari. Berapa kilometer seluruh jaraknya?',['2,6 kilometer','2,6 km','2.6 kilometer','2.6 km','2,6','2.6'],'Ubah 850 meter menjadi 0,85 kilometer. Jumlahnya 1,75 + 0,85 = 2,60 kilometer atau 2,6 kilometer.'],
+['Tiga paket masing-masing berbobot 2,5 kilogram, ditambah satu paket berbobot 750 gram. Berapa kilogram berat seluruh paket?',['8,25 kilogram','8,25 kg','8.25 kilogram','8.25 kg','8,25','8.25'],'Berat tiga paket adalah 3 × 2,5 = 7,5 kilogram. Ubah 750 gram menjadi 0,75 kilogram. Totalnya 7,5 + 0,75 = 8,25 kilogram.']
+]}
+
 
 
 
@@ -561,7 +574,7 @@ const modules=[
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
