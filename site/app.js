@@ -567,14 +567,26 @@ const lessons=[
 
 
 
-
+,
+{name:'Konversi satuan waktu & durasi',type:'PENGUKURAN',desc:'Ubah satuan jam, menit, dan detik serta tentukan lama atau waktu selesai suatu kegiatan.',tip:'Samakan satuan sebelum menghitung. Ingat: 1 jam = 60 menit dan 1 menit = 60 detik.',lessonNote:'<b>Tujuan belajar</b><span>Mengonversi satuan waktu dan menyelesaikan masalah durasi dalam kegiatan sehari-hari.</span><b>Petunjuk konsep</b><span>1 jam = 60 menit; 1 menit = 60 detik. Untuk mencari waktu selesai, tambahkan durasi. Untuk mencari lama kegiatan, hitung selisih waktu.</span><small>Contoh: 2 jam 15 menit = (2 × 60) + 15 = 135 menit.</small>',qs:[
+['Tiga jam sama dengan berapa menit?',['180 menit','180'],'Karena 1 jam = 60 menit, maka 3 × 60 = 180 menit.'],
+['Seratus lima puluh menit sama dengan berapa jam dan menit?',['2 jam 30 menit','2jam30menit','2 jam 30'],'Seratus dua puluh menit adalah 2 jam. Sisanya 150 − 120 = 30 menit, jadi 2 jam 30 menit.'],
+['Empat menit 25 detik sama dengan berapa detik?',['265 detik','265'],'Empat menit = 4 × 60 = 240 detik. Tambahkan 25 detik sehingga menjadi 265 detik.'],
+['Lima ribu empat ratus detik sama dengan berapa menit?',['90 menit','90'],'Karena 1 menit = 60 detik, maka 5.400 ÷ 60 = 90 menit.'],
+['Sekolah dimulai pukul 07.15 dan selesai pukul 12.30. Berapa lama Hanum berada di sekolah?',['5 jam 15 menit','5jam15menit','5 jam 15'],'Dari 07.15 ke 12.15 adalah 5 jam, lalu sampai 12.30 ada 15 menit. Totalnya 5 jam 15 menit.'],
+['Sebuah film dimulai pukul 13.40 dan berlangsung 1 jam 35 menit. Pukul berapa film selesai?',['15.15','15:15','pukul 15.15','pukul 15:15'],'Tambahkan 1 jam pada 13.40 menjadi 14.40, lalu tambah 35 menit menjadi pukul 15.15.'],
+['Hanum berlatih membaca selama 45 menit setiap hari selama 5 hari. Berapa total waktunya dalam jam dan menit?',['3 jam 45 menit','3jam45menit','3 jam 45'],'Lima kali 45 menit = 225 menit. Itu sama dengan 180 menit + 45 menit, yaitu 3 jam 45 menit.'],
+['Perjalanan ke rumah nenek memerlukan 2 jam 20 menit dan waktu istirahat 35 menit. Berapa lama seluruh perjalanan?',['2 jam 55 menit','2jam55menit','2 jam 55'],'Tambahkan 20 menit dan 35 menit menjadi 55 menit. Total waktunya 2 jam 55 menit.'],
+['Ibu mulai memanggang kue pukul 09.50. Kue selesai setelah 1 jam 25 menit. Pukul berapa kue selesai?',['11.15','11:15','pukul 11.15','pukul 11:15'],'Dari 09.50 ditambah 1 jam menjadi 10.50, lalu tambah 25 menit menjadi pukul 11.15.'],
+['Latihan dimulai pukul 08.45 dan berakhir pukul 10.10. Berapa lama latihan berlangsung?',['1 jam 25 menit','1jam25menit','1 jam 25'],'Dari 08.45 ke 09.45 adalah 1 jam, lalu ke 10.10 ada 25 menit. Jadi durasinya 1 jam 25 menit.']
+]}
 ];
 const modules=[
   {title:'Bilangan dan operasi hitung',detail:'Bilangan cacah, operasi, uang, dan aljabar awal · 10 sesi tersedia',state:'Sedang dipelajari',active:true,start:33,end:43},
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50]},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
