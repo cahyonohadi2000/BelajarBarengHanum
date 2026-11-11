@@ -579,6 +579,18 @@ const lessons=[
 ['Perjalanan ke rumah nenek memerlukan 2 jam 20 menit dan waktu istirahat 35 menit. Berapa lama seluruh perjalanan?',['2 jam 55 menit','2jam55menit','2 jam 55'],'Tambahkan 20 menit dan 35 menit menjadi 55 menit. Total waktunya 2 jam 55 menit.'],
 ['Ibu mulai memanggang kue pukul 09.50. Kue selesai setelah 1 jam 25 menit. Pukul berapa kue selesai?',['11.15','11:15','pukul 11.15','pukul 11:15'],'Dari 09.50 ditambah 1 jam menjadi 10.50, lalu tambah 25 menit menjadi pukul 11.15.'],
 ['Latihan dimulai pukul 08.45 dan berakhir pukul 10.10. Berapa lama latihan berlangsung?',['1 jam 25 menit','1jam25menit','1 jam 25'],'Dari 08.45 ke 09.45 adalah 1 jam, lalu ke 10.10 ada 25 menit. Jadi durasinya 1 jam 25 menit.']
+]},
+{name:'Soal cerita keliling & luas',type:'PENGUKURAN',desc:'Gunakan keliling dan luas untuk menyelesaikan masalah taman, pagar, lantai, kain, dan bangun gabungan.',tip:'Keliling mengukur panjang batas di sekeliling bangun. Luas mengukur besar daerah yang ditutupi. Tuliskan satuan panjang atau satuan persegi dengan tepat.',lessonNote:'<b>Tujuan belajar</b><span>Menyelesaikan soal cerita yang melibatkan keliling dan luas persegi, persegi panjang, segitiga, jajargenjang, serta bangun gabungan.</span><b>Petunjuk konsep</b><span>Persegi: K = 4 × sisi dan L = sisi × sisi. Persegi panjang: K = 2 × (panjang + lebar) dan L = panjang × lebar. Segitiga: L = ½ × alas × tinggi.</span><small>Contoh: taman persegi panjang 12 m × 8 m memerlukan pagar sepanjang 2 × (12 + 8) = 40 m.</small>',qs:[
+['Sebuah taman berbentuk persegi memiliki sisi 18 meter. Berapa meter panjang pagar untuk mengelilingi taman?',['72 meter','72 m','72'],'Keliling persegi = 4 × sisi = 4 × 18 = 72 meter.'],
+['Lapangan berbentuk persegi panjang memiliki panjang 25 meter dan lebar 14 meter. Berapa meter keliling lapangan?',['78 meter','78 m','78'],'Keliling persegi panjang = 2 × (25 + 14) = 2 × 39 = 78 meter.'],
+['Sebuah ubin berbentuk persegi dengan sisi 12 sentimeter. Berapa luas permukaannya?',['144 sentimeter persegi','144 cm²','144 cm2','144'],'Luas persegi = sisi × sisi = 12 × 12 = 144 sentimeter persegi.'],
+['Kain berbentuk persegi panjang berukuran 16 meter × 9 meter. Berapa meter persegi luas kain?',['144 meter persegi','144 m²','144 m2','144'],'Luas persegi panjang = 16 × 9 = 144 meter persegi.'],
+['Sebuah papan berbentuk segitiga memiliki alas 14 sentimeter dan tinggi 8 sentimeter. Berapa luasnya?',['56 sentimeter persegi','56 cm²','56 cm2','56'],'Luas segitiga = ½ × 14 × 8 = 56 sentimeter persegi.'],
+['Kebun berbentuk jajargenjang memiliki alas 15 meter dan tinggi 6 meter. Berapa luas kebun?',['90 meter persegi','90 m²','90 m2','90'],'Luas jajargenjang = alas × tinggi = 15 × 6 = 90 meter persegi.'],
+['Sebuah halaman berbentuk persegi panjang 20 meter × 12 meter akan dipagari, tetapi disisakan pintu selebar 3 meter. Berapa meter pagar yang dibutuhkan?',['61 meter','61 m','61'],'Keliling halaman = 2 × (20 + 12) = 64 meter. Kurangi lebar pintu 3 meter, sehingga pagar yang dibutuhkan 61 meter.'],
+['Bangun gabungan dibuat dari persegi panjang 12 sentimeter × 10 sentimeter, lalu bagian sudut berukuran 4 sentimeter × 3 sentimeter dipotong. Berapa luas bangun yang tersisa?',['108 sentimeter persegi','108 cm²','108 cm2','108'],'Luas awal = 12 × 10 = 120 sentimeter persegi. Luas potongan = 4 × 3 = 12 sentimeter persegi. Sisanya 120 − 12 = 108 sentimeter persegi.'],
+['Lantai berukuran 8 meter × 6 meter ditutup ubin persegi berukuran 50 sentimeter × 50 sentimeter. Berapa ubin yang diperlukan?',['192 ubin','192'],'Luas lantai = 8 × 6 = 48 meter persegi. Sisi ubin 50 sentimeter = 0,5 meter, sehingga luas satu ubin = 0,5 × 0,5 = 0,25 meter persegi. Jumlah ubin = 48 ÷ 0,25 = 192.'],
+['Sebuah lapangan persegi memiliki keliling 96 meter. Berapa meter persegi luas lapangan itu?',['576 meter persegi','576 m²','576 m2','576'],'Panjang sisi = 96 ÷ 4 = 24 meter. Luas lapangan = 24 × 24 = 576 meter persegi.']
 ]}
 ];
 const modules=[
@@ -586,7 +598,7 @@ const modules=[
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51]},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
