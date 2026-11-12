@@ -591,6 +591,18 @@ const lessons=[
 ['Bangun gabungan dibuat dari persegi panjang 12 sentimeter × 10 sentimeter, lalu bagian sudut berukuran 4 sentimeter × 3 sentimeter dipotong. Berapa luas bangun yang tersisa?',['108 sentimeter persegi','108 cm²','108 cm2','108'],'Luas awal = 12 × 10 = 120 sentimeter persegi. Luas potongan = 4 × 3 = 12 sentimeter persegi. Sisanya 120 − 12 = 108 sentimeter persegi.'],
 ['Lantai berukuran 8 meter × 6 meter ditutup ubin persegi berukuran 50 sentimeter × 50 sentimeter. Berapa ubin yang diperlukan?',['192 ubin','192'],'Luas lantai = 8 × 6 = 48 meter persegi. Sisi ubin 50 sentimeter = 0,5 meter, sehingga luas satu ubin = 0,5 × 0,5 = 0,25 meter persegi. Jumlah ubin = 48 ÷ 0,25 = 192.'],
 ['Sebuah lapangan persegi memiliki keliling 96 meter. Berapa meter persegi luas lapangan itu?',['576 meter persegi','576 m²','576 m2','576'],'Panjang sisi = 96 ÷ 4 = 24 meter. Luas lapangan = 24 × 24 = 576 meter persegi.']
+]},
+{name:'Sudut pada bangun datar & garis berpotongan',type:'PENGUKURAN',desc:'Gunakan jumlah sudut untuk menentukan sudut yang belum diketahui pada garis lurus, titik, segitiga, segiempat, dan garis berpotongan.',tip:'Ingat jumlah penting: sudut siku-siku 90°, garis lurus 180°, satu putaran 360°, sudut segitiga 180°, dan sudut segiempat 360°.',lessonNote:'<b>Tujuan belajar</b><span>Menentukan besar sudut yang belum diketahui pada bangun datar dan dua garis berpotongan.</span><b>Petunjuk konsep</b><span>Sudut bersebelahan pada garis lurus berjumlah 180°. Sudut yang saling bertolak belakang pada dua garis berpotongan besarnya sama. Jumlah sudut segitiga 180° dan segiempat 360°.</span><small>Contoh: sebuah sudut pada garis lurus besarnya 65°. Sudut di sebelahnya = 180° − 65° = 115°.</small>',qs:[
+['Sebuah sudut siku-siku dibagi menjadi dua bagian. Jika satu bagian 32°, berapa besar bagian lainnya?',['58','58°'],'Sudut siku-siku besarnya 90°. Bagian lainnya = 90° − 32° = 58°.'],
+['Dua sudut bersebelahan membentuk garis lurus. Jika satu sudut 75°, berapa besar sudut lainnya?',['105','105°'],'Sudut pada garis lurus berjumlah 180°. Jadi 180° − 75° = 105°.'],
+['Di sekitar satu titik terdapat tiga sudut. Dua sudut besarnya 110° dan 95°. Berapa besar sudut ketiga?',['155','155°'],'Jumlah sudut di sekitar satu titik adalah 360°. Sudut ketiga = 360° − 110° − 95° = 155°.'],
+['Sebuah segitiga memiliki dua sudut sebesar 45° dan 65°. Berapa besar sudut ketiga?',['70','70°'],'Jumlah sudut segitiga 180°. Sudut ketiga = 180° − 45° − 65° = 70°.'],
+['Segitiga siku-siku memiliki satu sudut 90° dan satu sudut 38°. Berapa besar sudut yang tersisa?',['52','52°'],'Jumlah sudut segitiga 180°. Sudut tersisa = 180° − 90° − 38° = 52°.'],
+['Sebuah segiempat memiliki tiga sudut sebesar 90°, 90°, dan 80°. Berapa besar sudut keempat?',['100','100°'],'Jumlah sudut segiempat 360°. Sudut keempat = 360° − 90° − 90° − 80° = 100°.'],
+['Dua garis berpotongan. Salah satu sudutnya 54°. Berapa besar sudut yang tepat bertolak belakang dengannya?',['54','54°'],'Sudut yang saling bertolak belakang pada dua garis berpotongan memiliki besar yang sama, yaitu 54°.'],
+['Dua garis berpotongan membentuk sebuah sudut 54°. Berapa besar sudut yang bersebelahan dengannya?',['126','126°'],'Dua sudut yang bersebelahan membentuk garis lurus. Besarnya = 180° − 54° = 126°.'],
+['Empat sudut mengelilingi satu titik. Tiga sudutnya 80°, 95°, dan 105°. Berapa besar sudut terakhir?',['80','80°'],'Jumlah seluruh sudut di sekitar titik adalah 360°. Sudut terakhir = 360° − 80° − 95° − 105° = 80°.'],
+['Pada busur derajat, satu kaki sudut menunjuk 20° dan kaki lainnya menunjuk 135°. Berapa besar sudut di antara keduanya?',['115','115°'],'Besar sudut diperoleh dari selisih kedua bacaan: 135° − 20° = 115°.']
 ]}
 ];
 const modules=[
@@ -598,7 +610,7 @@ const modules=[
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52]},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52,53]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
