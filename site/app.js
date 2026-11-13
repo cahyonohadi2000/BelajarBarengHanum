@@ -603,6 +603,18 @@ const lessons=[
 ['Dua garis berpotongan membentuk sebuah sudut 54°. Berapa besar sudut yang bersebelahan dengannya?',['126','126°'],'Dua sudut yang bersebelahan membentuk garis lurus. Besarnya = 180° − 54° = 126°.'],
 ['Empat sudut mengelilingi satu titik. Tiga sudutnya 80°, 95°, dan 105°. Berapa besar sudut terakhir?',['80','80°'],'Jumlah seluruh sudut di sekitar titik adalah 360°. Sudut terakhir = 360° − 80° − 95° − 105° = 80°.'],
 ['Pada busur derajat, satu kaki sudut menunjuk 20° dan kaki lainnya menunjuk 135°. Berapa besar sudut di antara keduanya?',['115','115°'],'Besar sudut diperoleh dari selisih kedua bacaan: 135° − 20° = 115°.']
+]},
+{name:'Volume kubus & balok',type:'PENGUKURAN',desc:'Hitung volume kubus dan balok dengan kubus satuan serta gunakan satuan sentimeter kubik dalam masalah sehari-hari.',tip:'Volume menunjukkan banyak ruang yang ditempati. Kubus: V = sisi × sisi × sisi. Balok: V = panjang × lebar × tinggi.',lessonNote:'<b>Tujuan belajar</b><span>Menghitung volume kubus dan balok serta menentukan ukuran yang belum diketahui.</span><b>Petunjuk konsep</b><span>Volume bangun ruang dapat dihitung dari banyak kubus satuan yang mengisinya. Gunakan V kubus = s × s × s dan V balok = p × l × t. Tuliskan satuan kubik, misalnya cm³.</span><small>Contoh: balok berukuran 6 cm × 4 cm × 3 cm memiliki volume 6 × 4 × 3 = 72 cm³.</small>',qs:[
+['Sebuah kubus memiliki panjang sisi 4 sentimeter. Berapa volumenya?',['64 sentimeter kubik','64 cm³','64 cm3','64'],'Volume kubus = sisi × sisi × sisi = 4 × 4 × 4 = 64 sentimeter kubik.'],
+['Sebuah balok memiliki panjang 8 sentimeter, lebar 5 sentimeter, dan tinggi 3 sentimeter. Berapa volumenya?',['120 sentimeter kubik','120 cm³','120 cm3','120'],'Volume balok = panjang × lebar × tinggi = 8 × 5 × 3 = 120 sentimeter kubik.'],
+['Satu lapisan balok tersusun dari 6 × 4 kubus satuan. Jika ada 5 lapisan yang sama, berapa banyak kubus satuan seluruhnya?',['120 kubus satuan','120 kubus','120'],'Setiap lapisan berisi 6 × 4 = 24 kubus. Lima lapisan berisi 24 × 5 = 120 kubus satuan.'],
+['Kotak berbentuk kubus memiliki sisi 7 sentimeter. Berapa volumenya?',['343 sentimeter kubik','343 cm³','343 cm3','343'],'Volume kubus = 7 × 7 × 7 = 343 sentimeter kubik.'],
+['Akuarium berbentuk balok berukuran panjang 10 desimeter, lebar 4 desimeter, dan tinggi 6 desimeter. Berapa volumenya?',['240 desimeter kubik','240 dm³','240 dm3','240'],'Volume akuarium = 10 × 4 × 6 = 240 desimeter kubik.'],
+['Sebuah balok volumenya 180 sentimeter kubik. Panjangnya 10 sentimeter dan lebarnya 6 sentimeter. Berapa tingginya?',['3 sentimeter','3 cm','3'],'Tinggi = volume ÷ (panjang × lebar) = 180 ÷ (10 × 6) = 3 sentimeter.'],
+['Sebuah kubus memiliki volume 216 sentimeter kubik. Berapa panjang sisinya?',['6 sentimeter','6 cm','6'],'Carilah bilangan yang jika dikalikan tiga kali menghasilkan 216. Karena 6 × 6 × 6 = 216, panjang sisinya 6 sentimeter.'],
+['Dua kotak berbentuk balok masing-masing berukuran 5 sentimeter × 4 sentimeter × 3 sentimeter. Berapa jumlah volume kedua kotak?',['120 sentimeter kubik','120 cm³','120 cm3','120'],'Volume satu kotak = 5 × 4 × 3 = 60 sentimeter kubik. Dua kotak memiliki volume 2 × 60 = 120 sentimeter kubik.'],
+['Sebuah wadah balok berukuran 12 sentimeter × 5 sentimeter × 4 sentimeter. Di dalamnya diletakkan benda bervolume 40 sentimeter kubik. Berapa ruang kosong yang tersisa?',['200 sentimeter kubik','200 cm³','200 cm3','200'],'Volume wadah = 12 × 5 × 4 = 240 sentimeter kubik. Ruang kosong = 240 − 40 = 200 sentimeter kubik.'],
+['Balok A berukuran 9 sentimeter × 4 sentimeter × 3 sentimeter. Balok B berukuran 6 sentimeter × 5 sentimeter × 4 sentimeter. Balok mana yang volumenya lebih besar dan berapa selisihnya?',['balok b, 12 sentimeter kubik','balok b 12 cm³','balok b, 12 cm3','balok b 12'],'Volume A = 9 × 4 × 3 = 108 sentimeter kubik. Volume B = 6 × 5 × 4 = 120 sentimeter kubik. Balok B lebih besar dengan selisih 12 sentimeter kubik.']
 ]}
 ];
 const modules=[
@@ -610,7 +622,7 @@ const modules=[
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52,53]},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, volume, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52,53,54]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
