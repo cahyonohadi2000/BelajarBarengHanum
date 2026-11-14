@@ -18,7 +18,7 @@ Latihan matematika interaktif untuk menemani belajar di rumah.
 - Materi pecahan senilai, operasi pecahan, hubungan pecahan–desimal–persen, konteks persen sederhana, soal cerita operasi pecahan sehari-hari, serta membandingkan, mengurutkan, menjumlahkan, mengurangkan, mengalikan, membagi, dan mengerjakan operasi hitung campuran desimal
 - Materi pola bilangan membesar dan mengecil
 - Materi rasio dan proporsi: membaca, menulis, menyederhanakan rasio, menentukan rasio satuan, melengkapi tabel rasio senilai, serta menyelesaikan soal cerita perbandingan senilai
-- Materi pengukuran dan geometri mencakup konversi satuan panjang, berat, dan waktu, perhitungan durasi kegiatan, keliling, luas persegi, persegi panjang, segitiga, jajargenjang, bangun gabungan, pengenalan dan pengukuran sudut, sudut pada bangun datar dan garis berpotongan, soal cerita keliling dan luas, volume kubus dan balok, serta unsur, visualisasi, penyusunan, dan penguraian kubus-balok
+- Materi pengukuran dan geometri mencakup konversi satuan panjang, berat, dan waktu, perhitungan durasi kegiatan, keliling, luas persegi, persegi panjang, segitiga, jajargenjang, bangun gabungan, pengenalan dan pengukuran sudut, sudut pada bangun datar dan garis berpotongan, soal cerita keliling dan luas, volume kubus dan balok, hubungan volume dengan kapasitas liter–mililiter, serta unsur, visualisasi, penyusunan, dan penguraian kubus-balok
 - Setiap sesi berisi tepat 10 soal, kunci jawaban, dan pembahasan ringkas per soal
 - Riwayat setiap nilai dan progres disimpan otomatis di perangkat (localStorage)
 - Tampilan responsif untuk ponsel dan komputer

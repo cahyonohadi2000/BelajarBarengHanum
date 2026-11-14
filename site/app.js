@@ -615,6 +615,18 @@ const lessons=[
 ['Dua kotak berbentuk balok masing-masing berukuran 5 sentimeter × 4 sentimeter × 3 sentimeter. Berapa jumlah volume kedua kotak?',['120 sentimeter kubik','120 cm³','120 cm3','120'],'Volume satu kotak = 5 × 4 × 3 = 60 sentimeter kubik. Dua kotak memiliki volume 2 × 60 = 120 sentimeter kubik.'],
 ['Sebuah wadah balok berukuran 12 sentimeter × 5 sentimeter × 4 sentimeter. Di dalamnya diletakkan benda bervolume 40 sentimeter kubik. Berapa ruang kosong yang tersisa?',['200 sentimeter kubik','200 cm³','200 cm3','200'],'Volume wadah = 12 × 5 × 4 = 240 sentimeter kubik. Ruang kosong = 240 − 40 = 200 sentimeter kubik.'],
 ['Balok A berukuran 9 sentimeter × 4 sentimeter × 3 sentimeter. Balok B berukuran 6 sentimeter × 5 sentimeter × 4 sentimeter. Balok mana yang volumenya lebih besar dan berapa selisihnya?',['balok b, 12 sentimeter kubik','balok b 12 cm³','balok b, 12 cm3','balok b 12'],'Volume A = 9 × 4 × 3 = 108 sentimeter kubik. Volume B = 6 × 5 × 4 = 120 sentimeter kubik. Balok B lebih besar dengan selisih 12 sentimeter kubik.']
+]},
+{name:'Volume & kapasitas: liter–mililiter',type:'PENGUKURAN',desc:'Hubungkan satuan volume kubik dengan liter dan mililiter untuk menyelesaikan masalah kapasitas sehari-hari.',tip:'Ingat hubungan penting: 1 cm³ = 1 mL, 1 dm³ = 1 L, dan 1 L = 1.000 mL.',lessonNote:'<b>Tujuan belajar</b><span>Menghubungkan satuan volume cm³ dan dm³ dengan kapasitas mL dan L serta menerapkannya dalam soal cerita.</span><b>Petunjuk konsep</b><span>Setiap 1 cm³ ruang dapat memuat 1 mL cairan. Setiap 1 dm³ sama dengan 1 L atau 1.000 mL. Samakan satuan sebelum menjumlahkan, mengurangkan, atau membandingkan kapasitas.</span><small>Contoh: wadah berukuran 10 cm × 10 cm × 10 cm memiliki volume 1.000 cm³, sehingga kapasitasnya 1.000 mL = 1 L.</small>',qs:[
+['Sebuah wadah memiliki volume 750 sentimeter kubik. Berapa mililiter kapasitas wadah itu?',['750 mililiter','750 ml','750'],'Karena 1 cm³ = 1 mL, volume 750 cm³ sama dengan kapasitas 750 mL.'],
+['Kotak air memiliki volume 3 desimeter kubik. Berapa liter kapasitasnya?',['3 liter','3 l','3'],'Karena 1 dm³ = 1 L, maka 3 dm³ sama dengan 3 liter.'],
+['Dua setengah liter air sama dengan berapa mililiter?',['2500 mililiter','2.500 mililiter','2500 ml','2.500 ml','2500'],'Karena 1 liter = 1.000 mL, maka 2,5 × 1.000 = 2.500 mililiter.'],
+['Sebuah wadah berbentuk balok berukuran 20 cm × 10 cm × 5 cm. Berapa liter kapasitas penuh wadah itu?',['1 liter','1 l','1'],'Volumenya 20 × 10 × 5 = 1.000 cm³. Karena 1.000 cm³ = 1.000 mL = 1 liter, kapasitasnya 1 liter.'],
+['Akuarium berukuran 30 cm × 20 cm × 20 cm. Berapa liter kapasitasnya jika diisi penuh?',['12 liter','12 l','12'],'Volume akuarium = 30 × 20 × 20 = 12.000 cm³. Itu sama dengan 12.000 mL atau 12 liter.'],
+['Botol berisi 1,5 liter jus. Jus dituangkan ke tiga gelas, masing-masing 250 mililiter. Berapa mililiter jus yang tersisa?',['750 mililiter','750 ml','750'],'Satu setengah liter = 1.500 mL. Jus yang dituang = 3 × 250 = 750 mL. Sisanya 1.500 − 750 = 750 mL.'],
+['Tangki kecil berkapasitas 8 desimeter kubik. Sebanyak 3,5 liter air digunakan. Berapa liter air yang tersisa jika tangki semula penuh?',['4,5 liter','4.5 liter','4,5 l','4.5 l','4,5','4.5'],'Delapan dm³ = 8 liter. Air tersisa = 8 − 3,5 = 4,5 liter.'],
+['Sebuah kotak pendingin memiliki volume 2.400 sentimeter kubik dan terisi setengahnya. Berapa mililiter minuman di dalamnya?',['1200 mililiter','1.200 mililiter','1200 ml','1.200 ml','1200'],'Setengah dari 2.400 cm³ adalah 1.200 cm³. Karena 1 cm³ = 1 mL, isinya 1.200 mL.'],
+['Wadah A berisi 1.800 mililiter air. Wadah B berisi 2 desimeter kubik air. Wadah mana yang berisi lebih banyak dan berapa selisihnya?',['wadah b, 200 mililiter','wadah b 200 mililiter','wadah b, 200 ml','wadah b 200 ml','wadah b 200'],'Dua dm³ = 2 liter = 2.000 mL. Wadah B lebih banyak, dengan selisih 2.000 − 1.800 = 200 mL.'],
+['Enam botol masing-masing berisi 750 mililiter air. Berapa liter jumlah air seluruhnya?',['4,5 liter','4.5 liter','4,5 l','4.5 l','4,5','4.5'],'Jumlah air = 6 × 750 = 4.500 mL. Karena 1.000 mL = 1 liter, 4.500 mL = 4,5 liter.']
 ]}
 ];
 const modules=[
@@ -622,7 +634,7 @@ const modules=[
   {title:'Faktor, FPB, dan KPK',detail:'Faktor, FPB, KPK, dan tantangan expert',state:'Latihan tersedia',start:0,end:8},
   {title:'Pecahan, desimal, dan persen',detail:'Pecahan, operasi, hubungan desimal-persen, dan urutan',state:'Latihan tersedia',start:8,end:15,extra:[43,44,45,46,47,48]},
   {title:'Pola bilangan dan perbandingan',detail:'Pola, rasio sederhana, rasio satuan, dan proporsi',state:'Latihan tersedia',start:15,end:19,extra:[49]},
-  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, volume, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52,53,54]},
+  {title:'Pengukuran dan geometri',detail:'Sudut, luas, keliling, volume, kapasitas, dan bangun ruang',state:'Latihan tersedia',start:19,end:26,extra:[50,51,52,53,54,55]},
   {title:'Data, peluang, dan pengulangan',detail:'Data, peluang, dan pengulangan campuran · 7 sesi tersedia',state:'Latihan tersedia',start:26,end:33}
 ];
 const STORE='belajarBarengHanum.v1';
